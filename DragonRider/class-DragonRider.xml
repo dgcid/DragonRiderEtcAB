@@ -708,7 +708,7 @@
 					<em>Spell Slots.</em>
 				</strong> The Nomad Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
 			<p class="indent">For example, if you know the 1st-level spell shield and have a 1st-level and a 2nd-level spell slot available, you can cast shield using either slot.</p>		
-			</center>
+		</description>
 			<h5 class="caption">NOMAD SPELLCASTING</h5>
 			<table class="class-features">
 				<thead>
