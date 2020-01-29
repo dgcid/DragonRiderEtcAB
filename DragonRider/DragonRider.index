@@ -11,6 +11,6 @@
 	<files>
 		<!--<file name="infra.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/infra.xml" /> -->
 		<!-- DragonRider class -->
-		<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/class-DragonRider.xml" />
+		<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/DragonRider/class-DragonRider.xml" />
 	</files>
 </index>
