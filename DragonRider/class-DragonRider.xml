@@ -4,12 +4,12 @@
 		<name>DragonRider</name>
 		<description>The DragonRider class </description>
 		<author url="https://github.com/dgcid">dgcid</author>
-		<update version="0.3.7">
+		<update version="0.3.8">
 			<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/DragonRider/class-DragonRider.xml" />
 		</update>
 	</info>
 
-	<element name="DragonRider" type="Class" source="Player’s Handbook" id="ID_MYHB_DR_CLASS_DragonRider">
+	<element name="DragonRider" type="Class" source="Dragon Riders of Abeir" id="ID_MYHB_DR_CLASS_DragonRider">
 		<description>
 			<p>The Bandit leader breathing heavy as he and his band run for their lives. Why hadn’t he listened to the ferrymen who dropped them off. Why did he ignore the rumours, these questions haunted him as he gave the order to run faster . Suddenly a bellowing roar over head and the sound of clapping thunder and the ground shook as if it was impacted by a meteor and Standing before him and his band a firece looking Black dragon ready to destroy them.</p>
 			<p class="indent">A company of fighters closes in on hollow said to be the home of a emrald colored dragon. They have come with the intention of killing the beast before it can cause damage to the region. Little did they know the dragon was not alone. As they approached the hollow and caught glimspes of the dragon the ground erupted and they were soon entangled in a mass of vines. As the tried to free themselves a humanoid approached and said to them; “ We only wanted to be left alone.” The stranger then beheaded them one by one and returned to his activities.</p>
