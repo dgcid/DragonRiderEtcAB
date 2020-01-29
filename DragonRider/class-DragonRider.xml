@@ -993,7 +993,7 @@
 			<stat name="DR_Nomad:spellcasting:slots:8" value="1" level="15" />
 			<stat name="DR_Nomad:spellcasting:slots:9" value="1" level="17" />
 			<stat name="wizard:spellcasting:prepare" value="intelligence:modifier" />
-			<stat name="wizard:spellcasting:prepare" value="level:DragonRider" /
+			<stat name="wizard:spellcasting:prepare" value="level:DragonRider" />
 			<select type="Spell" name="Cantrip (DR_Nomad)" supports="Wizard, 0" level="3" number="2" spellcasting="DR_Nomad" />
 			<select type="Spell" name="Cantrip (DR_Nomad)" supports="Wizard, 0" level="4" number="3" spellcasting="DR_Nomad" />
 			<select type="Spell" name="Spellbook (DR_Nomad)" supports="$(spellcasting:list), 1" level="1" number="6" spellcasting="DR_Nomad" />
