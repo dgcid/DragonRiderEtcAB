@@ -2,10 +2,10 @@
 <elements>
 	<info>
 		<name>DragonRider</name>
-		<description>The DragonRider class and the champion archetype from the Player’s Handbook.</description>
+		<description>The DragonRider class </description>
 		<author url="https://github.com/dgcid"</author>
 		<update version="0.3.6">
-			<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/core/players-handbook/classes/class-DragonRider.xml" />
+			<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/class-DragonRider.xml" />
 		</update>
 	</info>
 
@@ -255,7 +255,7 @@
 			<p>Each time you gain a Dragon Rider level, you can add two wizard spells of  your choice to your spellbook. Each of these spells must be of a level for which you have spell slots, as shown on the Dragon Rider table. On your adventures, you might find other spells that you can add to your spellbook (see the “Your Spellbook” sidebar). </p>
 		</description>
 		<sheet display="false">
-			<description>You can prepare {{wizard:spellcasting:prepare}} spells from the your spellbook. You use an arcane focus to cast spells.</description>
+			<description>You can prepare {{DragonRider:spellcasting:prepare}} spells from the your spellbook. You use an arcane focus to cast spells.</description>
 		</sheet>
 		<spellcasting name="Dragon Rider" ability="Intelligence" prepare="true">
 			<list>ALL</list>
@@ -313,6 +313,9 @@
 			<p>At 1st Level, A dragon egg comes into your possession, causing a bond that gives life to dormant magic deep within you. A lofty feeling pulls you skyward as you yearn to soar in the sky. You gain a dragon egg of a type of your choosing, or at random, that has 20 AC and 10 HP. In addition, you can speak Draconic. </p>
 			<p class="indent">See Dragon Riders of Abeir to See exact choices for Dragon egg and given Cantrip. </p>
 		</description>
+		 <sheet display="true">
+			<description>You gain a dragon egg of a type of your choosing, or at random, that has 20 AC and 10 HP. In addition, you can speak Draconic.</description>
+		</sheet>
 		<rules>
 			<select type="Class Feature" name="Dragon Egg" supports="Dragon Egg" level="1"/>
 		</rules>
@@ -324,18 +327,23 @@
 			<p>At 3rd level you develop a telepathic link between you and your dragon, which allows you to communicate freely witihing your minds up to 5 miles on the same plane. As a bonus action either of you  can focus your thoughts and find their partner up to the same distanc away as the telepathy. at 7th level the bond deepens granting an additional 5 miles to the range.at 13th level the bond reaches pea level and the distance becomes unlimited.</p>
 		</description>
 		<sheet action="Bonus Action" usage="1/Short Rest">
+					<description>You develop a telepathic link between you and your dragon, which allows you to communicate freely witihing your minds up to 5 miles on the same plane. As a bonus action either of you  can focus your thoughts and find their partner up to the same distanc away as the telepathy. at 7th level the bond deepens granting an additional 5 miles to the range.at 13th level the bond reaches pea level and the distance becomes unlimited.</description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Bond of the Rider" supports="Fighting Style" level="3"/>
+			<select type="Class Feature" name="Bond of the Rider" supports="Bond of the Rider" level="3"/>
 		</rules>
 	</element>
 
 	<element name="Dragon hatchling" type="Class Feature" source="Homebrew" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonHatchling">
 		<description>
 			<h5 class="caption">Dragon hatchling</h5>
-			<p>At 3rd level, your dragon egg hatches into a dragon hatchling with the following stat block. Although the it will try to stay by your side, the DM controls the actions of the dragon hatchling; However, you can influence these actions with a successful Handle Animal check. </p>
+			<p>At 3rd level, your dragon egg hatches into a dragon hatchling with the following stat block. Although the it will try to stay by your side, the DM controls the actions of the dragon hatchling; However, you can influence these actions with a successful Handle Animal check. </p>
 			<p class="indent">See Dragon Riders of Abeir for Stat Block. </p>
 		</description>
+		<sheet display="true">
+			<description>your dragon egg hatches into a dragon hatchling. Although the it will try to stay by your side, the DM controls the actions of the dragon hatchling; However, you can influence these actions with a successful Handle Animal check.</description>
+		</sheet>
+
 		<rules>
 			<select type="Class Feature" name="Dragon hatchling" supports="Dragon hatchling" level="3"/>
 		</rules>
@@ -347,6 +355,7 @@
 			<p>At 5th level The rider may invoke the power of his dragons blood. As a reaction to attack the rider may gain temporary immunity to their dragons' element. This feature may be used a number of times equal to his constitution modifier per long rest. A minimum of 1.</p>			
 		</description>
 		<sheet action="Reaction" usage="Con_Mod/Long Rest">
+		<description>As a reaction to attack the rider may gain temporary immunity to their dragons' element. This feature may be used a number of times equal to his constitution modifier per long rest. A minimum of 1.</description>
 		</sheet>
 		<rules>
 			<select type="Class Feature" name="Dragons Blood" supports="Dragons Blood" level="5"/>
@@ -361,6 +370,7 @@
 			<p class="indent">If you already have a breath weapon from some other source, such as if you are a dragon born, the number of times you can use the weapon per rest stack. You can choose during that rest to use your dragon’s energy type or your own.</p>
 		</description>
 		<sheet action="Action" usage="1/Short Rest">
+		<description>you gain a breath weapon of the same energy type as your dragon. The type and area of effect are detailed in the dragon egg. All breath weapons deal 2d6 points of energy damage, the same type as your dragon’s, half damage on a successful Dexterity saving throw (DC is equal to 8 + your proficiency bonus + your Constitution modifier).>After you use this weapon, you cannot use it again until you take a short or long rest. At 9th, 12th, 15th, and 18th level, you gain another use of the breath weapon and another d6 damage, until you have 5 uses and deal 7d6 damage.If you already have a breath weapon from some other source, such as if you are a dragon born, the number of times you can use the weapon per rest stack. You can choose during that rest to use your dragon’s energy type or your own.</description>
 		</sheet>
 		<rules>
 			<select type="Class Feature" name="Breath Weapon" supports="Breath Weapon" level="7"/>
@@ -370,12 +380,13 @@
 	<element name="Dragon Wyrmling" type="Class Feature" source="Player’s Handbook" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonWyrmling">
 		<description>
 			<h5 class="caption">Dragon Wyrmling</h5>
-			<p>At 7th level, the hatchling has matured into a 'Dragon Wyrmling', as described in the Monster Manual. DM still controls the Dragon Wyrmling but as described below the rider can command the dragon.</p>
+			<p>At 7th level, the hatchling has matured into a 'Dragon Wyrmling', as described in the Monster Manual.</p>
 			<p class="indent">The dragon wyrmling is now a companion that accompanies you on your adventures and is trained to fight alongside you. The type of wyrming corresponds to the chosen dragon egg. Add your proficiency bonus to the wyrmling’s AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. Its hit point maximum equals the hit point number in its stat block or four times your Dragon Rider Level level, whichever is higher. Like any creature, it can spend Hit Dice during a short rest to regain hit points. </p>
-			<p class="indent">The wyrmling obeys your commands as best as it can On your turn, you can verbally command the wyrmling where to move (no action required by you). You can use your bonus action to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action. Once you have the Extra Attack feature, you can make one weapon attack yourself when you command the wyrmling to take the Attack action.  </p>
-			<p class="indent">If you are incapacitated or absent, the wyrmling acts on its own, focusing on protecting you and itself. The wyrmling never requires your command to use its reaction, such as when making an opportunity attack. </p>
+			<p class="indent">The wyrmling obeys your commands as best as it can On your turn, you can verbally command the wyrmling where to move (no action required by you). You can use your bonus action to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action.</p>
+			<p class="indent">If you are incapacitated or absent, the wyrmling acts on its own, focusing on protecting you and itself. The wyrmling never requires your command to use its reaction, such as when making an opportunity attack. </p>
 		</description>
 		<sheet action="Bonus Action" usage="Unlimited"> 
+		<description>the hatchling has matured into a 'Dragon Wyrmling', as described in the Monster Manual. The wyrmling obeys your commands as best as it can On your turn, you can verbally command the wyrmling where to move (no action required by you). You can use your bonus action to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action.</description>
 		</sheet>
 		<rules>
 			<select type="Class Feature" name="Dragon Wyrmling" supports="Dragon Wyrmling" level="7"/>
@@ -387,6 +398,9 @@
 			<h5 class="caption">Primal Growth</h5>
 			<p>Due to the connection you share with your dragon starting at 9th level, The Dragon Wyrmling is considered large size in the case of Mounting and Mounted Combat.  </p>
 		</description>
+		<sheet display="true">
+		<description>Due to the connection you share with your dragon, The Dragon Wyrmling is considered large size in the case of Mounting and Mounted Combat.</description>
+		</sheet>
 		<rules>
 			<select type="Class Feature" name="Primal Growth" supports="Primal Growth" level="9"/>
 		</rules>
@@ -397,6 +411,9 @@
 			<h5 class="caption">Ride Dragon</h5>
 			<p>At 10th level once dragon grows into a wyrmling. The rider may mount the wyrmling like a mount and perform mounted combat with the dragon. .</p>
 		</description>
+		<sheet display="true">
+		<description>Once dragon grows into a wyrmling. The rider may mount the wyrmling like a mount and perform mounted combat with the dragon.</description>
+		</sheet>
 		<rules>
 			<select type="Class Feature" name="Ride Dragon  " supports="Ride Dragon  " level="10"/>
 		</rules>
@@ -407,6 +424,9 @@
 			<h5 class="caption">Born to the Saddle</h5>
 			<p>Starting at 11th level, your mastery as a rider becomes apparent. You have advantage on saving throws made to avoid falling off your mount. If you fall off your mount and descend no more than 10 feet, you can land on your feet if you’re not incapacitated. Finally, mounting or dismounting a creature costs you only 5 feet of movement, rather than half your speed.</p>
 		</description>
+		<sheet display="true">
+		<description>your mastery as a rider becomes apparent. You have advantage on saving throws made to avoid falling off your mount. If you fall off your mount and descend no more than 10 feet, you can land on your feet if you’re not incapacitated. Finally, mounting or dismounting a creature costs you only 5 feet of movement, rather than half your speed.</description>
+		</sheet>
 		<rules>
 			<select type="Class Feature" name="Born to the Saddle" supports="Born to the Saddle" level="11"/>
 		</rules>
@@ -418,6 +438,7 @@
 			<p>At 13th level, the wyrmling has matured into a 'Young Dragon', as described in the Monster Manual; use these stat blocks to replace the dragon wyrmling from the Dragon Wyrmling class feature. The type of young dragon must remain the same. You gain the benefit of the Mounted Combatant feat. You can use your bonus action to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action. If you are incapacitated or absent, the Young Dragon acts on its own, focusing on protecting you and itself. The Young Dragon never requires your command to use its reaction, such as when making an opportunity attack.</p>
 		</description>
 		<sheet action="Bonus Action" usage="Unlimited"> 
+		<description>The wyrmling has matured into a 'Young Dragon', as described in the Monster Manual.You gain the benefit of the Mounted Combatant feat. You can use your bonus action to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action.If you are incapacitated or absent, the Young Dragon acts on its own, focusing on protecting you and itself. The Young Dragon never requires your command to use its reaction, such as when making an opportunity attack.</description>
 		</sheet>
 		<rules>
 			<select type="Class Feature" name="Young Dragon" supports="Young Dragon" level="13" />
@@ -429,6 +450,9 @@
 			<h5 class="caption">Dragons Longevity</h5>
 			<p>At 14th level Age 1 year for every 10 years until level 20 then you are true immortal. Gain resistance to poison, disease, charm, fear. If dragon is within 10 feet you can choose to succeed on one of those saves if you fail. if you let your dragon die then this ability also makes you weak to these conditions if your new dragon hasn't been found </p>
 		</description>
+				<sheet display="true">
+		<description>You Age 1 year for every 10 years until level 20 then you are true immortal. Gain resistance to poison, disease, charm, fear. If dragon is within 10 feet you can choose to succeed on one of those saves if you fail. if you let your dragon die then this ability also makes you weak to these conditions if your new dragon hasn't been found</description>
+		</sheet>
 		<rules>
 			<select type="Class Feature" name="Dragons Longevity" supports="Dragons Longevity" level="14"/>
 		</rules>
@@ -439,6 +463,10 @@
 			<h5 class="caption">Dragon Heart</h5>
 			<p>At 17th As an action once per long rest you can reach out and directly connect with the soul of your dragon, twinning each other for up to 1 minute, while in this state, treat your health pools as a total, this health total has resistance to all damage, additionally, while in this state you have advantage on all saving throws against effects that the other can see, and attack rolls on targets the other can see. </p>
 		</description>
+		<sheet action="Action" usage="1/long rest"> 
+		<description>As an action once per long rest you can reach out and directly connect with the soul of your dragon, twinning each other for up to 1 minute, while in this state, treat your health pools as a total, this health total has resistance to all damage, additionally, while in this state you have advantage on all saving throws against effects that the other can see, and attack rolls on targets the other can see.</description>
+		</sheet>
+
 		<rules>
 			<select type="Class Feature" name="Dragon Heart" supports="Dragon Heart" level="17"/>
 		</rules>
@@ -447,8 +475,12 @@
 	<element name="Adult Dragon" type="Class Feature" source="Homebrew" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonAdult">
 		<description>
 			<h5 class="caption">Adult Dragon</h5>
-			<p>At 20th level, the Young Dragon has matured into a 'Adult Dragon', as described in the Monster Manual; use these stat blocks to replace the young dragon from the young dragon class feature. The type of young dragon must remain the same. You gain the benefit of the Mounted Combatant feat. The Dragon will act on its own. </p>
+			<p>At 20th level, the Young Dragon has matured into a 'Adult Dragon', as described in the Monster Manual; use these stat blocks to replace the young dragon from the young dragon class feature. The type of young dragon must remain the same. You gain the benefit of the Mounted Combatant feat. The Dragon will act on its own initiative. </p>
 		</description>
+			<sheet display="true">
+		<description>The Young Dragon has matured into a 'Adult Dragon', as described in the Monster Manual. You gain the benefit of the Mounted Combatant feat. The Dragon will act on its own initiative.</description>
+		</sheet>
+
 		<rules>
 			<select type="Class Feature" name="Adult Dragon" supports="Adult Dragon" level="20"/>
 		</rules>
@@ -460,6 +492,7 @@
 		<supports>Riders Archetype</supports>
 		<description>
 			<p>The archetypal Dragoon focuses on the development of physical abilites based on draconic aspects.Those wo model themselves on this archetpe combine rigorous training with physical excellence to deal devasting blows.</p>
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_EXTRAATTACK" />
 		    <div element="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE" />
 			<div element="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_SOTD"/>
 			<div element="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_JumpStrike"/>
@@ -477,9 +510,26 @@
 			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_SOTD" level="3"/>
 			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_JumpStrike" level="3"/>
 			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_DragonHide" level="6"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_EXTRAATTACK" level="9"/>
 			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_Skewer" level="11"/>
 			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_MasterDragoon" level="15"/>
 			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_SuperiorDragoon" level="18"/>
+		</rules>
+	</element>
+	<element name="Extra Attack" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_EXTRAATTACK">
+		<description>
+			<p>Beginning at 9th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+			<p class="indent">The number of attacks increases to three when you reach 15th level in this class and to four when you reach 18th level in this class.</p>
+		</description>
+		<sheet>
+			<description level="9">You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+			<description level="15">You can attack three times, instead of once, whenever you take the Attack action on your turn</description>
+			<description level="18">You can attack four times, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="9" bonus="extra attack" />
+			<stat name="extra attack:count" value="3" level="15" bonus="extra attack" />
+			<stat name="extra attack:count" value="4" level="18" bonus="extra attack" />
 		</rules>
 	</element>
 	<element name="Fighting Style" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE">
