@@ -619,7 +619,7 @@
 			<description>Characters that choose this archetype are typically wanderers who have either have no knowledge of the order or don’t care. Their attunement with their dragon has made them one with nature and they seek to protect that nature.</description>
 		</sheet>
 		<rules>
-			<Revoke type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_SPELLCASTING_Dragonrider" level="3"/>
+			
 			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_SPELLCASTING" level="3"/>
 			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_TWTF" level="3"/>
 			<grant type="Archetype Feature" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_WILDSHAPE" level="3"/>
