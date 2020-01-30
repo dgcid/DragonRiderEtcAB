@@ -4,7 +4,7 @@
 		<name>Compendium Combos</name>
 		<description>Combos for the Compendium of forgotten secrets not included in the compendium</description>
 		<author url="https://github.com/dgcid">dgcid</author>
-		<update version="0.0.8">
+		<update version="0.0.9">
 			<file name="ComendiumCombos.index" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/Races/ComendiumCombos.index" />
 		</update>
 	</info>
