@@ -4,7 +4,7 @@
 		<name>DragonRider</name>
 		<description>The DragonRider class </description>
 		<author url="https://github.com/dgcid">dgcid</author>
-		<update version="0.5.3">
+		<update version="0.5.4">
 			<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/DragonRider/class-DragonRider.xml" />
 		</update>
 	</info>
@@ -711,7 +711,7 @@
 			<p>At 3rd level, your dragon egg hatches into a dragon hatchling with the following stat block. Although the it will try to stay by your side, the DM controls the actions of the dragon hatchling; However, you can influence these actions with a successful Handle Animal check. </p>
 			<p class="indent">See Dragon Riders of Abeir for Stat Block. </p>
 		</description>
-		<sheet display="true">
+		<sheet>
 			<description>your dragon egg hatches into a dragon hatchling. Although the it will try to stay by your side, the DM controls the actions of the dragon hatchling; However, you can influence these actions with a successful Handle Animal check.</description>
 		</sheet>
 			<rules>
@@ -1328,7 +1328,7 @@
 				</rules>
 			</element>	
 
- 	<!-- Cleric Archetype 
+ 	<!-- Cleric Archetype -->
 	<element name="Cleric" type="Archetype" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_DragonRider_Cleric">
 		<supports>Riders Archetype</supports>
 		<description>
@@ -1440,9 +1440,9 @@
 		</sheet>
 	</element>
 	
-	<element name="Divine Strike" type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DivineStrike">
+	<element name="Divine Strike" type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_AncientMagic">
 		<description>
-			<p>At 9th level, you gain the ability to infuse your weapon strikes with energy of your dragon’s type. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage type on the Dragon Domain table to the target. When you reach 14th level, the extra damage increases to 2d8. </p>
+			<pAt 9th level, you gain the ability to infuse your weapon strikes with energy of your dragon’s type. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage type on the Dragon Domain table to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
 		</description>
 		<sheet>
 			<description> Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage type from the dragon egg you chose to the target. When you reach 14th level, the extra damage increases to 2d8.</description>
@@ -1805,7 +1805,7 @@
 					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" number="0" spellcasting="Dragon Rider" />
 				</rules>
 			</element>
-			-->
+			
 </elements>
 	
 		
