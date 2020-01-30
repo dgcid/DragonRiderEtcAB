@@ -264,16 +264,16 @@
 			<grant type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_ARCANE_FOCUS" />
 
 			<stat name="Dragon Rider:spellcasting:slots:1" value="2" level="1" />
-			<stat name="Dragon Rider:spellcasting:slots:1" value="3" level="4" />
-			<stat name="Dragon Rider:spellcasting:slots:1" value="4" level="7" />
+			<stat name="Dragon Rider:spellcasting:slots:1" value="1" level="4" />
+			<stat name="Dragon Rider:spellcasting:slots:1" value="1" level="7" />
 
 
 			<stat name="Dragon Rider:spellcasting:slots:2" value="2" level="7" />
-			<stat name="Dragon Rider:spellcasting:slots:2" value="3" level="10" />
+			<stat name="Dragon Rider:spellcasting:slots:2" value="1" level="10" />
 			<stat name="Dragon Rider:spellcasting:slots:3" value="2" level="13" />
-			<stat name="Dragon Rider:spellcasting:slots:3" value="2" level="16" />
+			<stat name="Dragon Rider:spellcasting:slots:3" value="1" level="16" />
 			<stat name="Dragon Rider:spellcasting:slots:4" value="1" level="17" />
-			<stat name="Dragon Rider:spellcasting:slots:4" value="2" level="19" />
+			<stat name="Dragon Rider:spellcasting:slots:4" value="1" level="19" />
 			<stat name="Dragon Rider:spellcasting:slots:5" value="1" level="19" />
 
 
@@ -281,8 +281,8 @@
 			<stat name="Dragon Rider:spellcasting:prepare" value="level:Dragon Rider" />
 
 			<select type="Spell" name="Cantrip (Wizard)" supports="$(spellcasting:list), 0" level="1" number="2" spellcasting="Dragon Rider" />
-			<select type="Spell" name="Cantrip (Wizard)" supports="$(spellcasting:list), 0" level="4" number="3" spellcasting="Dragon Rider" />
-			<select type="Spell" name="Cantrip (Wizard)" supports="$(spellcasting:list), 0" level="10" number="4" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Cantrip (Wizard)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Cantrip (Wizard)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Dragon Rider" />
 
 			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), 1" level="1" number="6" spellcasting="Dragon Rider" />
 			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="2" spellcasting="Dragon Rider" />
@@ -319,7 +319,34 @@
 		<rules>
 			<select type="Class Feature" name="Dragon Egg" supports="Dragon Egg" level="1"/>
 		</rules>
+		<!-- Dragon Eggs -->
+		<element name="Obsidian" type="Class Feature" source="HomeBrew" id="ID_MYHB_DR_CLASS_FEATURE_OBSIDIAN_DRAGON_EGG">
+			<supports>Dragon Egg, DragonRider</supports>
+			<description>
+				<p>A dragon egg that imbues the power of Obsidian dragons. Altering your elemental damage to Fire, and teaching you the Firebolt cantrip.</p>
+			</description>
+			<sheet>
+				<description>A dragon egg that imbues the power of Obsidian dragons. Altering your elemental damage to Fire, and teaching you the Firebolt cantrip.</description>
+			</sheet>
+			<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT" />
+			</rules>
+		</element>
+		<!-- Dragon Eggs -->
+		<element name="Adamantine Dragon Egg" type="Class Feature" source="HomeBrew" id="ID_MYHB_DR_CLASS_FEATURE_OBSIDIAN_DRAGON_EGG">
+			<supports>Dragon Egg, DragonRider</supports>
+			<description>
+				<p>A dragon egg that imbues the power of Adamantine dragons. Altering your elemental damage to Thunder, and teaching you the Thunderclap cantrip.</p>
+			</description>
+			<sheet>
+				<description>A dragon egg that imbues the power of Adamantine dragons. Altering your elemental damage to Thunder, and teaching you the Thunderclap cantrip.</description>
+			</sheet>
+			<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_THUNDERCLAP" />
+			</rules>
+		</element>
 	</element>
+	
 
 	<element name="Bond of the Rider" type="Class Feature" source="Homebrew" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_BondofTheRider">
 		<description>
@@ -558,7 +585,7 @@
 			<p class="indent">Character gains Great Weapon Fighting Style. </p>
 		</description>
 	</element>
-	<element name="Jmup Strike" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_JumpStrike">
+	<element name="Jump Strike" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_JumpStrike">
 		<description>
 			<p>At 3rd Level, as an action on your turn, you may spring straight into the air to a height equal to your move speed and remain there until the start of your next turn. If you would be knocked prone, you fall straight to the ground and suffer the applicable fall damage. At the start of your next turn, you may use your action to land anywhere within half your move speed of the point you jumped from, making one melee attack against a target. If weapon is not a lance, attack is taken at advantage , If weapon is a lance and attack is successful, this attack is a critical hit, and target makes a strngth saving throw. If target fails it is knocked prone. At the start of your turn, you may instead use your bonus action to land safely on the ground without an attack. Jump Strike can be used numbers of times equal to your Strength Modifier per Long Rest. </p>
 		</description>
