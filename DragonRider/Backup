@@ -1,0 +1,1076 @@
+<?xml version="1.0" encoding="uthttps://github.com/dgcid/DragonRiderEtcAB/tree/master/DragonRiderf-8" ?>
+<elements>
+	<info>
+		<name>DragonRider</name>
+		<description>The DragonRider class </description>
+		<author url="https://github.com/dgcid">dgcid</author>
+		<update version="0.5.1">
+			<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/DragonRider/class-DragonRider.xml" />
+		</update>
+	</info>
+
+	<element name="Dragon Rider" type="Class" source="Dragon Riders of Abeir" id="ID_MYHB_DR_CLASS_DragonRider">
+		<description>
+			<p>The Bandit leader breathing heavy as he and his band run for their lives. Why hadn’t he listened to the ferrymen who dropped them off. Why did he ignore the rumours, these questions haunted him as he gave the order to run faster . Suddenly a bellowing roar over head and the sound of clapping thunder and the ground shook as if it was impacted by a meteor and Standing before him and his band a firece looking Black dragon ready to destroy them.</p>
+			<p class="indent">A company of fighters closes in on hollow said to be the home of a emrald colored dragon. They have come with the intention of killing the beast before it can cause damage to the region. Little did they know the dragon was not alone. As they approached the hollow and caught glimspes of the dragon the ground erupted and they were soon entangled in a mass of vines. As the tried to free themselves a humanoid approached and said to them; “ We only wanted to be left alone.” The stranger then beheaded them one by one and returned to his activities.</p>
+			<p class="indent">All of these stories revolve around Dragon Riders, a diverse class designed for Dungeons and Dragons.Whether you serve the Rider’s Order, reject their teachings, or want a peaceful life of a nomad. All share their bond with the dragon who chose them, the unparalled masteries that come with this bond. And the adventure that awaits those who choose this class.</p>
+			<h4>SPECIALIST ON THE FRONTLINES</h4>
+			<p>Riders spend years honing their fightning prowess, magical knowledge, and bond with their dragon. They are versatile enough to use any weapon handed to them, and skilled enough to understand magic and all it’s complexities. The one place you will always find a Rider is on the frontlines acting as the parties shield and sword.</p>
+			<h4>TRAINED FOR DANGER</h4>		
+			<h4>CREATING A DragonRider</h4>
+			<p>As you build your Dragon Rider think about the choices you will make for the future. Will you serve the Order? There are many benefits to the being in the ranks of the Order, such as exclusive knowledge, access ro arms and armor you will finds no place else. Or will you reject the Order’s summons and try to forge your own destiny? Will you be a mighty Dragoon whose prowess with the spear is unmatched and complimented by the gifts bestowed upon them by their dragon? Will you be a Magus whose knowledge of magic can be considered limitless? What color is your dragon? How did the egg appear before you? All these things must be considered when making your Dragon rider.</p>
+			<h5>QUICK BUILD</h5>
+			<p>You can make a Dragon Rider usinfg these quick suggestions; IF you are going with the Dragoon archetype First make Strength your highest score, Followed by Constitution,Dexterity,Charisma,Wisdom, and Intelligence last. If you are going with the Magus or Nomad archetypes, First make Intelligence your highest score, Followed by Constitution, Charisma , Dexterity,Wisdom, and Strength last. Lastly if you are going with the Cleric archetype, First make your highest score, Wisdom Followed by Constitution, Strength, Dexterity, Intelligence, and Charisma last.</p>
+			<h3>CLASS FEATURES</h3>
+			<p>As a DragonRider, you gain the following class features.</p>
+			<h5>HIT POINTS</h5>
+			<ul class="unstyled">
+				<li>
+					<strong>Hit Dice:</strong> 1d10 per Dragon Rider level</li>
+				<li>
+					<strong>Hit Points at 1st Level:</strong> 10 + your Constitution modifier</li>
+				<li>
+					<strong>Hit Points at Higher Levels:</strong> 1d10 (or 6) + your Constitution modifier per DragonRider level after 1st</li>
+			</ul>
+			<h5>PROFICIENCIES</h5>
+			<ul class="unstyled mb">
+				<li>
+					<strong>Armor:</strong> medium armor,Light armor, shields</li>
+				<li>
+					<strong>Weapons:</strong> Simple weapons, martial weapons</li>
+				<li>
+					<strong>Tools:</strong> Calligraphy Supplies or Alchemist Supplies</li>
+			</ul>
+			<ul class="unstyled">
+				<li>
+					<strong>Saving Throws:</strong> Intelligence, Constitution</li>
+				<li>
+					<strong>Skills:</strong> Gain proficiency in Animal Handling, and Choose one skill from  Acrobatics,  Athletics, History, Insight, Intimidation, Perception, and Survival</li>
+			</ul>
+			<h5>EQUIPMENT</h5>
+			<p>You start with the following equipment, in addition to the equipment granted by your background:</p>
+			<ul>
+				<li>
+					leather armor, longbow, and 20 arrows</li>
+				<li>
+					<i>(a)</i> a martial weapon and a shield or <i>(b)</i> two martial weapons</li>			
+				<li>
+					<i>(a)</i> a dungeoneer’s pack or <i>(b)</i> an explorer’s pack</li>
+				<li>
+					a spellbook of the dragon riders </li>
+			</ul>
+			<h5 class="caption">THE DragonRider</h5>
+			<table class="class-features">
+				<thead>
+					<tr>
+						<tr><td class="col-5">Level</td><td class="left">Features</td><td class="col-10">Cantrips Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td></tr>
+					</tr>
+				</thead>
+				<tr>
+					<tr><td> 1st</td><td class="left">Dragon Egg, Spellcasting</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				</tr>
+				<tr>
+					<tr><td> 2nd</td><td class="left">Second Wind</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				</tr>
+				<tr>
+					<tr><td> 3rd</td><td class="left">Dragon Hatchling, Bond of The Rider,Rider's Archetype Feature</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				</tr>
+				<tr>
+					<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>	
+				</tr>
+				<tr>
+					<tr><td> 5th</td><td class="left">Dragon's Blood</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				</tr>
+				<tr>
+					<tr><td> 6th</td><td class="left">Rider's Archetype Feature</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+				</tr>
+				<tr>
+					<tr><td> 7th</td><td class="left">Dragon's Breath Weapon,Dragon Wyrmling</td><td>3</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				</tr>
+				<tr>
+					<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>3</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				</tr>
+				<tr>
+					<tr><td> 9th</td><td class="left">Primal Growth, Rider’s Archetype Feature</td><td>3</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+				</tr>
+				<tr>
+					<tr><td> 10th</td><td class="left">Ride Dragon</td><td>4</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				</tr>
+				<tr>
+					<tr><td> 11th</td><td class="left">Born to the Saddle,Rider’s Archetype Feature</td><td>4</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				</tr>
+				<tr>
+					<tr><td> 12th</td><td class="left">Ability Score Improvement</td><td>4</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+				</tr>
+				<tr>
+					<tr><td> 13th</td><td class="left">Young Dragon</td><td>4</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				</tr>
+				<tr>
+					<tr><td> 14th</td><td class="left">Dragon's Longevity</td><td>4</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				</tr>
+				<tr>
+					<tr><td> 15th</td><td class="left">Rider’s Archetype feature</td><td>4</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+				</tr>
+				<tr>
+					<tr><td> 16th</td><td class="left">Ability Score Improvement</td><td>4</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+				</tr>
+				<tr>
+					<tr><td> 17th</td><td class="left">Dragon Heart</td><td>4</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				</tr>
+				<tr>
+					<tr><td> 18th</td><td class="left">Rider’s Archetype feature</td><td>4</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+				</tr>
+				<tr>
+					<tr><td> 19th</td><td class="left">Ability Score Improvement</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td><td>1</td></tr>
+				</tr>
+				<tr>
+					<tr><td> 20th</td><td class="left">Adult Dragon</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td><td>1</td></tr>
+				</tr>
+			</table>
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_SECONDWIND" />			
+			<div element="ID_MYHB_DR_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_Dragonrider" />
+			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_RiderArchetype" />
+			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_SPELLCASTING_Dragonrider" />
+			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonEgg" />
+			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonHatchling" />
+			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonWyrmling" />
+			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonYoung" />
+			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonAdult" />
+			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_BondofTheRider" />
+			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DraogonsBlood" />
+			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_BreathWeapon" />
+			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_PrimalGrowth" />
+			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_RideDragon" />
+			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_Borntothesaddle" />
+			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonsLongevity" />
+			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonHeart" />
+
+
+		</description>
+		<sheet display="false">
+			<description>A master of martial combat, skilled with a variety of weapons and armor.</description>
+		</sheet>
+		<setters>
+			<set name="short">A master of martial combat, skilled with a variety of weapons and armor.</set>
+			<set name="hd">d10</set>
+		</setters>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
+			<select type="Proficiency" name="Skill Proficiency (Dragon Rider)" supports="Skill,DragonRider" number="2" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
+			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_SPELLCASTING_Dragonrider" level="1"/>
+			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonEgg" level="1"/>
+			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SECONDWIND" level="2"/>
+			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_RiderArchetype" level="3"/>
+			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_BondofTheRider" level="3"/>
+			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonHatchling" level="3"/>
+			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_Dragonrider" level="4"/>
+			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DraogonsBlood" level="5"/>
+			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_BreathWeapon" level="7"/>
+			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonWyrmling" level="7"/>
+			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_PrimalGrowth" level="9"/>
+			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_RideDragon" level="10"/>
+			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_Borntothesaddle" level="11"/>
+			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonYoung" level="13"/>
+			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonsLongevity" level="14"/>
+			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonHeart" level="17"/>
+			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonAdult" level="20"/>
+
+
+		</rules>
+		<multiclass id="ID_MYHB_DR_MULTICLASS_DragonRider">
+			<prerequisite>Strength 13 or Dexterity 13</prerequisite>
+			<requirements>([str:13]||[dex:13])</requirements>
+			<setters>
+				<set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons</set>
+			</setters>
+			<rules>
+				<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+				<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			</rules>
+		</multiclass>
+	</element>
+	<element name="Second Wind" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_SECONDWIND">
+		<description>
+			<p>You have a limited well of stamina that you can draw on to protect yourself from harm. On your turn, you can use a bonus action to regain hit points equal to 1d10 + your DragonRider level.</p>
+			<p class="indent">Once you use this feature, you must finish a short or long rest before you can use it again.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+		<description>You regain 1d10+{{level:Dragon Rider}} hp.</description>
+		</sheet>
+	</element>
+	<element name="Rider's Archetype" type="Class Feature" source="Homebrew" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_RiderArchetype">
+		<description>
+			<p>At 3rd level, you choose an archetype that you stirve to emulate in combat styles and techniques. Choose between; Dragoon, Magus, Cleric, and Nomad. At 10th level a Rider may choose to change his archetype.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Archetype" name="Riders Archetype" supports="Riders Archetype" level="3" />
+		</rules>
+	</element>
+	<element name="Ability Score Improvement" type="Class Feature" source="Homebrew" id="ID_MYHB_DR_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_Dragonrider">
+		<compendium display="false" />
+		<description>
+			<p>When you reach 4th level, and again at 6th, 8th, 12th, 14th, 16th, and 19th level, you can increase one ability score of your choice by 2, or you can increase two ability scores of your choice by 1. As normal, you can’t increase an ability score above 20 using this feature.</p>
+		</description>
+		<sheet display="false" />
+		<rules>
+			<select type="Class Feature" name="Improvement Option (Dragon Rider 4)" supports="Improvement Option,Dragon Rider,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Dragon Rider 8)" supports="Improvement Option,Dragon Rider,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Dragon Rider 12)" supports="Improvement Option,Dragon Rider,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Dragon Rider 16)" supports="Improvement Option,Dragon Rider,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Dragon Rider 19)" supports="Improvement Option,Dragon Rider,19" level="19" />
+		</rules>
+	</element>
+	<element name="Spellcasting" type="Class Feature" source="Homebrew" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_SPELLCASTING_Dragonrider">
+		<description>
+			<p>Once you received the dragon egg you felt a great well of magic awaken in you. Augementing your martial prowess with ability to cast spells. you have a spellbook containing spells that show the first glimmerings of your true power. </p>
+			<h5>CANTRIPS</h5>
+			<p>You learn two cantrips of your choice from the Any spell list. You learn additional Any cantrips of your choice at higher levels, as shown in the Cantrips Known column of the Dragon Rider table. </p>
+			<h5>SPELLBOOK</h5>
+			<p>At 1st level, you have a spellbook containing 6 1st-level wizard spells of your choice.</p>
+			<h5>PREPARING AND CASTING SPELLS</h5>
+			<p>The Dragon Rider table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest. </p>
+			<p class="indent">You prepare the list of Dragon Rider spells that are available for you to cast. To do so. choose a number of  spells from your spellbook equal to your Intelligence modifier + your Dragon Rider level (minimum of one spell). The spells must be of a level for which you have spell slots(Unless you are a Magus). </p>
+			<p class="indent">For example, if you're a 3rd-level Dragon Rider, you have 2 1st-level spell slots. With an Intelligence of 16, your list of prepared spells can include six spells of 1st level only from your spellbook. Casting the spell doesn’t remove it from  your list of prepared spells.</p>
+			<p class="indent">You can change your list of prepared spells when you finish a long rest. Preparing a new list of spells requires time spent studying your spellbook and  memorizing the incantations and gestures you must make to cast the spell: at least 1 minute per spell level  for each spell on your list.</p>
+			<h5>SPELLCASTING ABILITY</h5>
+			<p>Intelligence is your spellcasting ability for your Dragon Rider spells, since you learn your spells through dedicated study and memorization. You use your Intelligence whenever a spell refers to your spellcasting ability. In addition, you use your Intelligence modifier when setting the saving throw DC for a Dragon Rider spell you cast and when making an attack roll with one. </p>
+			<center>
+				<p><strong>Spell save DC</strong> = 8 + your proficiency bonus + your Intelligence modifier</p>
+				<p><strong>Spell attack modifier</strong> = your proficiency bonus + your Intelligence modifier</p>
+			</center>
+			<h5>SPELLCASTING FOCUS</h5>
+			<p>You can use an arcane focus as a spellcasting focus for your spells.</p>
+			<h5>LEARNING SPELLS OF 1ST LEVEL AND HIGHER</h5>
+			<p>Each time you gain a Dragon Rider level, you can add two wizard spells of  your choice to your spellbook. Each of these spells must be of a level for which you have spell slots, as shown on the Dragon Rider table. On your adventures, you might find other spells that you can add to your spellbook (see the “Your Spellbook” sidebar). </p>
+		</description>
+		<sheet display="false">
+			<description>You can prepare {{Dragon Rider:spellcasting:prepare}} spells from the your spellbook. You use an arcane focus to cast spells.</description>
+		</sheet>
+		<spellcasting name="Dragon Rider" ability="Intelligence" prepare="true">
+			<list>Wizard</list>
+		</spellcasting>
+		<rules>
+			<grant type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_ARCANE_FOCUS" />
+
+			<stat name="Dragon Rider:spellcasting:slots:1" value="2" level="1" />
+			<stat name="Dragon Rider:spellcasting:slots:1" value="1" level="4" />
+			<stat name="Dragon Rider:spellcasting:slots:1" value="1" level="7" />
+
+
+			<stat name="Dragon Rider:spellcasting:slots:2" value="2" level="7" />
+			<stat name="Dragon Rider:spellcasting:slots:2" value="1" level="10" />
+			<stat name="Dragon Rider:spellcasting:slots:3" value="2" level="13" />
+			<stat name="Dragon Rider:spellcasting:slots:3" value="1" level="16" />
+			<stat name="Dragon Rider:spellcasting:slots:4" value="1" level="17" />
+			<stat name="Dragon Rider:spellcasting:slots:4" value="1" level="19" />
+			<stat name="Dragon Rider:spellcasting:slots:5" value="1" level="19" />
+
+
+			<stat name="Dragon Rider:spellcasting:prepare" value="intelligence:modifier" />
+			<stat name="Dragon Rider:spellcasting:prepare" value="level:Dragon Rider" />
+
+			<select type="Spell" name="Cantrip (Wizard)" supports="$(spellcasting:list), 0" level="1" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Cantrip (Wizard)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Cantrip (Wizard)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Dragon Rider" />
+
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), 1" level="1" number="6" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="12" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="18" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" number="2" spellcasting="Dragon Rider" />
+		</rules>
+	</element>
+
+	<element name="Dragon Egg" type="Class Feature" source="Homebrew" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonEgg">
+		<description>
+			<h5 class="caption">Dragon Egg</h5>
+			<p>At 1st Level, A dragon egg comes into your possession, causing a bond that gives life to dormant magic deep within you. A lofty feeling pulls you skyward as you yearn to soar in the sky. You gain a dragon egg of a type of your choosing, or at random, that has 20 AC and 10 HP. In addition, you can speak Draconic. </p>
+			<p class="indent">See Dragon Riders of Abeir to See exact choices for Dragon egg and given Cantrip. </p>
+		</description>
+		<sheet display="true">
+			<description>You gain a dragon egg of a type of your choosing, or at random, that has 20 AC and 10 HP. In addition, you can speak Draconic.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Dragon Egg" supports="Dragon Egg" level="1"/>
+		</rules>
+	</element>
+		<!-- Dragon Eggs -->
+		<element name="Obsidian Dragon Egg" type="Class Feature" source="HomeBrew" id="ID_MYHB_DR_CLASS_FEATURE_OBSIDIAN_DRAGON_EGG">
+			<supports>Dragon Egg, Dragon Rider</supports>
+			<description>
+				<p>A dragon egg that imbues the power of Obsidian dragons. Altering your elemental damage to Fire, and teaching you the Firebolt cantrip.</p>
+			</description>
+			<sheet>
+				<description>A dragon egg that imbues the power of Obsidian dragons. Altering your elemental damage to Fire, and teaching you the Firebolt cantrip.</description>
+			</sheet>
+			<rules>
+			<grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT" />
+			</rules>
+		</element>
+		
+		<element name="Adamantine Dragon Egg" type="Class Feature" source="HomeBrew" id="ID_MYHB_DR_CLASS_FEATURE_ADAMANTINE_DRAGON_EGG">
+			<supports>Dragon Egg, Dragon Rider</supports>
+			<description>
+				<p>A dragon egg that imbues the power of Adamantine dragons. Altering your elemental damage to Thunder, and teaching you the Thunderclap cantrip.</p>
+			</description>
+			<sheet>
+				<description>A dragon egg that imbues the power of Adamantine dragons. Altering your elemental damage to Thunder, and teaching you the Thunderclap cantrip.</description>
+			</sheet>
+			<rules>
+			<grant type="Spell" id="ID_XGTE_SPELL_THUNDERCLAP" />
+			</rules>
+		</element>
+
+	<element name="Bond of the Rider" type="Class Feature" source="Homebrew" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_BondofTheRider">
+		<description>
+			<h5 class="caption">Bond of the Rider</h5>
+			<p>At 3rd level you develop a telepathic link between you and your dragon, which allows you to communicate freely witihing your minds up to 5 miles on the same plane. As a bonus action either of you  can focus your thoughts and find their partner up to the same distanc away as the telepathy. at 7th level the bond deepens granting an additional 5 miles to the range.at 13th level the bond reaches pea level and the distance becomes unlimited.</p>
+		</description>
+		<sheet action="Bonus Action" usage="1/Short Rest">
+			<description>You develop a telepathic link between you and your dragon, which allows you to communicate freely witihing your minds up to 5 miles on the same plane. As a bonus action either of you  can focus your thoughts and find their partner up to the same distanc away as the telepathy. at 7th level the bond deepens granting an additional 5 miles to the range.at 13th level the bond reaches pea level and the distance becomes unlimited.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Bond of the Rider" supports="Bond of the Rider" level="3"/>
+		</rules>
+	</element>
+
+	<element name="Dragon hatchling" type="Class Feature" source="Homebrew" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonHatchling">
+		<description>
+			<h5 class="caption">Dragon hatchling</h5>
+			<p>At 3rd level, your dragon egg hatches into a dragon hatchling with the following stat block. Although the it will try to stay by your side, the DM controls the actions of the dragon hatchling; However, you can influence these actions with a successful Handle Animal check. </p>
+			<p class="indent">See Dragon Riders of Abeir for Stat Block. </p>
+		</description>
+		<sheet display="true">
+			<description>your dragon egg hatches into a dragon hatchling. Although the it will try to stay by your side, the DM controls the actions of the dragon hatchling; However, you can influence these actions with a successful Handle Animal check.</description>
+		</sheet>
+
+		<rules>
+			<select type="Class Feature" name="Dragon hatchling" supports="Dragon hatchling" level="3"/>
+		</rules>
+	</element>
+
+	<element name="Dragons Blood" type="Class Feature" source="Homebrew" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DraogonsBlood">
+		<description>
+			<h5 class="caption">Dragons Blood</h5>
+			<p>At 5th level The rider may invoke the power of his dragons blood. As a reaction to attack the rider may gain temporary immunity to their dragons' element. This feature may be used a number of times equal to his constitution modifier per long rest. A minimum of 1.</p>			
+		</description>
+		<sheet action="Reaction" usage="Con_Mod/Long Rest">
+			<description>As a reaction to attack the rider may gain temporary immunity to their dragons' element. This feature may be used a number of times equal to his constitution modifier per long rest. A minimum of 1.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Dragons Blood" supports="Dragons Blood" level="5"/>
+		</rules>
+	</element>
+
+	<element name="Breath Weapon" type="Class Feature" source="Player’s Handbook" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_BreathWeapon">
+		<description>
+			<h5 class="caption">Breath Weapon</h5>
+			<p>At 7th level, you gain a breath weapon of the same energy type as your dragon. The type and area of effect are detailed in the dragon egg. All breath weapons deal 2d6 points of energy damage, the same type as your dragon’s, half damage on a successful Dexterity saving throw (DC is equal to 8 + your proficiency bonus + your Constitution modifier).</p>
+			<p class="indent">After you use this weapon, you cannot use it again until you take a short or long rest. At 9th, 12th, 15th, and 18th level, you gain another use of the breath weapon and another d6 damage, until you have 5 uses and deal 7d6 damage.</p>
+			<p class="indent">If you already have a breath weapon from some other source, such as if you are a dragon born, the number of times you can use the weapon per rest stack. You can choose during that rest to use your dragon’s energy type or your own.</p>
+		</description>
+		<sheet action="Action" usage="1/Short Rest">
+			<description>you gain a breath weapon of the same energy type as your dragon. The type and area of effect are detailed in the dragon egg. All breath weapons deal 2d6 points of energy damage, the same type as your dragon’s, half damage on a successful Dexterity saving throw (DC is equal to 8 + your proficiency bonus + your Constitution modifier).>After you use this weapon, you cannot use it again until you take a short or long rest. At 9th, 12th, 15th, and 18th level, you gain another use of the breath weapon and another d6 damage, until you have 5 uses and deal 7d6 damage.If you already have a breath weapon from some other source, such as if you are a dragon born, the number of times you can use the weapon per rest stack. You can choose during that rest to use your dragon’s energy type or your own.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Breath Weapon" supports="Breath Weapon" level="7"/>
+		</rules>
+	</element>
+
+	<element name="Dragon Wyrmling" type="Class Feature" source="Player’s Handbook" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonWyrmling">
+		<description>
+			<h5 class="caption">Dragon Wyrmling</h5>
+			<p>At 7th level, the hatchling has matured into a 'Dragon Wyrmling', as described in the Monster Manual.</p>
+			<p class="indent">The dragon wyrmling is now a companion that accompanies you on your adventures and is trained to fight alongside you. The type of wyrming corresponds to the chosen dragon egg. Add your proficiency bonus to the wyrmling’s AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. Its hit point maximum equals the hit point number in its stat block or four times your Dragon Rider Level level, whichever is higher. Like any creature, it can spend Hit Dice during a short rest to regain hit points. </p>
+			<p class="indent">The wyrmling obeys your commands as best as it can On your turn, you can verbally command the wyrmling where to move (no action required by you). You can use your bonus action to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action.</p>
+			<p class="indent">If you are incapacitated or absent, the wyrmling acts on its own, focusing on protecting you and itself. The wyrmling never requires your command to use its reaction, such as when making an opportunity attack. </p>
+		</description>
+		<sheet action="Bonus Action" usage="Unlimited"> 
+			<description>the hatchling has matured into a 'Dragon Wyrmling', as described in the Monster Manual. The wyrmling obeys your commands as best as it can On your turn, you can verbally command the wyrmling where to move (no action required by you). You can use your bonus action to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Dragon Wyrmling" supports="Dragon Wyrmling" level="7"/>
+		</rules>
+	</element>
+
+	<element name="Primal Growth" type="Class Feature" source="Homebrew" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_PrimalGrowth">
+		<description>
+			<h5 class="caption">Primal Growth</h5>
+			<p>Due to the connection you share with your dragon starting at 9th level, The Dragon Wyrmling is considered large size in the case of Mounting and Mounted Combat.  </p>
+		</description>
+		<sheet display="true">
+			<description>Due to the connection you share with your dragon, The Dragon Wyrmling is considered large size in the case of Mounting and Mounted Combat.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Primal Growth" supports="Primal Growth" level="9"/>
+		</rules>
+	</element>
+
+	<element name="Ride Dragon " type="Class Feature" source="Homebrew" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_RideDragon">
+		<description>
+			<h5 class="caption">Ride Dragon</h5>
+			<p>At 10th level once dragon grows into a wyrmling. The rider may mount the wyrmling like a mount and perform mounted combat with the dragon. .</p>
+		</description>
+		<sheet display="true">
+			<description>Once dragon grows into a wyrmling. The rider may mount the wyrmling like a mount and perform mounted combat with the dragon.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Ride Dragon  " supports="Ride Dragon  " level="10"/>
+		</rules>
+	</element>
+
+	<element name="Born to the Saddle" type="Class Feature" source="Homebrew" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_Borntothesaddle">
+		<description>
+			<h5 class="caption">Born to the Saddle</h5>
+			<p>Starting at 11th level, your mastery as a rider becomes apparent. You have advantage on saving throws made to avoid falling off your mount. If you fall off your mount and descend no more than 10 feet, you can land on your feet if you’re not incapacitated. Finally, mounting or dismounting a creature costs you only 5 feet of movement, rather than half your speed.</p>
+		</description>
+		<sheet display="true">
+			<description>your mastery as a rider becomes apparent. You have advantage on saving throws made to avoid falling off your mount. If you fall off your mount and descend no more than 10 feet, you can land on your feet if you’re not incapacitated. Finally, mounting or dismounting a creature costs you only 5 feet of movement, rather than half your speed.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Born to the Saddle" supports="Born to the Saddle" level="11"/>
+		</rules>
+	</element>
+
+	<element name="Young Dragon" type="Class Feature" source="HomeBrew" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonYoung">
+		<description>
+			<h5 class="caption">Young Dragon</h5>
+			<p>At 13th level, the wyrmling has matured into a 'Young Dragon', as described in the Monster Manual; use these stat blocks to replace the dragon wyrmling from the Dragon Wyrmling class feature. The type of young dragon must remain the same. You gain the benefit of the Mounted Combatant feat. You can use your bonus action to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action. If you are incapacitated or absent, the Young Dragon acts on its own, focusing on protecting you and itself. The Young Dragon never requires your command to use its reaction, such as when making an opportunity attack.</p>
+		</description>
+		<sheet action="Bonus Action" usage="Unlimited"> 
+			<description>The wyrmling has matured into a 'Young Dragon', as described in the Monster Manual.You gain the benefit of the Mounted Combatant feat. You can use your bonus action to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action.If you are incapacitated or absent, the Young Dragon acts on its own, focusing on protecting you and itself. The Young Dragon never requires your command to use its reaction, such as when making an opportunity attack.</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Young Dragon" supports="Young Dragon" level="13" />
+		</rules>
+	</element>
+
+	<element name="Dragons Longevity" type="Class Feature" source="homebrew" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonsLongevity">
+		<description>
+			<h5 class="caption">Dragons Longevity</h5>
+			<p>At 14th level Age 1 year for every 10 years until level 20 then you are true immortal. Gain resistance to poison, disease, charm, fear. If dragon is within 10 feet you can choose to succeed on one of those saves if you fail. if you let your dragon die then this ability also makes you weak to these conditions if your new dragon hasn't been found </p>
+		</description>
+		<sheet display="true">
+			<description>You Age 1 year for every 10 years until level 20 then you are true immortal. Gain resistance to poison, disease, charm, fear. If dragon is within 10 feet you can choose to succeed on one of those saves if you fail. if you let your dragon die then this ability also makes you weak to these conditions if your new dragon hasn't been found</description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Dragons Longevity" supports="Dragons Longevity" level="14"/>
+		</rules>
+	</element>
+
+	<element name="Dragon Heart" type="Class Feature" source="Homebrew" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonHeart">
+		<description>
+			<h5 class="caption">Dragon Heart</h5>
+			<p>At 17th As an action once per long rest you can reach out and directly connect with the soul of your dragon, twinning each other for up to 1 minute, while in this state, treat your health pools as a total, this health total has resistance to all damage, additionally, while in this state you have advantage on all saving throws against effects that the other can see, and attack rolls on targets the other can see. </p>
+		</description>
+		<sheet action="Action" usage="1/long rest"> 
+			<description>As an action once per long rest you can reach out and directly connect with the soul of your dragon, twinning each other for up to 1 minute, while in this state, treat your health pools as a total, this health total has resistance to all damage, additionally, while in this state you have advantage on all saving throws against effects that the other can see, and attack rolls on targets the other can see.</description>
+		</sheet>
+
+		<rules>
+			<select type="Class Feature" name="Dragon Heart" supports="Dragon Heart" level="17"/>
+		</rules>
+	</element>
+
+	<element name="Adult Dragon" type="Class Feature" source="Homebrew" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonAdult">
+		<description>
+			<h5 class="caption">Adult Dragon</h5>
+			<p>At 20th level, the Young Dragon has matured into a 'Adult Dragon', as described in the Monster Manual; use these stat blocks to replace the young dragon from the young dragon class feature. The type of young dragon must remain the same. You gain the benefit of the Mounted Combatant feat. The Dragon will act on its own initiative. </p>
+		</description>
+		<sheet display="true">
+			<description>The Young Dragon has matured into a 'Adult Dragon', as described in the Monster Manual. You gain the benefit of the Mounted Combatant feat. The Dragon will act on its own initiative.</description>
+		</sheet>
+
+		<rules>
+			<select type="Class Feature" name="Adult Dragon" supports="Adult Dragon" level="20"/>
+		</rules>
+	</element>
+
+
+	<!-- Dragoon Archetype -->
+	<element name="Dragoon" type="Archetype" source="HomeBrew" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON">
+		<supports>Riders Archetype</supports>
+		<description>
+			<p>The archetypal Dragoon focuses on the development of physical abilites based on draconic aspects.Those wo model themselves on this archetpe combine rigorous training with physical excellence to deal devasting blows.</p>
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_EXTRAATTACK" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE" />
+			<div element="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_SOTD"/>
+			<div element="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_JumpStrike"/>
+			<div element="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_DragonHide"/>
+			<div element="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_Skewer"/>
+			<div element="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_MasterDragoon"/>
+			<div element="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_SuperiorDragoon"/>
+		</description>
+		<sheet display="false">
+			<description>The archetypal Dragoon focuses on the development of physical abilites based on draconic aspects.Those wo model themselves on this archetpe combine rigorous training with physical excellence to deal devasting blows. </description>
+		</sheet>
+		<rules>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
+			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_FIGHTINGSTYLE" level="3"/>
+			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_SOTD" level="3"/>
+			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_JumpStrike" level="3"/>
+			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_DragonHide" level="6"/>
+			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_EXTRAATTACK" level="9"/>
+			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_Skewer" level="11"/>
+			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_MasterDragoon" level="15"/>
+			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_SuperiorDragoon" level="18"/>
+		</rules>
+	</element>
+	<element name="Extra Attack" type="Archetype Feature" source="HomeBrew" id="ID_MYHB_DR_ARCHETYPE_EXTRAATTACK">
+		<description>
+			<p>Beginning at 9th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
+			<p class="indent">The number of attacks increases to three when you reach 15th level in this class and to four when you reach 18th level in this class.</p>
+		</description>
+		<sheet>
+			<description level="9">You can attack twice, instead of once, whenever you take the Attack action on your turn</description>
+			<description level="15">You can attack three times, instead of once, whenever you take the Attack action on your turn</description>
+			<description level="18">You can attack four times, instead of once, whenever you take the Attack action on your turn</description>
+		</sheet>
+		<rules>
+			<stat name="extra attack:count" value="2" level="9" bonus="extra attack" />
+			<stat name="extra attack:count" value="3" level="15" bonus="extra attack" />
+			<stat name="extra attack:count" value="4" level="18" bonus="extra attack" />
+		</rules>
+	</element>
+	<element name="Fighting Style" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_FEATURE_FIGHTINGSTYLE">
+		<description>
+			<h5 class="caption">GREAT WEAPON FIGHTING</h5>
+			<p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+		</description>
+		<rules>
+			<select type="Archetype Feature" name="Fighting Style" supports="Fighting Style" level="3"/>
+		</rules>
+		</element>
+		<!-- Fighting Styles -->
+		<element name="Great Weapon Fighting" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING">
+			<supports>Fighting Style, Dragon Rider, Paladin</supports>
+			<description>
+				<p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
+			</description>
+			<sheet>
+				<description>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</description>
+			</sheet>
+		</element>
+	
+	<element name="Strength of the Dragon" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_SOTD">
+		<description>
+			<p>Characters who picked the Dragoon gain the strength of a dragon.  </p>
+			<p class="indent">Character gains proficiency in Heavy Armor. </p>
+			<p class="indent">Character gains Great Weapon Fighting Style. </p>
+		</description>
+	</element>
+	<element name="Jump Strike" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_JumpStrike">
+		<description>
+			<p>At 3rd Level, as an action on your turn, you may spring straight into the air to a height equal to your move speed and remain there until the start of your next turn. If you would be knocked prone, you fall straight to the ground and suffer the applicable fall damage. At the start of your next turn, you may use your action to land anywhere within half your move speed of the point you jumped from, making one melee attack against a target. If weapon is not a lance, attack is taken at advantage , If weapon is a lance and attack is successful, this attack is a critical hit, and target makes a strngth saving throw. If target fails it is knocked prone. At the start of your turn, you may instead use your bonus action to land safely on the ground without an attack. Jump Strike can be used numbers of times equal to your Strength Modifier per Long Rest. </p>
+		</description>
+		<sheet action="Action">
+			<description>as an action on your turn, you may spring straight into the air to a height equal to your move speed and remain there until the start of your next turn. If you would be knocked prone, you fall straight to the ground and suffer the applicable fall damage. At the start of your next turn, you may use your action to land anywhere within half your move speed of the point you jumped from, making one melee attack against a target. If weapon is not a lance, attack is taken at advantage , If weapon is a lance and attack is successful, this attack is a critical hit, and target makes a strngth saving throw. If target fails it is knocked prone. At the start of your turn, you may instead use your bonus action to land safely on the ground without an attack. Jump Strike can be used numbers of times equal to your Strength Modifier per Long Rest.</description>
+		</sheet>
+	</element>
+	<element name="Dragon Hide" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_DragonHide">
+		<description>
+			<p>At 6th level as a action the rider can invoke the power of his dragon’s hide. For 1 minute the rider can add half his dragon’s ac to his ac. This ability can be used once per short rest. </p>
+		</description>
+		<sheet>
+			<description>As an action you can invoke Dragon hide adding half your dragons ac to your ac. This lasts 1 minue. Ability can only be used once per short rest.</description>
+		</sheet>
+	</element>
+	<element name="Skewer" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_Skewer">
+		<description>
+			<p>Starting at 11th level, you strike with such force that you can penetrate multiple foes in your weapon’s reach.When making an attack with a two-handed melee weapon with reach, you may attempt to strike all foes in a 10-foot line from you. Use the same attack and damage roll for all creatures. Alternatively, if a single creature takes up the area of a 10-foot line from you, you may have an attack strike that creature twice; once for every 5 feet it occupies. You still use the same attack and damage roll for both strikes, but this counts as two separate attacks against the creature. You may use this feature numbers of times equal to your Strength Modifier per Long Rest a minimum of 1</p>
+		</description>
+		<sheet>
+			<description>When making an attack with a two-handed melee weapon with reach, you may attempt to strike all foes in a 10-foot line from you  Use the same attack and damage roll for all creatures. Alternatively, if a single creature takes up the area of a 10-foot line from you, you may have an attack strike that creature twice; once for every 5 feet it occupies. You still use the same attack and damage roll for both strikes, but this counts as two separate attacks against the creature. You may use this feature numbers of times equal to your Strength Modifier per Long Rest a minimum of 1</description>
+		</sheet>
+	</element>
+	<element name="Master Dragoon" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_MasterDragoon">
+		<description>
+			<p>Starting at 15th level, you can initiate your Jump Strike from the back of your airborne dragon, and make the attack in the same turn. </p>
+		</description>
+		<sheet>
+			<description>You can initiate your Jump Strike from the back of your airborne dragon, and make the attack in the same turn. </description>
+		</sheet>
+	</element>
+	<element name="Superior Dragoon" type="Archetype Feature" source="Player’s Handbook" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_SuperiorDragoon">
+		<description>
+			<p>At 18th level, you maximize the potential of your weapon’s already formidable range. When wielding a two-handed weapon with the reach property, the additional range of your weapon from the reach property increases to 10 feet. In addition, your Skewer ability may now strike up to a 15 foot line from where you stand; if the same creature takes up all 15 feet of the line, you may have the attack strike that creature three times (once for every 5 feet).</p>
+		</description>
+		<sheet>
+			<description>When wielding a two-handed weapon with the reach property, the additional range of your weapon from the reach property increases to 10 feet. In addition, your Skewer ability may now strike up to a 15 foot line from where you stand; if the same creature takes up all 15 feet of the line, you may have the attack strike that creature three times (once for every 5 feet). </description>
+		</sheet>
+	</element>
+
+
+	<!-- Nomad Archetype -->
+	<element name="Nomad" type="Archetype" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_DragonRider_NOMAD">
+		<supports>Riders Archetype</supports>
+		<description>
+			<p>Characters that choose this archetype are typically wanderers who have either have no knowledge of the order or don’t care. Their attunement with their dragon has made them one with nature and they seek to protect that nature. </p>
+			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_SPELLCASTING_Dragonrider"/>
+			<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_SPELLCASTING"/>
+			<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_TWTF"/>
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_DRUID_WILDSHAPE" />
+			<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_DraconicForm"/>
+			<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_DraconicAffinity"/>
+			<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_DraconicTuning"/>
+			<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_DraconicMastery"/>
+
+		</description>
+		<sheet display="false">
+			<description>Characters that choose this archetype are typically wanderers who have either have no knowledge of the order or don’t care. Their attunement with their dragon has made them one with nature and they seek to protect that nature.</description>
+		</sheet>
+		<rules>
+			
+			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_SPELLCASTING" level="3"/>
+			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_TWTF" level="3"/>
+			<grant type="Archetype Feature" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_WILDSHAPE" level="3"/>
+			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_DraconicForm" level="3"/>
+			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_DraconicAffinity" level="6"/>
+			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_DraconicTuning" level="9"/>
+			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_DraconicMastery" level="11"/>
+			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_MasterofTheSky" level="15"/>
+			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_FullDraconicMastery" level="18"/>	
+		</rules>
+	</element>
+	<element name="The Wild that Flows" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_TWTF">
+		<description>
+			<p>The connection to nature and their partner has unlocked the ability to use Wild shape in the druid. See the druid class in the Player’s handbook for more information. </p>
+
+		</description>
+		<sheet>
+			<description>You perform a ritual over the course of 1 hour, which can be done during a short rest. The weapon must be within your reach throughout the ritual, at the conclusion of which you touch the weapon and forge the bond.
+			Once you have bonded a weapon to yourself, you can’t be disarmed of that weapon unless you are incapacitated. If it is on the same plane of existence, you can summon that weapon as a bonus action on your turn, causing it to teleport instantly to your hand.
+			You can have up to two bonded weapons, but can summon only one at a time with your bonus action. If you attempt to bond with a third weapon, you must break the bond with one of the other two.</description>
+		</sheet>
+	</element>
+	<element name="Wildshape" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_DRUID_WILDSHAPE">
+		<description>
+			<p>Starting at 2nd level, you can use your action to magically assume the shape of a beast that you have seen before. You can use this feature twice. You regain expended uses when you finish a short or long rest.</p>
+			<p class="indent">Your druid level determines the beasts you can transform into, as shown in the Beast Shapes table. At 2nd level, for example, you can transform into any beast that has a challenge rating of 1/4 or lower that doesn’t have a flying or swimming speed.</p>
+			<p class="indent">You can stay in a beast shape for a number of hours equal to half your druid level (rounded down). You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.</p>
+			<p class="indent">While you are transformed, the following rules apply:</p>
+			<ul>
+				<li>Your game statistics are replaced by the statistics of the beast, but you retain your alignment, personality, and Intelligence, Wisdom, and Charisma scores. You also retain all of your skill and saving throw proficiencies, in addition to gaining those of the creature. If the creature has the same proficiency as you and the bonus in its stat block is higher than yours, use the creature’s bonus instead of yours. If the creature has any legendary or lair actions, you can't use them.</li>
+				<li>When you transform, you assume the beast’s hit points and Hit Dice. When you revert to your normal form, you return to the number of hit points you had before you transformed. However, if you revert as a result of dropping to 0 hit points, any excess damage carries over to your normal form. For example, if you take 10 damage in animal form and have only 1 hit point left, you revert and take 9 damage. As long as the excess damage doesn’t reduce your normal form to 0 hit points, you aren’t knocked unconscious.</li>
+				<li>You can’t cast spells, and your ability to speak or take any action that requires hands is limited to the capabilities of your beast form. Transforming doesn’t break your concentration on a spell you’ve already cast, however, or prevent you from taking actions that are part of a spell, such as call lightning, that you’ve already cast.</li>
+				<li>You retain the benefit of any features from your class, race, or other source and can use them if the new form is physically capable of doing so. However, you can’t use any of your special senses, such as darkvision, unless your new form also has that sense.</li>
+				<li>You choose whether your equipment falls to the ground in your space, merges into your new form, or is worn by it. Worn equipment functions as normal, but the DM decides whether it is practical for the new form to wear a piece of equipment, based on the creature’s shape and size. Your equipment doesn’t change size or shape to match the new form, and any equipment that the new form can’t wear must either fall to the ground or merge with it. Equipment that merges with the form has no effect until you leave the form.</li>
+			</ul>
+		</description>
+		<sheet action="Action" usage="2/Short Rest">
+			<description level="2">You can magically assume the shape of a beast that you have seen before.
+			You can stay in a beast shape for {{druid wildshape:hours}} hours. You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.</description>
+			<description level="20" usage="">You can magically assume the shape of a beast that you have seen before.
+			You can stay in a beast shape for {{druid wildshape:hours}} hours. You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.</description>
+		</sheet>
+		<rules>
+			<stat name="druid wildshape:hours" value="level:Dragon Rider:half" />
+		</rules>
+	</element>	<element name="Draconic Form" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_DraconicForm">
+		<description>
+			<p>When you choose this circle at 2nd level, you gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action. The rites of your circle grant you the ability to transform into more dangerous forms. Also at 2nd level, you can use your Wild Shape to transform into a dragon with a challenge rating as high as 1, when you do so you do not have to abide by the other limitations there. Starting at 6th level, you can transform into a dragon with a challenge rating as high as your druid level divided by 3, rounded down. If you use Wild Shape to transform into a beast, you must follow the normal limitations on the Beast Shapes table.  </p>
+		</description>
+		<sheet>
+			<description>you gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action. The rites of your circle grant you the ability to transform into more dangerous forms. Also at 2nd level, you can use your Wild Shape to transform into a dragon with a challenge rating as high as 1, when you do so you do not have to abide by the other limitations there. Starting at 6th level, you can transform into a dragon with a challenge rating as high as your druid level divided by 3, rounded down. If you use Wild Shape to transform into a beast, you must follow the normal limitations on the Beast Shapes table</description>
+		</sheet>
+		<rules>
+			<stat name="Nomad wildshape:hours" value="level:Dragon Rider:half" />
+		</rules>
+	</element>
+	<element name="Draconic Affinity" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_DraconicAffinity">
+		<description>
+			<p>Starting at 6th level, when you cast a spell that deals damage of the element associated with your draconic type, add your Intelligence modifier to that damage. You also gain resistance to that element. These effects do not apply while in Wild Shape. Additionally, you gain advantage on all Intelligence checks related to recalling information about dragons, and all Survival checks related to tracking dragons.  </p>
+		</description>
+		<sheet>
+			<description>when you cast a spell that deals damage of the element associated with your draconic type, add your Intelligence modifier to that damage. You also gain resistance to that element. These effects do not apply while in Wild Shape. Additionally, you gain advantage on all Intelligence checks related to recalling information about dragons, and all Survival checks related to tracking dragons. </description>
+		</sheet>
+	</element>
+	<element name="Dragon Body" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_DraconicTuning">
+		<description>
+			<p>At 9th level, your material form attunes to the Dragon forms you control. You gain blindsight up to 30ft and darkvision of 60ft.Furthermore, your attacks in beast form or dragon form count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.  </p>
+		</description>
+		<sheet>
+			<description>you sacrifice one use of your wild shape to more finely manifest a pair of dragon wings from your back in your base form. If you do not already have one or it is not reptilian in nature, you also grow a tail equal to half your height. These wings grant you a flying speed equal to your walking speed. This state retains the duration of a normal Wild Shape until level 14, at which time they last until you dismiss them. At level 18, they can be manifested and dismissed at will.  
+			Note: While it shouldn't be necessary to state, you cannot manifest these wings/tail while you are wearing any restrictive garments that would block them.</description>
+		</sheet>
+	</element>
+	<element name="Draconic Mastery" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_DraconicMastery">
+		<description>
+			<p>Starting at 11th level, you have completely mastered your ability to wild shape into dragons. You can expend two uses of your wild shape at the same time to transform into a Dragon with a challenge rating of 10 or lower. The duration of this transformation is a number of hours equal to your druid level divided by 4 rounded down. Starting at level 17, you can use two uses of Wild Shape to take the form of any Adult Dragon. The duration of this transformatin is 5hours at this level. </p>
+		</description>
+		<sheet>
+			<description> you have completely mastered your ability to wild shape into dragons. You can expend two uses of your wild shape at the same time to transform into a Dragon with a challenge rating of 10 or lower. The duration of this transformation is a number of hours equal to your druid level divided by 4 rounded down. Starting at level 17, you can use two uses of Wild Shape to take the form of any Adult Dragon. The duration of this transformatin is 5hours at this level.</description>
+		</sheet>
+		<rules>
+			<stat name="Nomad wildshape:hours" value="level:Dragon Rider:half" />
+		</rules>
+	</element>
+		<element name="Master of The Sky" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_MasterofTheSky">
+		<description>
+			<p>By 14th level, you have learned to use magic to dominate the skies. You can cast the Fly spell without the need to concentrate on it and it lasts up to an hour.</p>
+		</description>
+		<sheet>
+			<description> By 14th level, you have learned to use magic to dominate the skies. You can cast the Fly spell without the need to concentrate on it and it lasts up to an hour.</description>
+		</sheet>
+	</element>	<element name="Full Draconic Mastery" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_FullDraconicMastery">
+		<description>
+			<p> Starting at level 17, you can use two uses of Wild Shape to take the form of any Adult Dragon as described in the Monster Manual. The duration of this transformation is 5 hours. </p>
+		</description>
+		<sheet>
+			<description> Starting at level 17, you can use two uses of Wild Shape to take the form of any Adult Dragon as described in the Monster Manual. The duration of this transformation is 5 hours.</description>
+		</sheet>
+		<rules>
+			<stat name="Nomad wildshape:hours" value="5" />
+		</rules>
+	</element>
+	<element name="Full Casting" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_SPELLCASTING">
+		<description>
+			<p>When you reach 3rd level, you augment your Arcane prowess with the ability to cast more powerful spells.</p>
+			<p class="indent"><strong><em>Spell Slots.</em></strong> The Nomad Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+			<p class="indent">For example, if you know the 1st-level spell shield and have a 1st-level and a 2nd-level spell slot available, you can cast shield using either slot.</p>		
+
+			<h5 class="caption">NOMAD SPELLCASTING</h5>
+			<table class="class-features">
+				<thead>
+					<tr>
+						<td class="col-5">Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td>
+					</tr>
+				</thead>
+				<tr>
+					<td> 3rd</td>
+					<td>2</td>
+					<td>10</td>
+					<td>4</td>
+					<td>2</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td> 4th</td>
+					<td>3</td>
+					<td>12</td>
+					<td>4</td>
+					<td>3</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td> 5th</td>
+					<td>3</td>
+					<td>14</td>
+					<td>4</td>
+					<td>3</td>
+					<td>2</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td> 6th</td>
+					<td>3</td>
+					<td>16</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td> 7th</td>
+					<td>3</td>
+					<td>18</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>1</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td> 8th</td>
+					<td>3</td>
+					<td>20</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>2</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td> 9th</td>
+					<td>3</td>
+					<td>22</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3</td>
+					<td>1</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td>10th</td>
+					<td>4</td>
+					<td>24</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3</td>
+					<td>2</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td>11th</td>
+					<td>4</td>
+					<td>26</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3</td>
+					<td>2</td>
+					<td>1</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td>12th</td>
+					<td>4</td>
+					<td>28</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3</td>
+					<td>2</td>
+					<td>1</td>
+					<td>—</td>
+					<td>—</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td>13th</td>
+					<td>4</td>
+					<td>30</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3</td>
+					<td>2</td>
+					<td>1</td>
+					<td>1</td>
+					<td>—</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td>14th</td>
+					<td>4</td>
+					<td>32</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3</td>
+					<td>2</td>
+					<td>1</td>
+					<td>1</td>
+					<td>—</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td>15th</td>
+					<td>4</td>
+					<td>34</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3</td>
+					<td>2</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td>16th</td>
+					<td>4</td>
+					<td>34</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3</td>
+					<td>2</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>—</td>
+				</tr>
+				<tr>
+					<td>17th</td>
+					<td>4</td>
+					<td>36</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3</td>
+					<td>2</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>18th</td>
+					<td>5</td>
+					<td>38</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>19th</td>
+					<td>5</td>
+					<td>40</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3</td>
+					<td>2</td>
+					<td>1</td>
+					<td>1</td>
+					<td>1</td>
+				</tr>
+				<tr>
+					<td>20th</td>
+					<td>5</td>
+					<td>42</td>
+					<td>4</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3</td>
+					<td>3</td>
+					<td>2</td>
+					<td>2</td>
+					<td>1</td>
+					<td>1</td>
+				</tr>
+			</table>
+		</description>
+		<sheet display="false">
+			<description>You augment your Arcane prowess with the ability to cast more powerful spells.</description>
+		</sheet>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+		<stat name="Dragon Rider:spellcasting:slots:1" value="2" level="3" />
+			<stat name="Dragon Rider:spellcasting:slots:1" value="-1" level="4" />
+			<stat name="Dragon Rider:spellcasting:slots:1" value="-1" level="7" />
+			<stat name="Dragon Rider:spellcasting:slots:2" value="2" level="3" />
+			<stat name="Dragon Rider:spellcasting:slots:2" value="1" level="4" />
+			<stat name="Dragon Rider:spellcasting:slots:2" value="-2" level="7" />
+			<stat name="Dragon Rider:spellcasting:slots:2" value="-1" level="10" />
+			<stat name="Dragon Rider:spellcasting:slots:3" value="2" level="5" />
+			<stat name="Dragon Rider:spellcasting:slots:3" value="1" level="6" />
+			<stat name="Dragon Rider:spellcasting:slots:3" value="1" level="13" />
+			<stat name="Dragon Rider:spellcasting:slots:3" value="-2" level="16" />
+			<stat name="Dragon Rider:spellcasting:slots:3" value="-1" level="16" />
+			<stat name="Dragon Rider:spellcasting:slots:4" value="1" level="7" />
+			<stat name="Dragon Rider:spellcasting:slots:4" value="1" level="8" />
+			<stat name="Dragon Rider:spellcasting:slots:4" value="1" level="9" />
+			<stat name="Dragon Rider:spellcasting:slots:4" value="-1" level="17" />
+			<stat name="Dragon Rider:spellcasting:slots:4" value="-1" level="19" />
+			<stat name="Dragon Rider:spellcasting:slots:5" value="1" level="9" />
+			<stat name="Dragon Rider:spellcasting:slots:5" value="1" level="10" />
+			<stat name="Dragon Rider:spellcasting:slots:5" value="1" level="18" />
+			<stat name="Dragon Rider:spellcasting:slots:5" value="-1" level="19" />
+			<stat name="Dragon Rider:spellcasting:slots:6" value="1" level="11" />
+			<stat name="Dragon Rider:spellcasting:slots:6" value="1" level="19" />
+			<stat name="Dragon Rider:spellcasting:slots:7" value="1" level="13" />
+			<stat name="Dragon Rider:spellcasting:slots:7" value="1" level="20" />
+			<stat name="Dragon Rider:spellcasting:slots:8" value="1" level="15" />
+			<stat name="Dragon Rider:spellcasting:slots:9" value="1" level="17" />				
+					<select type="Spell" name="Cantrip (Wizard)" supports="Wizard, 0" level="18" number="1" spellcasting="Dragon Rider" />					
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), 1" level="1" number="6" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="12" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="18" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" number="0" spellcasting="Dragon Rider" />
+				</rules>
+			</element>
+		</elements>
+
+		
