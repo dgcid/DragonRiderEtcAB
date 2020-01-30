@@ -4,7 +4,7 @@
 		<name>Dragon Rider</name>
 		<description>Dragon Riders of Abeir</description>
 		<author url="https://github.com/dgcid">dgcid</author>
-		<update version="0.0.17">
+		<update version="0.0.18">
 		<file name="DragonRider.index" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/DragonRider/DragonRider.index" />
 		</update>
 	</info>
