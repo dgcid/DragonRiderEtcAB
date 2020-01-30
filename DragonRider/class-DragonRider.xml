@@ -1002,47 +1002,56 @@
 		</spellcasting>
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
-			<stat name="DR_Nomad:spellcasting:slots:1" value="4" level="3" />
+			<stat name="DR_Nomad:spellcasting:slots:1" value="2" level="3" />
+			<stat name="DR_Nomad:spellcasting:slots:1" value="-1" level="4" />
+			<stat name="DR_Nomad:spellcasting:slots:1" value="-1" level="7" />
 			<stat name="DR_Nomad:spellcasting:slots:2" value="2" level="3" />
 			<stat name="DR_Nomad:spellcasting:slots:2" value="1" level="4" />
+			<stat name="DR_Nomad:spellcasting:slots:2" value="-2" level="7" />
+			<stat name="DR_Nomad:spellcasting:slots:2" value="-1" level="10" />
 			<stat name="DR_Nomad:spellcasting:slots:3" value="2" level="5" />
 			<stat name="DR_Nomad:spellcasting:slots:3" value="1" level="6" />
+			<stat name="DR_Nomad:spellcasting:slots:3" value="1" level="13" />
+			<stat name="DR_Nomad:spellcasting:slots:3" value="-2" level="16" />
+			<stat name="DR_Nomad:spellcasting:slots:3" value="-1" level="16" />
 			<stat name="DR_Nomad:spellcasting:slots:4" value="1" level="7" />
 			<stat name="DR_Nomad:spellcasting:slots:4" value="1" level="8" />
 			<stat name="DR_Nomad:spellcasting:slots:4" value="1" level="9" />
+			<stat name="DR_Nomad:spellcasting:slots:4" value="-1" level="17" />
+			<stat name="DR_Nomad:spellcasting:slots:4" value="-1" level="19" />
 			<stat name="DR_Nomad:spellcasting:slots:5" value="1" level="9" />
 			<stat name="DR_Nomad:spellcasting:slots:5" value="1" level="10" />
 			<stat name="DR_Nomad:spellcasting:slots:5" value="1" level="18" />
+			<stat name="DR_Nomad:spellcasting:slots:5" value="-1" level="19" />
 			<stat name="DR_Nomad:spellcasting:slots:6" value="1" level="11" />
 			<stat name="DR_Nomad:spellcasting:slots:6" value="1" level="19" />
 			<stat name="DR_Nomad:spellcasting:slots:7" value="1" level="13" />
-			<stat name="DR_Nomad:spellcasting:slots:7" value="1" level="12" />
+			<stat name="DR_Nomad:spellcasting:slots:7" value="1" level="20" />
 			<stat name="DR_Nomad:spellcasting:slots:8" value="1" level="15" />
 			<stat name="DR_Nomad:spellcasting:slots:9" value="1" level="17" />
 			<stat name="wizard:spellcasting:prepare" value="intelligence:modifier" />
-			<stat name="wizard:spellcasting:prepare" value="level:DragonRider" />
-					<select type="Spell" name="Cantrip (DR_Nomad)" supports="Wizard, 0" level="3" number="2" spellcasting="DR_Nomad" />
-					<select type="Spell" name="Cantrip (DR_Nomad)" supports="Wizard, 0" level="4" number="3" spellcasting="DR_Nomad" />
-					<select type="Spell" name="Spellbook (DR_Nomad)" supports="$(spellcasting:list), 1" level="1" number="6" spellcasting="DR_Nomad" />
-					<select type="Spell" name="Spellbook (DR_Nomad)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="2" spellcasting="DR_Nomad" />
-					<select type="Spell" name="Spellbook (DR_Nomad)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="2" spellcasting="DR_Nomad" />
-					<select type="Spell" name="Spellbook (DR_Nomad)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="2" spellcasting="DR_Nomad" />
-					<select type="Spell" name="Spellbook (DR_Nomad)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="2" spellcasting="DR_Nomad" />
-					<select type="Spell" name="Spellbook (DR_Nomad)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" number="2" spellcasting="DR_Nomad" />
-					<select type="Spell" name="Spellbook (DR_Nomad)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="2" spellcasting="DR_Nomad" />
-					<select type="Spell" name="Spellbook (DR_Nomad)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" number="2" spellcasting="DR_Nomad" />
-					<select type="Spell" name="Spellbook (DR_Nomad)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="2" spellcasting="DR_Nomad" />
-					<select type="Spell" name="Spellbook (DR_Nomad)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" number="2" spellcasting="DR_Nomad" />
-					<select type="Spell" name="Spellbook (DR_Nomad)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="2" spellcasting="DR_Nomad" />
-					<select type="Spell" name="Spellbook (DR_Nomad)" supports="$(spellcasting:list), $(spellcasting:slots)" level="12" number="2" spellcasting="DR_Nomad" />
-					<select type="Spell" name="Spellbook (DR_Nomad)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="2" spellcasting="DR_Nomad" />
-					<select type="Spell" name="Spellbook (DR_Nomad)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" number="2" spellcasting="DR_Nomad" />
-					<select type="Spell" name="Spellbook (DR_Nomad)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="2" spellcasting="DR_Nomad" />
-					<select type="Spell" name="Spellbook (DR_Nomad)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" number="2" spellcasting="DR_Nomad" />
-					<select type="Spell" name="Spellbook (DR_Nomad)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="2" spellcasting="DR_Nomad" />
-					<select type="Spell" name="Spellbook (DR_Nomad)" supports="$(spellcasting:list), $(spellcasting:slots)" level="18" number="2" spellcasting="DR_Nomad" />
-					<select type="Spell" name="Spellbook (DR_Nomad)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="2" spellcasting="DR_Nomad" />
-					<select type="Spell" name="Spellbook (DR_Nomad)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" number="2" spellcasting="DR_Nomad" />
+			<stat name="wizard:spellcasting:prepare" value="level:Dragon Rider" />
+					<select type="Spell" name="Cantrip (Wizard)" supports="Wizard, 0" level="18" number="1" spellcasting="DR_Nomad" />					
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), 1" level="1" number="6" spellcasting="DR_Nomad" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="2" spellcasting="DR_Nomad" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="2" spellcasting="DR_Nomad" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="2" spellcasting="DR_Nomad" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="2" spellcasting="DR_Nomad" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" number="2" spellcasting="DR_Nomad" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="2" spellcasting="DR_Nomad" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" number="2" spellcasting="DR_Nomad" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="2" spellcasting="DR_Nomad" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" number="2" spellcasting="DR_Nomad" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="2" spellcasting="DR_Nomad" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="12" number="2" spellcasting="DR_Nomad" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="2" spellcasting="DR_Nomad" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" number="2" spellcasting="DR_Nomad" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="2" spellcasting="DR_Nomad" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" number="2" spellcasting="DR_Nomad" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="2" spellcasting="DR_Nomad" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="18" number="2" spellcasting="DR_Nomad" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="2" spellcasting="DR_Nomad" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" number="2" spellcasting="DR_Nomad" />
 				</rules>
 			</element>
 		</elements>
