@@ -258,7 +258,7 @@
 			<description>You can prepare {{DragonRider:spellcasting:prepare}} spells from the your spellbook. You use an arcane focus to cast spells.</description>
 		</sheet>
 		<spellcasting name="Dragon Rider" ability="Intelligence" prepare="true">
-			<list>Wizard,SOrceror,Cleric,Paladin,Ranger,Rogue,Fighter</list>
+			<list>Wizard</list>
 		</spellcasting>
 		<rules>
 			<grant type="Proficiency" id="ID_INTERNAL_PROFICIENCY_SPELLFOCUS_GROUP_ARCANE_FOCUS" />
