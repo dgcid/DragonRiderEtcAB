@@ -4,12 +4,12 @@
 		<name>Goliath</name>
 		<description></description>
 				<author url="https://github.com/dgcid">dgcid</author>
-		<update version="0.1.4">
+		<update version="0.1.5">
 			<file name="race-Statue-goliath.xml" url="https://raw.githubusercontent.com/aurorabuilder/elements/master/supplements/volos-guide-to-monsters/race-goliath.xml" />
 		</update>
 	</info>
 
-  <element name="Goliath" type="Race" source="Homebrew" id="ID_MYHB_CC_RACE_STATUE_GOLIATH">
+  <element name="Statue Goliath" type="Race" source="Homebrew" id="ID_MYHB_CC_RACE_STATUE_GOLIATH">
     <description>
       <p class="flavor">At the highest mountain peaks-far above the slopes where trees grow and where the air is thin and the frigid winds howl-dwell the reclusive goliaths. Few folk can claim to have seen a goliath, and fewer still can claim friendship with one. Goliaths wander a bleak realm of rock, wind, and cold. Their bodies look as if they are carved from mountain stone and give them great physical power. Their spirits take after the wandering wind, making them nomads who wander from peak to peak. Their hearts are infused with the cold regard of their frigid realm, leaving each goliath with the responsibility to earn a place in the tribe or die trying.</p>
       <h4>DRIVEN COMPETITORS</h4>
