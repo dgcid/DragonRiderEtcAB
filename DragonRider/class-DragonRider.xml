@@ -453,19 +453,6 @@
 			</rules>
 		</element>
 		
-		<element name=" Dragon Egg" type="Class Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_CLASS_FEATURE_copper_DRAGON_EGG">
-			<supports>Dragon Egg, Dragon Rider</supports>
-			<description>
-				<p>A dragon egg that imbues the power of copper dragons. Altering your elemental damage to copper, and teaching you the copper cantrip.</p>
-			</description>
-			<sheet>
-				<description>A dragon egg that imbues the power of copper dragons. Altering your elemental damage to copper, and teaching you the copper cantrip.</description>
-			</sheet>
-			<rules>
-			<grant type="Spell" id="ID_PHB_SPELL_ACID_SPLASH" />
-			</rules>
-		</element>
-		
 		<element name=" Amethyst Dragon Egg" type="Class Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_CLASS_FEATURE_AMEHYST_DRAGON_EGG">
 			<supports>Dragon Egg, Dragon Rider</supports>
 			<description>
@@ -717,8 +704,8 @@
 		</rules>
 	</element>
 	
-	<element name="Dragon hatchling" type="Class Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonHatchling">
-			<supports>Dragon Partner, Dragon Rider</supports>
+	<element name="Dragon Hatchling" type="Class Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonHatchling">
+		<supports>Dragon Partner, Dragon Rider</supports>
 		<description>
 			<h5 class="caption">Dragon hatchling</h5>
 			<p>At 3rd level, your dragon egg hatches into a dragon hatchling with the following stat block. Although the it will try to stay by your side, the DM controls the actions of the dragon hatchling; However, you can influence these actions with a successful Handle Animal check. </p>
@@ -728,7 +715,7 @@
 			<description>your dragon egg hatches into a dragon hatchling. Although the it will try to stay by your side, the DM controls the actions of the dragon hatchling; However, you can influence these actions with a successful Handle Animal check.</description>
 		</sheet>
 			<rules>
-			<select type="Class Feature" name="Dragon hatchling" supports="Dragon Partner" level="3"/>
+			<!--<select type="Class Feature" name="Dragon Hatchling" supports="Dragon Partner" level="3"/> -->
 		</rules>
 	</element>
 	
@@ -745,7 +732,7 @@
 			<description>the hatchling has matured into a 'Dragon Wyrmling', as described in the Monster Manual. The wyrmling obeys your commands as best as it can On your turn, you can verbally command the wyrmling where to move (no action required by you). You can use your bonus action to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action.</description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Dragon Wyrmling" supports="Dragon Partner" level="7"/>
+			<!--<select type="Class Feature" name="Dragon Wyrmling" supports="Dragon Partner" level="7"/> -->
 		</rules>
 	</element>
 	
@@ -759,7 +746,7 @@
 			<description>The wyrmling has matured into a 'Young Dragon', as described in the Monster Manual.You gain the benefit of the Mounted Combatant feat. You can use your bonus action to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action.If you are incapacitated or absent, the Young Dragon acts on its own, focusing on protecting you and itself. The Young Dragon never requires your command to use its reaction, such as when making an opportunity attack.</description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Young Dragon" supports="Dragon Partner" level="13" />
+			<!--<select type="Class Feature" name="Young Dragon" supports="Dragon Partner" level="13" /> -->
 		</rules>
 	</element>
 
@@ -774,7 +761,7 @@
 		</sheet>
 
 		<rules>
-			<select type="Class Feature" name="Adult Dragon" supports="Dragon Partner" level="20"/>
+			<!-- <select type="Class Feature" name="Adult Dragon" supports="Dragon Partner" level="20"/> -->
 		</rules>
 	</element>
 
