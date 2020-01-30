@@ -4,7 +4,7 @@
 		<name>DragonRider</name>
 		<description>The DragonRider class </description>
 		<author url="https://github.com/dgcid">dgcid</author>
-		<update version="0.4.8">
+		<update version="0.4.9">
 			<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/DragonRider/class-DragonRider.xml" />
 		</update>
 	</info>
@@ -334,7 +334,7 @@
 			</rules>
 		</element>
 		<!-- Dragon Eggs -->
-		<element name="Adamantine Dragon Egg" type="Class Feature" source="HomeBrew" id="ID_MYHB_DR_CLASS_FEATURE_OBSIDIAN_DRAGON_EGG">
+		<element name="Adamantine Dragon Egg" type="Class Feature" source="HomeBrew" id="ID_MYHB_DR_CLASS_FEATURE_ADAMANTINE_DRAGON_EGG">
 			<supports>Dragon Egg, Dragon Rider</supports>
 			<description>
 				<p>A dragon egg that imbues the power of Adamantine dragons. Altering your elemental damage to Thunder, and teaching you the Thunderclap cantrip.</p>
