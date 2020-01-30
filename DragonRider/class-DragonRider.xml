@@ -4,7 +4,7 @@
 		<name>DragonRider</name>
 		<description>The DragonRider class </description>
 		<author url="https://github.com/dgcid">dgcid</author>
-		<update version="0.4.5">
+		<update version="0.4.6">
 			<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/DragonRider/class-DragonRider.xml" />
 		</update>
 	</info>
@@ -162,7 +162,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
-			<select type="Proficiency" name="Skill Proficiency (DragonRider)" supports="Skill,DragonRider" number="2" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
+			<select type="Proficiency" name="Skill Proficiency (Dragon Rider)" supports="Skill,DragonRider" number="2" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
 			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_SPELLCASTING_Dragonrider" level="1"/>
 			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonEgg" level="1"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SECONDWIND" level="2"/>
@@ -205,7 +205,7 @@
 			<p class="indent">Once you use this feature, you must finish a short or long rest before you can use it again.</p>
 		</description>
 		<sheet action="Bonus Action" usage="1/Short Rest">
-			<description>You regain 1d10+{{level:DragonRider}} hp.</description>
+		<description>You regain 1d10+{{level:Dragon Rider}} hp.</description>
 		</sheet>
 	</element>
 	<element name="Rider's Archetype" type="Class Feature" source="Homebrew" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_RiderArchetype">
@@ -224,11 +224,11 @@
 		</description>
 		<sheet display="false" />
 		<rules>
-			<select type="Class Feature" name="Improvement Option (DragonRider 4)" supports="Improvement Option,DragonRider,4" level="4" />
-			<select type="Class Feature" name="Improvement Option (DragonRider 8)" supports="Improvement Option,DragonRider,8" level="8" />
-			<select type="Class Feature" name="Improvement Option (DragonRider 12)" supports="Improvement Option,DragonRider,12" level="12" />
-			<select type="Class Feature" name="Improvement Option (DragonRider 16)" supports="Improvement Option,DragonRider,16" level="16" />
-			<select type="Class Feature" name="Improvement Option (DragonRider 19)" supports="Improvement Option,DragonRider,19" level="19" />
+			<select type="Class Feature" name="Improvement Option (Dragon Rider 4)" supports="Improvement Option,Dragon Rider,4" level="4" />
+			<select type="Class Feature" name="Improvement Option (Dragon Rider 8)" supports="Improvement Option,Dragon Rider,8" level="8" />
+			<select type="Class Feature" name="Improvement Option (Dragon Rider 12)" supports="Improvement Option,Dragon Rider,12" level="12" />
+			<select type="Class Feature" name="Improvement Option (Dragon Rider 16)" supports="Improvement Option,Dragon Rider,16" level="16" />
+			<select type="Class Feature" name="Improvement Option (Dragon Rider 19)" supports="Improvement Option,Dragon Rider,19" level="19" />
 		</rules>
 	</element>
 	<element name="Spellcasting" type="Class Feature" source="Homebrew" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_SPELLCASTING_Dragonrider">
@@ -255,7 +255,7 @@
 			<p>Each time you gain a Dragon Rider level, you can add two wizard spells of  your choice to your spellbook. Each of these spells must be of a level for which you have spell slots, as shown on the Dragon Rider table. On your adventures, you might find other spells that you can add to your spellbook (see the “Your Spellbook” sidebar). </p>
 		</description>
 		<sheet display="false">
-			<description>You can prepare {{DragonRider:spellcasting:prepare}} spells from the your spellbook. You use an arcane focus to cast spells.</description>
+			<description>You can prepare {{Dragon Rider:spellcasting:prepare}} spells from the your spellbook. You use an arcane focus to cast spells.</description>
 		</sheet>
 		<spellcasting name="Dragon Rider" ability="Intelligence" prepare="true">
 			<list>Wizard</list>
@@ -319,9 +319,10 @@
 		<rules>
 			<select type="Class Feature" name="Dragon Egg" supports="Dragon Egg" level="1"/>
 		</rules>
+	</element>
 		<!-- Dragon Eggs -->
 		<element name="Obsidian" type="Class Feature" source="HomeBrew" id="ID_MYHB_DR_CLASS_FEATURE_OBSIDIAN_DRAGON_EGG">
-			<supports>Dragon Egg, DragonRider</supports>
+			<supports>Dragon Egg, Dragon Rider</supports>
 			<description>
 				<p>A dragon egg that imbues the power of Obsidian dragons. Altering your elemental damage to Fire, and teaching you the Firebolt cantrip.</p>
 			</description>
@@ -334,7 +335,7 @@
 		</element>
 		<!-- Dragon Eggs -->
 		<element name="Adamantine Dragon Egg" type="Class Feature" source="HomeBrew" id="ID_MYHB_DR_CLASS_FEATURE_OBSIDIAN_DRAGON_EGG">
-			<supports>Dragon Egg, DragonRider</supports>
+			<supports>Dragon Egg, Dragon Rider</supports>
 			<description>
 				<p>A dragon egg that imbues the power of Adamantine dragons. Altering your elemental damage to Thunder, and teaching you the Thunderclap cantrip.</p>
 			</description>
@@ -345,8 +346,6 @@
 			<grant type="Spell" id="ID_XGTE_SPELL_THUNDERCLAP" />
 			</rules>
 		</element>
-	</element>
-	
 
 	<element name="Bond of the Rider" type="Class Feature" source="Homebrew" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_BondofTheRider">
 		<description>
@@ -533,17 +532,17 @@
 		</sheet>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
-			<grant type="Archetype Feature" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE" level="3"/>
+			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_FIGHTINGSTYLE" level="3"/>
 			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_SOTD" level="3"/>
 			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_JumpStrike" level="3"/>
 			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_DragonHide" level="6"/>
-			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_EXTRAATTACK" level="9"/>
+			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_EXTRAATTACK" level="9"/>
 			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_Skewer" level="11"/>
 			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_MasterDragoon" level="15"/>
 			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_SuperiorDragoon" level="18"/>
 		</rules>
 	</element>
-	<element name="Extra Attack" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_EXTRAATTACK">
+	<element name="Extra Attack" type="Archetype Feature" source="HomeBrew" id="ID_MYHB_DR_ARCHETYPE_EXTRAATTACK">
 		<description>
 			<p>Beginning at 9th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
 			<p class="indent">The number of attacks increases to three when you reach 15th level in this class and to four when you reach 18th level in this class.</p>
@@ -559,17 +558,18 @@
 			<stat name="extra attack:count" value="4" level="18" bonus="extra attack" />
 		</rules>
 	</element>
-	<element name="Fighting Style" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE">
+	<element name="Fighting Style" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_FEATURE_FIGHTINGSTYLE">
 		<description>
 			<h5 class="caption">GREAT WEAPON FIGHTING</h5>
 			<p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
 		</description>
 		<rules>
-			<select type="Class Feature" name="Fighting Style" supports="Fighting Style" level="1"/>
+			<select type="Archetype Feature" name="Fighting Style" supports="Fighting Style" level="3"/>
 		</rules>
+		</element>
 		<!-- Fighting Styles -->
-		<element name="Great Weapon Fighting" type="Class Feature" source="Player’s Handbook" id="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING">
-			<supports>Fighting Style, DragonRider, Paladin</supports>
+		<element name="Great Weapon Fighting" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_CLASS_FEATURE_FIGHTINGSTYLE_GREAT_WEAPON_FIGHTING">
+			<supports>Fighting Style, Dragon Rider, Paladin</supports>
 			<description>
 				<p>When you roll a 1 or 2 on a damage die for an attack you make with a melee weapon that you are wielding with two hands, you can reroll the die and must use the new roll, even if the new roll is a 1 or a 2. The weapon must have the two-handed or versatile property for you to gain this benefit.</p>
 			</description>
@@ -688,7 +688,7 @@
 			You can stay in a beast shape for {{druid wildshape:hours}} hours. You then revert to your normal form unless you expend another use of this feature. You can revert to your normal form earlier by using a bonus action on your turn. You automatically revert if you fall unconscious, drop to 0 hit points, or die.</description>
 		</sheet>
 		<rules>
-			<stat name="druid wildshape:hours" value="level:DragonRider:half" />
+			<stat name="druid wildshape:hours" value="level:Dragon Rider:half" />
 		</rules>
 	</element>	<element name="Draconic Form" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_DraconicForm">
 		<description>
@@ -698,7 +698,7 @@
 			<description>you gain the ability to use Wild Shape on your turn as a bonus action, rather than as an action. The rites of your circle grant you the ability to transform into more dangerous forms. Also at 2nd level, you can use your Wild Shape to transform into a dragon with a challenge rating as high as 1, when you do so you do not have to abide by the other limitations there. Starting at 6th level, you can transform into a dragon with a challenge rating as high as your druid level divided by 3, rounded down. If you use Wild Shape to transform into a beast, you must follow the normal limitations on the Beast Shapes table</description>
 		</sheet>
 		<rules>
-			<stat name="Nomad wildshape:hours" value="level:DragonRider:half" />
+			<stat name="Nomad wildshape:hours" value="level:Dragon Rider:half" />
 		</rules>
 	</element>
 	<element name="Draconic Affinity" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_DraconicAffinity">
@@ -1028,25 +1028,25 @@
 			<stat name="Dragon Rider:spellcasting:slots:9" value="1" level="17" />				
 					<select type="Spell" name="Cantrip (Wizard)" supports="Wizard, 0" level="18" number="1" spellcasting="Dragon Rider" />					
 					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), 1" level="1" number="6" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="-2" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="-2" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="-2" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="-2" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" number="-2" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="-2" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" number="-2" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="-2" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" number="-2" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="-2" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="12" number="-2" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="-2" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" number="-2" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="-2" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" number="-2" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="-2" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="18" number="-2" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="-2" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" number="-2" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="12" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="18" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" number="0" spellcasting="Dragon Rider" />
 				</rules>
 			</element>
 		</elements>
