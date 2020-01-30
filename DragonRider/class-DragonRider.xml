@@ -654,6 +654,8 @@
 			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_DraconicAffinity" level="6"/>
 			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_DraconicTuning" level="9"/>
 			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_DraconicMastery" level="11"/>
+			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_MasterofTheSky" level="15"/>
+			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_FullDraconicMastery" level="18"/>	
 		</rules>
 	</element>
 	<element name="The Wild that Flows" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_TWTF">
@@ -709,10 +711,9 @@
 			<description>when you cast a spell that deals damage of the element associated with your draconic type, add your Intelligence modifier to that damage. You also gain resistance to that element. These effects do not apply while in Wild Shape. Additionally, you gain advantage on all Intelligence checks related to recalling information about dragons, and all Survival checks related to tracking dragons. </description>
 		</sheet>
 	</element>
-	<element name="Draconic Tuning" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_DraconicTuning">
+	<element name="Dragon Body" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_DraconicTuning">
 		<description>
-			<p>At 9th level, you learn to use your wild shape in more precise methods. Channeling your connection beyond the restrictions of a total transformation, you sacrifice one use of your wild shape to more finely manifest a pair of dragon wings from your back in your base form. If you do not already have one or it is not reptilian in nature, you also grow a tail equal to half your height. These wings grant you a flying speed equal to your walking speed. This state retains the duration of a normal Wild Shape until level 14, at which time they last until you dismiss them. At level 18, they can be manifested and dismissed at will.  
-			Note: While it shouldn't be necessary to state, you cannot manifest these wings/tail while you are wearing any restrictive garments that would block them.  </p>
+			<p>At 9th level, your material form attunes to the Dragon forms you control. You gain blindsight up to 30ft and darkvision of 60ft.Furthermore, your attacks in beast form or dragon form count as magical for the purpose of overcoming resistance and immunity to nonmagical attacks and damage.  </p>
 		</description>
 		<sheet>
 			<description>you sacrifice one use of your wild shape to more finely manifest a pair of dragon wings from your back in your base form. If you do not already have one or it is not reptilian in nature, you also grow a tail equal to half your height. These wings grant you a flying speed equal to your walking speed. This state retains the duration of a normal Wild Shape until level 14, at which time they last until you dismiss them. At level 18, they can be manifested and dismissed at will.  
@@ -726,6 +727,27 @@
 		<sheet>
 			<description> you have completely mastered your ability to wild shape into dragons. You can expend two uses of your wild shape at the same time to transform into a Dragon with a challenge rating of 10 or lower. The duration of this transformation is a number of hours equal to your druid level divided by 4 rounded down. Starting at level 17, you can use two uses of Wild Shape to take the form of any Adult Dragon. The duration of this transformatin is 5hours at this level.</description>
 		</sheet>
+		<rules>
+			<stat name="Nomad wildshape:hours" value="level:Dragon Rider:half" />
+		</rules>
+	</element>
+		<element name="Master of The Sky" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_MasterofTheSky">
+		<description>
+			<p>By 14th level, you have learned to use magic to dominate the skies. You can cast the Fly spell without the need to concentrate on it and it lasts up to an hour.</p>
+		</description>
+		<sheet>
+			<description> By 14th level, you have learned to use magic to dominate the skies. You can cast the Fly spell without the need to concentrate on it and it lasts up to an hour.</description>
+		</sheet>
+	</element>	<element name="Full Draconic Mastery" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_FullDraconicMastery">
+		<description>
+			<p> Starting at level 17, you can use two uses of Wild Shape to take the form of any Adult Dragon as described in the Monster Manual. The duration of this transformation is 5 hours. </p>
+		</description>
+		<sheet>
+			<description> Starting at level 17, you can use two uses of Wild Shape to take the form of any Adult Dragon as described in the Monster Manual. The duration of this transformation is 5 hours.</description>
+		</sheet>
+		<rules>
+			<stat name="Nomad wildshape:hours" value="5" />
+		</rules>
 	</element>
 	<element name="Full Casting" type="Archetype Feature" source="Homebrew" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_SPELLCASTING">
 		<description>
