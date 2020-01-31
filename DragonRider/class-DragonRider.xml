@@ -1456,9 +1456,8 @@
 			<p class="indent">If your deity intervenes, you can't use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest. </p>
 		</description>
 		<sheet>
-			<description>Describe the assistance you seek, and roll a d100. If you roll a number equal to or lower than {{level:cleric}}, your deity intervenes.
-			If your deity intervenes, you can’t use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest.</description>
-	</description>
+		<description> Describe the assistance you seek, and roll a d100. If you roll a number equal to or lower than {{level:cleric}}, your deity intervenes.
+			If your deity intervenes, you can’t use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest. </description></description>
 		</sheet>
 
 	</element>
