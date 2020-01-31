@@ -1440,9 +1440,9 @@
 		</sheet>
 	</element>
 	
-	<element name="Divine Strike" type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_AncientMagic">
+	<element name="Divine Strike" type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DivineStrike">
 		<description>
-			<p>At 9th level, you gain the ability to infuse your weapon strikes with energy of your dragon’s type. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage type on the Dragon Domain table to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+			<p> Starting At 9th level, you gain the ability to infuse your weapon strikes with energy of your dragon’s type. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage type on the Dragon Domain table to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
 		</description>
 		<sheet>
 			<description> Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage type from the dragon egg you chose to the target. When you reach 14th level, the extra damage increases to 2d8.</description>
