@@ -4,7 +4,7 @@
 		<name>DragonRider</name>
 		<description>The DragonRider class </description>
 		<author url="https://github.com/dgcid">dgcid</author>
-		<update version="0.5.8">
+		<update version="0.5.9">
 			<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/DragonRider/class-DragonRider.xml" />
 		</update>
 	</info>
@@ -1451,7 +1451,7 @@
 		</sheet>
 	</element>
 	
-	<element name="Divine Intervention " type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DivineIntervention">
+<!--	<element name="Divine Intervention " type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DivineIntervention">
 		<description>
 			<p>Beginning at 11th level, you can call on your deity to intervene on your behalf when your need is great. If your deity intervenes, you can't use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest.  </p>
 			<p class="indent">Imploring your deity's aid requires you to use your action. Describe the assistance you seek, and roll percentile dice. If you roll a number equal to or lower than your cleric level, your deity intervenes. The DM chooses the nature of the intervention; the effect of any cleric spell or cleric domain spell would be appropriate. </p>
@@ -1460,7 +1460,7 @@
 		<sheet>
 		<description> Describe the assistance you seek, and roll a d100. If you roll a number equal to or lower than {{level:cleric}}, your deity intervenes.
 			If your deity intervenes, you can’t use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest. </description></description>
-		</sheet>
+		</sheet> -->
 
 	</element>
 		<element name="Weakening Breath " type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_WeakeningBreath">
