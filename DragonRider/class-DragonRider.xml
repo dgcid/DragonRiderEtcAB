@@ -4,7 +4,7 @@
 		<name>DragonRider</name>
 		<description>The DragonRider class </description>
 		<author url="https://github.com/dgcid">dgcid</author>
-		<update version="0.5.18">
+		<update version="0.5.19">
 			<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/DragonRider/class-DragonRider.xml" />
 		</update>
 	</info>
@@ -59,7 +59,7 @@
 				<li>
 					a spellbook of the dragon riders </li>
 			</ul>
-			<h5 class="caption">THE DragonRider</h5>
+			<h5 class="caption">The DragonRider</h5>
 			<table class="class-features">
 				<thead>
 					<tr>
@@ -155,7 +155,7 @@
 			<set name="hd">d10</set>
 		</setters>
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
 			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
