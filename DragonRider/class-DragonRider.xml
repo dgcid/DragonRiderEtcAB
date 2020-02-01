@@ -4,7 +4,7 @@
 		<name>DragonRider</name>
 		<description>The DragonRider class </description>
 		<author url="https://github.com/dgcid">dgcid</author>
-		<update version="0.5.19">
+		<update version="0.5.20">
 			<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/DragonRider/class-DragonRider.xml" />
 		</update>
 	</info>
@@ -156,13 +156,13 @@
 		</setters>
 		<rules>
 			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_LIGHT_ARMOR"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_STRENGTH" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
-			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
-			<select type="Proficiency" name="Skill Proficiency (Dragon Rider)" supports="Skill,DragonRider" number="2" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_MEDIUM_ARMOR" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_SHIELDS"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_SIMPLE_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_WEAPON_PROFICIENCY_MARTIAL_WEAPONS" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_Intelligence" />
+			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
+			<select type="Proficiency" name="Skill Proficiency (Dragon Rider)" supports="Skill,DragonRider" number="2"/>
 			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_SPELLCASTING_Dragonrider" level="1"/>
 			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonEgg" level="1"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SECONDWIND" level="2"/>
@@ -185,8 +185,8 @@
 
 		</rules>
 		<multiclass id="ID_MYHB_DR_MULTICLASS_DragonRider">
-			<prerequisite>Strength 13 or Dexterity 13</prerequisite>
-			<requirements>([str:13]||[dex:13])</requirements>
+			<prerequisite>Strength 13 or Intelligence</prerequisite>
+			<requirements>([str:13]||[Int:13])</requirements>
 			<setters>
 				<set name="multiclass proficiencies">Light armor, medium armor, shields, simple weapons, martial weapons</set>
 			</setters>
