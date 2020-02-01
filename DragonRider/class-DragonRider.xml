@@ -1327,7 +1327,7 @@
 					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" number="0" spellcasting="Dragon Rider" />
 				</rules>
 			</element>	
-
+<!--
  	<!-- Cleric Archetype -->
 	<element name="Cleric" type="Archetype" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_DragonRider_Cleric">
 		<supports>Riders Archetype</supports>
@@ -1806,7 +1806,7 @@
 					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" number="0" spellcasting="Dragon Rider" />
 				</rules>
 			</element>
-			
+			-->
 </elements>
 	
 		
