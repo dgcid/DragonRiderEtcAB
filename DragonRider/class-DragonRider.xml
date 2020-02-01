@@ -4,7 +4,7 @@
 		<name>DragonRider</name>
 		<description>The DragonRider class </description>
 		<author url="https://github.com/dgcid">dgcid</author>
-		<update version="0.5.16">
+		<update version="0.5.17">
 			<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/DragonRider/class-DragonRider.xml" />
 		</update>
 	</info>
@@ -1328,484 +1328,525 @@
 				</rules>
 			</element>	
 
-<!--  	 Cleric Archetype -->
-	<element name="Cleric" type="Archetype" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_DragonRider_Cleric">
-		<supports>Riders Archetype</supports>
-		<description>
-			<p>Characters that choose this archetype are placed under the Dragon Domain and are treated like a Cleric class. As long as they keep their spell book they may learn magic outside the cleric list. </p>
-			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_SPELLCASTING_Dragonrider"/>
-			<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_fULLCAST_SPELLCASTING"/>
-			<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_KOTF"/>
-			<div element="ID_MYHB_DR_CLASS_FEATURE_CLERIC_CHANNELDIVINITY" />
-			<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_BONUSPROF"/>
-			<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DragonVisage"/>
-			<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_AncientMagic"/>
-			<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DivineStrike"/>
-			<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DivineIntervention"/>
-			<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_WeakeningBreath"/>
-			<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DragonCall"/>
+						<!-- Cleric Archetype -->
+						<element name="Cleric" type="Archetype" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_DragonRider_Cleric">
+							<supports>Riders Archetype</supports>
+							<description>
+								<p>Characters that choose this archetype are placed under the Dragon Domain and are treated like a Cleric class. As long as they keep their spell book they may learn magic outside the cleric list. </p>
+								<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_SPELLCASTING_Dragonrider"/>
+								<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_fULLCAST_SPELLCASTING"/>
+								<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_KOTF"/>
+								<div element="ID_MYHB_DR_CLASS_FEATURE_CLERIC_CHANNELDIVINITY" />
+								<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_BONUSPROF"/>
+								<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DragonVisage"/>
+								<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_AncientMagic"/>
+								<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DivineStrike"/>
+								<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DivineIntervention"/>
+								<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_WeakeningBreath"/>
+								<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DragonCall"/>
 
-		</description>
-		<sheet display="false">
-			<description>Characters that choose this archetype are typically wanderers who have either have no knowledge of the order or don’t care. Their attunement with their dragon has made them one with nature and they seek to protect that nature.</description>
-		</sheet>
-		<rules>
-			
-			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_fULLCAST_SPELLCASTING" level="3"/>
-			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_BONUSPROF" level="3"/>
-			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_KOTF" level="3"/>
-			<grant type="Archetype Feature" id="ID_MYHB_DR_CLASS_FEATURE_CLERIC_CHANNELDIVINITY_TURN_UNDEAD" level="3"/>		
-			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_AncientMagic" level="6"/>
-			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DivineStrike" level="9"/>
-			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DivineIntervention" level="11"/>
-			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_WeakeningBreath" level="15"/>				
-		</rules>
-	</element>
-	<element name="The Keepers of Faith" type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_KOTF">
-		<description>
-			<p>Characters that choose this archetype are placed under the Dragon Domain and are treated like a Cleric class. As long as they keep their spell book they may learn magic outside the cleric list. </p>
-			
-			<h5 class="caption">DRAGON DOMAIN SPELLS</h5>
-			<table>
-				<thead>
-					<tr><td>Cleric Level</td><td>Spells</td></tr>
-				</thead>
-				<tr><td>1st</td><td><em>Absorb Elements, Identify</em></td></tr>
-				<tr><td>3rd</td><td><em>Alter Self, Dragon's Breath</em></td></tr>
-				<tr><td>5th</td><td><em>Elemental Weapon, Fear</em></td></tr>
-				<tr><td>7th</td><td><em>Leomund's secret chest, Mordenkainen's private sanctum </em></td></tr>
-				<tr><td>9th</td><td><em>legend lore, reincarnate* </em></td></tr>
-			</table>
-			<p class="indent"> *The target rolls a constituiton saving throw dc 18. If successful caster chooses race. If failed target becomes a Dragonborn. </p>
-		</description>
-		<sheet>
-			<description>Characters that choose this archetype are placed under the Dragon Domain and are treated like a Cleric class. As long as they keep their spell book they may learn magic outside the cleric list.</description>
-		</sheet>
-	</element>
-	
-	<element name="Bonus Proficiency" type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_BONUSPROF">
-		<description>
-			<p>You gain proficiency with heavy armor.</p>
-		</description>
-		<sheet display="false" />
-		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
-		</rules>
-	</element>
+							</description>
+							<sheet display="false">
+								<description>Characters that choose this archetype are typically wanderers who have either have no knowledge of the order or don’t care. Their attunement with their dragon has made them one with nature and they seek to protect that nature.</description>
+							</sheet>
+							<rules>
+								<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_fULLCAST_SPELLCASTING" level="3"/>
+								<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_BONUSPROF" level="3"/>
+								<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_KOTF" level="3"/>
+								<grant type="Archetype Feature" id="ID_MYHB_DR_CLASS_FEATURE_CLERIC_CHANNELDIVINITY_TURN_UNDEAD" level="3"/>
+								<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_AncientMagic" level="6"/>
+								<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DivineStrike" level="9"/>
+								<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DivineIntervention" level="11"/>
+								<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_WeakeningBreath" level="15"/>
+							</rules>
+						</element>
 
-	<element name="Channel Divinity" type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_CLASS_FEATURE_CLERIC_CHANNELDIVINITY">
-		<description>
-			<p>At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects: Turn Undead and an effect determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.</p>
-			<p class="indent">When you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again.</p>
-			<p class="indent">Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.</p>
-			<p class="indent">Beginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses.</p>		
-		</description>
-		<sheet usage="{{channel divinity:count}}/Short Rest" />
-		<rules>
-			<stat name="channel divinity:count" value="1" bonus="base" />
-			<stat name="channel divinity:count" value="2" level="6" bonus="base" />
-			<stat name="channel divinity:count" value="3" level="18" bonus="base" />
-			<grant type="Archetype Feature" id="ID_MYHB_DR_CLASS_FEATURE_CLERIC_CHANNELDIVINITY_TURN_UNDEAD" />
-			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DragonVisage" />
-			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DragonCall" level="18"/>
-		</rules>
-	</element>
-	
-	<element name="Channel Divinity: Turn Undead" type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_CLASS_FEATURE_CLERIC_CHANNELDIVINITY_TURN_UNDEAD">
-		<description>
-			<p>As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.</p>
-			<p class="indent">A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.</p>
-		</description>
-		<sheet alt="Turn Undead" action="Action" usage="Channel Divinity">
-			<description>Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.
+						<element name="The Keepers of Faith" type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_KOTF">
+							<description>
+								<p>Characters that choose this archetype are placed under the Dragon Domain and are treated like a Cleric class. As long as they keep their spell book they may learn magic outside the cleric list. </p>
+
+								<h5 class="caption">DRAGON DOMAIN SPELLS</h5>
+								<table>
+									<thead>
+										<tr>
+											<td>Cleric Level</td>
+											<td>Spells</td>
+										</tr>
+									</thead>
+									<tr>
+										<td>1st</td>
+										<td>
+											<em>Absorb Elements, Identify</em>
+										</td>
+									</tr>
+									<tr>
+										<td>3rd</td>
+										<td>
+											<em>Alter Self, Dragon's Breath</em>
+										</td>
+									</tr>
+									<tr>
+										<td>5th</td>
+										<td>
+											<em>Elemental Weapon, Fear</em>
+										</td>
+									</tr>
+									<tr>
+										<td>7th</td>
+										<td>
+											<em>Leomund's secret chest, Mordenkainen's private sanctum </em>
+										</td>
+									</tr>
+									<tr>
+										<td>9th</td>
+										<td>
+											<em>legend lore, reincarnate* </em>
+										</td>
+									</tr>
+								</table>
+								<p class="indent"> *The target rolls a constituiton saving throw dc 18. If successful caster chooses race. If failed target becomes a Dragonborn. </p>
+							</description>
+							<sheet>
+								<description>Characters that choose this archetype are placed under the Dragon Domain and are treated like a Cleric class. As long as they keep their spell book they may learn magic outside the cleric list.</description>
+							</sheet>
+						</element>
+
+						<element name="Bonus Proficiency" type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_BONUSPROF">
+							<description>
+								<p>You gain proficiency with heavy armor.</p>
+							</description>
+							<sheet display="false" />
+							<rules>
+								<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" />
+							</rules>
+						</element>
+
+						<element name="Channel Divinity" type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_CLASS_FEATURE_CLERIC_CHANNELDIVINITY">
+							<description>
+								<p>At 2nd level, you gain the ability to channel divine energy directly from your deity, using that energy to fuel magical effects. You start with two such effects: Turn Undead and an effect determined by your domain. Some domains grant you additional effects as you advance in levels, as noted in the domain description.</p>
+								<p class="indent">When you use your Channel Divinity, you choose which effect to create. You must then finish a short or long rest to use your Channel Divinity again.</p>
+								<p class="indent">Some Channel Divinity effects require saving throws. When you use such an effect from this class, the DC equals your cleric spell save DC.</p>
+								<p class="indent">Beginning at 6th level, you can use your Channel Divinity twice between rests, and beginning at 18th level, you can use it three times between rests. When you finish a short or long rest, you regain your expended uses.</p>
+							</description>
+							<sheet usage="{{channel divinity:count}}/Short Rest" />
+							<rules>
+								<stat name="channel divinity:count" value="1" bonus="base" />
+								<stat name="channel divinity:count" value="2" level="6" bonus="base" />
+								<stat name="channel divinity:count" value="3" level="18" bonus="base" />
+								<grant type="Archetype Feature" id="ID_MYHB_DR_CLASS_FEATURE_CLERIC_CHANNELDIVINITY_TURN_UNDEAD" />
+								<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DragonVisage" />
+								<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DragonCall" level="18"/>
+							</rules>
+						</element>
+
+						<element name="Channel Divinity: Turn Undead" type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_CLASS_FEATURE_CLERIC_CHANNELDIVINITY_TURN_UNDEAD">
+							<description>
+								<p>As an action, you present your holy symbol and speak a prayer censuring the undead. Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.</p>
+								<p class="indent">A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.</p>
+							</description>
+							<sheet alt="Turn Undead" action="Action" usage="Channel Divinity">
+								<description>Each undead that can see or hear you within 30 feet of you must make a Wisdom saving throw. If the creature fails its saving throw, it is turned for 1 minute or until it takes any damage.
 				A turned creature must spend its turns trying to move as far away from you as it can, and it can’t willingly move to a space within 30 feet of you. It also can’t take reactions. For its action, it can use only the Dash action or try to escape from an effect that prevents it from moving. If there’s nowhere to move, the creature can use the Dodge action.</description>
-		</sheet>
-	</element>
-	
-	<element name="Channel Divinity: Dragon Visage" type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DragonVisage">
-		<description>
-			<p>At 3rd level, you can call upon the appearance of a dragon god to make yourself fearsome. When you make a Deception, Intimidation, or Persuasion check, you can use your Channel Divinity to gain +10 to the roll. You make this choice after you see the roll, but before the DM says whether your check was successful or not. You may use this once per short rest. Beginning at 6th level you can use this twice per short rest. Starting at 18th level you may use this 3 times per short rest.</p>
-		</description>
-		<sheet alt="Dragon Visage" action="Action" usage="Channel Divinity">
-			<description> When you make a Deception, Intimidation, or Persuasion check, you can use your Channel Divinity to gain +10 to the roll. You make this choice after you see the roll, but before the DM says whether your check was successful or not. You may use this once per short rest. Beginning at 6th level you can use this twice per short rest. Starting at 18th level you may use this 3 times per short rest. </description>
-		</sheet>
-	</element>
-	
-	<element name="Ancient Magic" type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_AncientMagic">
-		<description>
-			<p>Starting at 6th level, you add your Wisdom modifier to the damage you deal with any cantrip or 1st level Spell.  </p>
-		</description>
-		<sheet>
-			<description> Whenever you deal damage with any cantrip or 1st level Spell add your Wisdom modifier.  </description>
-		</sheet>
-	</element>
-	
+							</sheet>
+						</element>
 
-		<element name="Divine Strike" type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DivineStrike">
-		<description>
-			<p> Starting At 9th level, you gain the ability to infuse your weapon strikes with energy of your dragon’s type. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage type on the Dragon Domain table to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
-		</description>
-			
-		<sheet>
-		<description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage type from the dragon egg you chose to the target. When you reach 14th level, the extra damage increases to 2d8.</description>
-		</sheet>
-	</element>
-	
-<!--	<element name="Divine Intervention " type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DivineIntervention">
-		<description>
-			<p>Beginning at 11th level, you can call on your deity to intervene on your behalf when your need is great. If your deity intervenes, you can't use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest.  </p>
-			<p class="indent">Imploring your deity's aid requires you to use your action. Describe the assistance you seek, and roll percentile dice. If you roll a number equal to or lower than your cleric level, your deity intervenes. The DM chooses the nature of the intervention; the effect of any cleric spell or cleric domain spell would be appropriate. </p>
-			<p class="indent">If your deity intervenes, you can't use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest. </p>
-		</description>
-		<sheet>
-		<description> Describe the assistance you seek, and roll a d100. If you roll a number equal to or lower than {{level:cleric}}, your deity intervenes.
-			If your deity intervenes, you can’t use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest. </description></description>
-		</sheet> -->
+						<element name="Channel Divinity: Dragon Visage" type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DragonVisage">
+							<description>
+								<p>At 3rd level, you can call upon the appearance of a dragon god to make yourself fearsome. When you make a Deception, Intimidation, or Persuasion check, you can use your Channel Divinity to gain +10 to the roll. You make this choice after you see the roll, but before the DM says whether your check was successful or not. You may use this once per short rest. Beginning at 6th level you can use this twice per short rest. Starting at 18th level you may use this 3 times per short rest.</p>
+							</description>
+							<sheet alt="Dragon Visage" action="Action" usage="Channel Divinity">
+								<description> When you make a Deception, Intimidation, or Persuasion check, you can use your Channel Divinity to gain +10 to the roll. You make this choice after you see the roll, but before the DM says whether your check was successful or not. You may use this once per short rest. Beginning at 6th level you can use this twice per short rest. Starting at 18th level you may use this 3 times per short rest. </description>
+							</sheet>
+						</element>
 
-	</element>
-		<element name="Weakening Breath " type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_WeakeningBreath">
-		<description>
-			<p>Starting at 15th level, you can now muster the breath weapon of the ancient Platinum dragons. As you exhale a mist of weaken gas from your mouth in a 15' cone attack, those caught in the attack must make Constitution Saving throw, if they fail they have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 Round per Int Modifier. You can use this ability as many times as your Con Modifier times per a long rest. </p>
-		</description>
-		<sheet>
-			<description>  you can now muster the breath weapon of the ancient Platinum dragons. As you exhale a mist of weaken gas from your mouth in a 15' cone attack, those caught in the attack must make Constitution Saving throw, if they fail they have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 Round per Int Modifier. You can use this ability as many times as your Con Modifier times per a long rest.</description>
-		</sheet>
-	</element>	
-	
-	<element name="Channel Divinity: Dragon Call " type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_FullDraconicMastery">
-		<description>
-			<p> Starting at 18th level, you can present your holy symbol and pray to your deity for help.  This costs 2 uses of Channel Divinity. You pray to your deity to send a dragon to help you. Roll a d100. 
-			<p class="indent">On a roll of 25 or higher, you succeed.  If you a place that a dragon cannot easily access, you automatically fail. 
-			<p class="indent">If you roll a 25-75, you summon a young dragon of your chosen type. If you roll a 76-95, you summon an adult dragon of your chosen type.If you roll a 96-100, you summon an ancient dragon of your chosen type. </p>
-			<p class="indent">The dragon takes 1 round to get to you. The dragon is friendly to you and your allies, and will mostly obey your commands. It stays for 1 hour, and then flies off.</p>
-		</description>
-		<sheet>
-			<description> Roll a d100 and follow the Chart to see what type of dragon you summon.</description>
-		</sheet>
-	</element>
-	
-	<element name="Full Casting" type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_FULLCAST_SPELLCASTING">
-		<description>
-			<p>When you reach 3rd level, you augment your Arcane prowess with the ability to cast more powerful spells.</p>
-			<p class="indent"><strong><em>Spell Slots.</em></strong> The Nomad Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
-			<p class="indent">For example, if you know the 1st-level spell shield and have a 1st-level and a 2nd-level spell slot available, you can cast shield using either slot.</p>		
+						<element name="Ancient Magic" type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_AncientMagic">
+							<description>
+								<p>Starting at 6th level, you add your Wisdom modifier to the damage you deal with any cantrip or 1st level Spell.  </p>
+							</description>
+							<sheet>
+								<description> Whenever you deal damage with any cantrip or 1st level Spell add your Wisdom modifier.  </description>
+							</sheet>
+						</element>
 
-			<h5 class="caption">Cleric SPELLCASTING</h5>
-			<table class="class-features">
-				<thead>
-					<tr>
-						<td class="col-5">Level</td><td class="col-10">Cantrips Known</td><td class="col-10">Spells Known</td><td>1st</td><td>2nd</td><td>3rd</td><td>4th</td><td>5th</td><td>6th</td><td>7th</td><td>8th</td><td>9th</td>
-					</tr>
-				</thead>
-				<tr>
-					<td> 3rd</td>
-					<td>2</td>
-					<td>10</td>
-					<td>4</td>
-					<td>2</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-				</tr>
-				<tr>
-					<td> 4th</td>
-					<td>3</td>
-					<td>12</td>
-					<td>4</td>
-					<td>3</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-				</tr>
-				<tr>
-					<td> 5th</td>
-					<td>3</td>
-					<td>14</td>
-					<td>4</td>
-					<td>3</td>
-					<td>2</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-				</tr>
-				<tr>
-					<td> 6th</td>
-					<td>3</td>
-					<td>16</td>
-					<td>4</td>
-					<td>3</td>
-					<td>3</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-				</tr>
-				<tr>
-					<td> 7th</td>
-					<td>3</td>
-					<td>18</td>
-					<td>4</td>
-					<td>3</td>
-					<td>3</td>
-					<td>1</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-				</tr>
-				<tr>
-					<td> 8th</td>
-					<td>3</td>
-					<td>20</td>
-					<td>4</td>
-					<td>3</td>
-					<td>3</td>
-					<td>2</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-				</tr>
-				<tr>
-					<td> 9th</td>
-					<td>3</td>
-					<td>22</td>
-					<td>4</td>
-					<td>3</td>
-					<td>3</td>
-					<td>3</td>
-					<td>1</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-				</tr>
-				<tr>
-					<td>10th</td>
-					<td>4</td>
-					<td>24</td>
-					<td>4</td>
-					<td>3</td>
-					<td>3</td>
-					<td>3</td>
-					<td>2</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-				</tr>
-				<tr>
-					<td>11th</td>
-					<td>4</td>
-					<td>26</td>
-					<td>4</td>
-					<td>3</td>
-					<td>3</td>
-					<td>3</td>
-					<td>2</td>
-					<td>1</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-				</tr>
-				<tr>
-					<td>12th</td>
-					<td>4</td>
-					<td>28</td>
-					<td>4</td>
-					<td>3</td>
-					<td>3</td>
-					<td>3</td>
-					<td>2</td>
-					<td>1</td>
-					<td>—</td>
-					<td>—</td>
-					<td>—</td>
-				</tr>
-				<tr>
-					<td>13th</td>
-					<td>4</td>
-					<td>30</td>
-					<td>4</td>
-					<td>3</td>
-					<td>3</td>
-					<td>3</td>
-					<td>2</td>
-					<td>1</td>
-					<td>1</td>
-					<td>—</td>
-					<td>—</td>
-				</tr>
-				<tr>
-					<td>14th</td>
-					<td>4</td>
-					<td>32</td>
-					<td>4</td>
-					<td>3</td>
-					<td>3</td>
-					<td>3</td>
-					<td>2</td>
-					<td>1</td>
-					<td>1</td>
-					<td>—</td>
-					<td>—</td>
-				</tr>
-				<tr>
-					<td>15th</td>
-					<td>4</td>
-					<td>34</td>
-					<td>4</td>
-					<td>3</td>
-					<td>3</td>
-					<td>3</td>
-					<td>2</td>
-					<td>1</td>
-					<td>1</td>
-					<td>1</td>
-					<td>—</td>
-				</tr>
-				<tr>
-					<td>16th</td>
-					<td>4</td>
-					<td>34</td>
-					<td>4</td>
-					<td>3</td>
-					<td>3</td>
-					<td>3</td>
-					<td>2</td>
-					<td>1</td>
-					<td>1</td>
-					<td>1</td>
-					<td>—</td>
-				</tr>
-				<tr>
-					<td>17th</td>
-					<td>4</td>
-					<td>36</td>
-					<td>4</td>
-					<td>3</td>
-					<td>3</td>
-					<td>3</td>
-					<td>2</td>
-					<td>1</td>
-					<td>1</td>
-					<td>1</td>
-					<td>1</td>
-				</tr>
-				<tr>
-					<td>18th</td>
-					<td>5</td>
-					<td>38</td>
-					<td>4</td>
-					<td>3</td>
-					<td>3</td>
-					<td>3</td>
-					<td>3</td>
-					<td>1</td>
-					<td>1</td>
-					<td>1</td>
-					<td>1</td>
-				</tr>
-				<tr>
-					<td>19th</td>
-					<td>5</td>
-					<td>40</td>
-					<td>4</td>
-					<td>3</td>
-					<td>3</td>
-					<td>3</td>
-					<td>3</td>
-					<td>2</td>
-					<td>1</td>
-					<td>1</td>
-					<td>1</td>
-				</tr>
-				<tr>
-					<td>20th</td>
-					<td>5</td>
-					<td>42</td>
-					<td>4</td>
-					<td>3</td>
-					<td>3</td>
-					<td>3</td>
-					<td>3</td>
-					<td>2</td>
-					<td>2</td>
-					<td>1</td>
-					<td>1</td>
-				</tr>
-			</table>
-		</description>
-		<sheet display="false">
-			<description>You augment your Arcane prowess with the ability to cast more powerful spells.</description>
-		</sheet>
-		<rules>
-			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
-		<stat name="Dragon Rider:spellcasting:slots:1" value="2" level="3" />
-			<stat name="Dragon Rider:spellcasting:slots:1" value="-1" level="4" />
-			<stat name="Dragon Rider:spellcasting:slots:1" value="-1" level="7" />
-			<stat name="Dragon Rider:spellcasting:slots:2" value="2" level="3" />
-			<stat name="Dragon Rider:spellcasting:slots:2" value="1" level="4" />
-			<stat name="Dragon Rider:spellcasting:slots:2" value="-2" level="7" />
-			<stat name="Dragon Rider:spellcasting:slots:2" value="-1" level="10" />
-			<stat name="Dragon Rider:spellcasting:slots:3" value="2" level="5" />
-			<stat name="Dragon Rider:spellcasting:slots:3" value="1" level="6" />
-			<stat name="Dragon Rider:spellcasting:slots:3" value="1" level="13" />
-			<stat name="Dragon Rider:spellcasting:slots:3" value="-2" level="16" />
-			<stat name="Dragon Rider:spellcasting:slots:3" value="-1" level="16" />
-			<stat name="Dragon Rider:spellcasting:slots:4" value="1" level="7" />
-			<stat name="Dragon Rider:spellcasting:slots:4" value="1" level="8" />
-			<stat name="Dragon Rider:spellcasting:slots:4" value="1" level="9" />
-			<stat name="Dragon Rider:spellcasting:slots:4" value="-1" level="17" />
-			<stat name="Dragon Rider:spellcasting:slots:4" value="-1" level="19" />
-			<stat name="Dragon Rider:spellcasting:slots:5" value="1" level="9" />
-			<stat name="Dragon Rider:spellcasting:slots:5" value="1" level="10" />
-			<stat name="Dragon Rider:spellcasting:slots:5" value="1" level="18" />
-			<stat name="Dragon Rider:spellcasting:slots:5" value="-1" level="19" />
-			<stat name="Dragon Rider:spellcasting:slots:6" value="1" level="11" />
-			<stat name="Dragon Rider:spellcasting:slots:6" value="1" level="19" />
-			<stat name="Dragon Rider:spellcasting:slots:7" value="1" level="13" />
-			<stat name="Dragon Rider:spellcasting:slots:7" value="1" level="20" />
-			<stat name="Dragon Rider:spellcasting:slots:8" value="1" level="15" />
-			<stat name="Dragon Rider:spellcasting:slots:9" value="1" level="17" />				
-					<select type="Spell" name="Cantrip (Wizard)" supports="Wizard, 0" level="18" number="1" spellcasting="Dragon Rider" />					
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), 1" level="1" number="6" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="12" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="18" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" number="0" spellcasting="Dragon Rider" />
-				</rules>
-			</element> 
+						<element name="Divine Strike" type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DivineStrike">
+							<description>
+								<p>Starting At 9th level, you gain the ability to infuse your weapon strikes with energy of your dragon’s type. Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage type on the Dragon Domain table to the target. When you reach 14th level, the extra damage increases to 2d8.</p>
+							</description>
+							<sheet>
+								<description>Once on each of your turns when you hit a creature with a weapon attack, you can cause the attack to deal an extra 1d8 damage type on the Dragon Domain table to the target. When you reach 14th level, the extra damage increases to 2d8.</description>
+							</sheet>
+						</element>
+
+						<element name="Divine Intervention" type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_DragonVisage">
+							<description>
+								<p>Beginning at 11th level, you can call on your deity to intervene on your behalf when your need is great. If your deity intervenes, you can't use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest.  </p>
+								<p class="indent">Imploring your deity's aid requires you to use your action. Describe the assistance you seek, and roll percentile dice. If you roll a number equal to or lower than your cleric level, your deity intervenes. The DM chooses the nature of the intervention; the effect of any cleric spell or cleric domain spell would be appropriate. </p>
+								<p class="indent">If your deity intervenes, you can't use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest. </p>
+							</description>
+							<sheet>
+								<description> Describe the assistance you seek, and roll a d100. If you roll a number equal to or lower than {{level:cleric}}, your deity intervenes.
+			If your deity intervenes, you can’t use this feature again for 7 days. Otherwise, you can use it again after you finish a long rest.  </description>
+							</sheet>
+						</element>
+
+						<element name="Weakening Breath " type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_CLERIC_WeakeningBreath">
+							<description>
+								<p>Starting at 15th level, you can now muster the breath weapon of the ancient Platinum dragons. As you exhale a mist of weaken gas from your mouth in a 15' cone attack, those caught in the attack must make Constitution Saving throw, if they fail they have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 Round per Int Modifier. You can use this ability as many times as your Con Modifier times per a long rest. </p>
+							</description>
+							<sheet>
+								<description>  you can now muster the breath weapon of the ancient Platinum dragons. As you exhale a mist of weaken gas from your mouth in a 15' cone attack, those caught in the attack must make Constitution Saving throw, if they fail they have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 Round per Int Modifier. You can use this ability as many times as your Con Modifier times per a long rest.</description>
+							</sheet>
+						</element>
+
+						<element name="Channel Divinity: Dragon Call " type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_NOMAD_FullDraconicMastery">
+							<description>
+								<p> Starting at 18th level, you can present your holy symbol and pray to your deity for help.  This costs 2 uses of Channel Divinity. You pray to your deity to send a dragon to help you. Roll a d100. 
+									<p class="indent">On a roll of 25 or higher, you succeed.  If you a place that a dragon cannot easily access, you automatically fail. 
+										<p class="indent">If you roll a 25-75, you summon a young dragon of your chosen type. If you roll a 76-95, you summon an adult dragon of your chosen type.If you roll a 96-100, you summon an ancient dragon of your chosen type. </p>
+										<p class="indent">The dragon takes 1 round to get to you. The dragon is friendly to you and your allies, and will mostly obey your commands. It stays for 1 hour, and then flies off.</p>
+
+							</description>		
+									<sheet>
+										<description> Roll a d100 and follow the Chart to see what type of dragon you summon.</description>
+									</sheet>
+								</element>
+
+								<element name="Full Casting" type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_FULLCAST_SPELLCASTING">
+									<description>
+										<p>When you reach 3rd level, you augment your Arcane prowess with the ability to cast more powerful spells.</p>
+										<p class="indent">
+											<strong>
+												<em>Spell Slots.</em>
+											</strong> The Nomad Spellcasting table shows how many spell slots you have to cast your spells of 1st level and higher. To cast one of these spells, you must expend a slot of the spell’s level or higher. You regain all expended spell slots when you finish a long rest.</p>
+										<p class="indent">For example, if you know the 1st-level spell shield and have a 1st-level and a 2nd-level spell slot available, you can cast shield using either slot.</p>
+
+										<h5 class="caption">Cleric SPELLCASTING</h5>
+										<table class="class-features">
+											<thead>
+												<tr>
+													<td class="col-5">Level</td>
+													<td class="col-10">Cantrips Known</td>
+													<td class="col-10">Spells Known</td>
+													<td>1st</td>
+													<td>2nd</td>
+													<td>3rd</td>
+													<td>4th</td>
+													<td>5th</td>
+													<td>6th</td>
+													<td>7th</td>
+													<td>8th</td>
+													<td>9th</td>
+												</tr>
+											</thead>
+											<tr>
+												<td> 3rd</td>
+												<td>2</td>
+												<td>10</td>
+												<td>4</td>
+												<td>2</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+											</tr>
+											<tr>
+												<td> 4th</td>
+												<td>3</td>
+												<td>12</td>
+												<td>4</td>
+												<td>3</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+											</tr>
+											<tr>
+												<td> 5th</td>
+												<td>3</td>
+												<td>14</td>
+												<td>4</td>
+												<td>3</td>
+												<td>2</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+											</tr>
+											<tr>
+												<td> 6th</td>
+												<td>3</td>
+												<td>16</td>
+												<td>4</td>
+												<td>3</td>
+												<td>3</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+											</tr>
+											<tr>
+												<td> 7th</td>
+												<td>3</td>
+												<td>18</td>
+												<td>4</td>
+												<td>3</td>
+												<td>3</td>
+												<td>1</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+											</tr>
+											<tr>
+												<td> 8th</td>
+												<td>3</td>
+												<td>20</td>
+												<td>4</td>
+												<td>3</td>
+												<td>3</td>
+												<td>2</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+											</tr>
+											<tr>
+												<td> 9th</td>
+												<td>3</td>
+												<td>22</td>
+												<td>4</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>1</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+											</tr>
+											<tr>
+												<td>10th</td>
+												<td>4</td>
+												<td>24</td>
+												<td>4</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>2</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+											</tr>
+											<tr>
+												<td>11th</td>
+												<td>4</td>
+												<td>26</td>
+												<td>4</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>2</td>
+												<td>1</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+											</tr>
+											<tr>
+												<td>12th</td>
+												<td>4</td>
+												<td>28</td>
+												<td>4</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>2</td>
+												<td>1</td>
+												<td>—</td>
+												<td>—</td>
+												<td>—</td>
+											</tr>
+											<tr>
+												<td>13th</td>
+												<td>4</td>
+												<td>30</td>
+												<td>4</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>—</td>
+												<td>—</td>
+											</tr>
+											<tr>
+												<td>14th</td>
+												<td>4</td>
+												<td>32</td>
+												<td>4</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>—</td>
+												<td>—</td>
+											</tr>
+											<tr>
+												<td>15th</td>
+												<td>4</td>
+												<td>34</td>
+												<td>4</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>1</td>
+												<td>—</td>
+											</tr>
+											<tr>
+												<td>16th</td>
+												<td>4</td>
+												<td>34</td>
+												<td>4</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>1</td>
+												<td>—</td>
+											</tr>
+											<tr>
+												<td>17th</td>
+												<td>4</td>
+												<td>36</td>
+												<td>4</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>1</td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>18th</td>
+												<td>5</td>
+												<td>38</td>
+												<td>4</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>1</td>
+												<td>1</td>
+												<td>1</td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>19th</td>
+												<td>5</td>
+												<td>40</td>
+												<td>4</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+												<td>1</td>
+											</tr>
+											<tr>
+												<td>20th</td>
+												<td>5</td>
+												<td>42</td>
+												<td>4</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>3</td>
+												<td>2</td>
+												<td>2</td>
+												<td>1</td>
+												<td>1</td>
+											</tr>
+										</table>
+									</description>
+									<sheet display="false">
+										<description>You augment your Arcane prowess with the ability to cast more powerful spells.</description>
+									</sheet>
+									<rules>
+										<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+										<stat name="Dragon Rider:spellcasting:slots:1" value="2" level="3" />
+										<stat name="Dragon Rider:spellcasting:slots:1" value="-1" level="4" />
+										<stat name="Dragon Rider:spellcasting:slots:1" value="-1" level="7" />
+										<stat name="Dragon Rider:spellcasting:slots:2" value="2" level="3" />
+										<stat name="Dragon Rider:spellcasting:slots:2" value="1" level="4" />
+										<stat name="Dragon Rider:spellcasting:slots:2" value="-2" level="7" />
+										<stat name="Dragon Rider:spellcasting:slots:2" value="-1" level="10" />
+										<stat name="Dragon Rider:spellcasting:slots:3" value="2" level="5" />
+										<stat name="Dragon Rider:spellcasting:slots:3" value="1" level="6" />
+										<stat name="Dragon Rider:spellcasting:slots:3" value="1" level="13" />
+										<stat name="Dragon Rider:spellcasting:slots:3" value="-2" level="16" />
+										<stat name="Dragon Rider:spellcasting:slots:3" value="-1" level="16" />
+										<stat name="Dragon Rider:spellcasting:slots:4" value="1" level="7" />
+										<stat name="Dragon Rider:spellcasting:slots:4" value="1" level="8" />
+										<stat name="Dragon Rider:spellcasting:slots:4" value="1" level="9" />
+										<stat name="Dragon Rider:spellcasting:slots:4" value="-1" level="17" />
+										<stat name="Dragon Rider:spellcasting:slots:4" value="-1" level="19" />
+										<stat name="Dragon Rider:spellcasting:slots:5" value="1" level="9" />
+										<stat name="Dragon Rider:spellcasting:slots:5" value="1" level="10" />
+										<stat name="Dragon Rider:spellcasting:slots:5" value="1" level="18" />
+										<stat name="Dragon Rider:spellcasting:slots:5" value="-1" level="19" />
+										<stat name="Dragon Rider:spellcasting:slots:6" value="1" level="11" />
+										<stat name="Dragon Rider:spellcasting:slots:6" value="1" level="19" />
+										<stat name="Dragon Rider:spellcasting:slots:7" value="1" level="13" />
+										<stat name="Dragon Rider:spellcasting:slots:7" value="1" level="20" />
+										<stat name="Dragon Rider:spellcasting:slots:8" value="1" level="15" />
+										<stat name="Dragon Rider:spellcasting:slots:9" value="1" level="17" />
+										<select type="Spell" name="Cantrip (Wizard)" supports="Wizard, 0" level="18" number="1" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), 1" level="1" number="6" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="12" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="18" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" number="0" spellcasting="Dragon Rider" />
+									</rules>
+								</element>
 			
 </elements>
 	
