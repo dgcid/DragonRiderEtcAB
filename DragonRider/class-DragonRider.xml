@@ -4,7 +4,7 @@
 		<name>DragonRider</name>
 		<description>The DragonRider class </description>
 		<author url="https://github.com/dgcid">dgcid</author>
-		<update version="0.5.24">
+		<update version="0.5.25">
 			<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/DragonRider/class-DragonRider.xml" />
 		</update>
 	</info>
@@ -163,7 +163,11 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_INTELLIGENCE" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
-			<select type="Proficiency" name="Skill Proficiency (Fighter)" supports="Skill,Fighter" number="1"/>
+			
+			<select type="Proficiency" name="Tool Proficiency (DragonRider)" supports="ID_WOTC_PHB_ITEM_TOOL_CALLIGRAPHERS_SUPPLIES|ID_WOTC_PHB_ITEM_TOOL_ALCHEMISTS_SUPPLIES" number="1" requirements="!ID_RDDT_AA_MULTICLASS_GUNSLINGER"  />
+			<select type="Proficiency" name="Skill Proficiency (Dragon Rider)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" number="1"/>
+
+
 			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_SPELLCASTING_Dragonrider" level="1"/>
 			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonEgg" level="1"/>
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SECONDWIND" level="2"/>
@@ -282,30 +286,30 @@
 			<stat name="Dragon Rider:spellcasting:prepare" value="intelligence:modifier" />
 			<stat name="Dragon Rider:spellcasting:prepare" value="level:Dragon Rider" />
 
-			<select type="Spell" name="Cantrip (Dragon Rider)" supports="$(spellcasting:list), 0" level="1" number="2" spellcasting="Dragon Rider" />
-			<select type="Spell" name="Cantrip (Dragon Rider)" supports="$(spellcasting:list), 0" level="4" number="1" spellcasting="Dragon Rider" />
-			<select type="Spell" name="Cantrip (Dragon Rider)" supports="$(spellcasting:list), 0" level="10" number="1" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Cantrip (Dragon Rider)" supports=" 0" level="1" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Cantrip (Dragon Rider)" supports=" 0" level="4" number="1" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Cantrip (Dragon Rider)" supports=" 0" level="10" number="1" spellcasting="Dragon Rider" />
 
-			<select type="Spell" name="Spellbook (Dragon Rider)" supports="$(spellcasting:list), 1" level="1" number="6" spellcasting="Dragon Rider" />
-			<select type="Spell" name="Spellbook (Dragon Rider)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="2" spellcasting="Dragon Rider" />
-			<select type="Spell" name="Spellbook (Dragon Rider)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="2" spellcasting="Dragon Rider" />
-			<select type="Spell" name="Spellbook (Dragon Rider)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="2" spellcasting="Dragon Rider" />
-			<select type="Spell" name="Spellbook (Dragon Rider)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="2" spellcasting="Dragon Rider" />
-			<select type="Spell" name="Spellbook (Dragon Rider)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" number="2" spellcasting="Dragon Rider" />
-			<select type="Spell" name="Spellbook (Dragon Rider)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="2" spellcasting="Dragon Rider" />
-			<select type="Spell" name="Spellbook (Dragon Rider)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" number="2" spellcasting="Dragon Rider" />
-			<select type="Spell" name="Spellbook (Dragon Rider)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="2" spellcasting="Dragon Rider" />
-			<select type="Spell" name="Spellbook (Dragon Rider)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" number="2" spellcasting="Dragon Rider" />
-			<select type="Spell" name="Spellbook (Dragon Rider)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="2" spellcasting="Dragon Rider" />
-			<select type="Spell" name="Spellbook (Dragon Rider)" supports="$(spellcasting:list), $(spellcasting:slots)" level="12" number="2" spellcasting="Dragon Rider" />
-			<select type="Spell" name="Spellbook (Dragon Rider)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="2" spellcasting="Dragon Rider" />
-			<select type="Spell" name="Spellbook (Dragon Rider)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" number="2" spellcasting="Dragon Rider" />
-			<select type="Spell" name="Spellbook (Dragon Rider)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="2" spellcasting="Dragon Rider" />
-			<select type="Spell" name="Spellbook (Dragon Rider)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" number="2" spellcasting="Dragon Rider" />
-			<select type="Spell" name="Spellbook (Dragon Rider)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="2" spellcasting="Dragon Rider" />
-			<select type="Spell" name="Spellbook (Dragon Rider)" supports="$(spellcasting:list), $(spellcasting:slots)" level="18" number="2" spellcasting="Dragon Rider" />
-			<select type="Spell" name="Spellbook (Dragon Rider)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="2" spellcasting="Dragon Rider" />
-			<select type="Spell" name="Spellbook (Dragon Rider)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" 1" level="1" number="6" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" $(spellcasting:slots)" level="2" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" $(spellcasting:slots)" level="3" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" $(spellcasting:slots)" level="4" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" $(spellcasting:slots)" level="5" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" $(spellcasting:slots)" level="6" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" $(spellcasting:slots)" level="7" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" $(spellcasting:slots)" level="8" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" $(spellcasting:slots)" level="9" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" $(spellcasting:slots)" level="10" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" $(spellcasting:slots)" level="11" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" $(spellcasting:slots)" level="12" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" $(spellcasting:slots)" level="13" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" $(spellcasting:slots)" level="14" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" $(spellcasting:slots)" level="15" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" $(spellcasting:slots)" level="16" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" $(spellcasting:slots)" level="17" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" $(spellcasting:slots)" level="18" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" $(spellcasting:slots)" level="19" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" $(spellcasting:slots)" level="20" number="2" spellcasting="Dragon Rider" />
 		</rules>
 	</element>
 
@@ -1306,26 +1310,26 @@
 			<stat name="Dragon Rider:spellcasting:slots:8" value="1" level="15" />
 			<stat name="Dragon Rider:spellcasting:slots:9" value="1" level="17" />				
 					<select type="Spell" name="Cantrip (Wizard)" supports="Wizard, 0" level="18" number="1" spellcasting="Dragon Rider" />					
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), 1" level="1" number="6" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="12" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="18" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="0" spellcasting="Dragon Rider" />
-					<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports=" 1" level="1" number="6" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="2" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="3" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="4" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="5" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="6" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="7" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="8" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="9" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="10" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="11" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="12" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="13" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="14" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="15" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="16" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="17" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="18" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="19" number="0" spellcasting="Dragon Rider" />
+					<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="20" number="0" spellcasting="Dragon Rider" />
 				</rules>
 			</element>	
 
@@ -1826,26 +1830,26 @@
 										<stat name="Dragon Rider:spellcasting:slots:8" value="1" level="15" />
 										<stat name="Dragon Rider:spellcasting:slots:9" value="1" level="17" />
 										<select type="Spell" name="Cantrip (Wizard)" supports="Wizard, 0" level="18" number="1" spellcasting="Dragon Rider" />
-										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), 1" level="1" number="6" spellcasting="Dragon Rider" />
-										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="2" number="0" spellcasting="Dragon Rider" />
-										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="3" number="0" spellcasting="Dragon Rider" />
-										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="4" number="0" spellcasting="Dragon Rider" />
-										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="5" number="0" spellcasting="Dragon Rider" />
-										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="6" number="0" spellcasting="Dragon Rider" />
-										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="7" number="0" spellcasting="Dragon Rider" />
-										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="8" number="0" spellcasting="Dragon Rider" />
-										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="9" number="0" spellcasting="Dragon Rider" />
-										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="10" number="0" spellcasting="Dragon Rider" />
-										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="11" number="0" spellcasting="Dragon Rider" />
-										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="12" number="0" spellcasting="Dragon Rider" />
-										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="13" number="0" spellcasting="Dragon Rider" />
-										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="14" number="0" spellcasting="Dragon Rider" />
-										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="15" number="0" spellcasting="Dragon Rider" />
-										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="16" number="0" spellcasting="Dragon Rider" />
-										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="17" number="0" spellcasting="Dragon Rider" />
-										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="18" number="0" spellcasting="Dragon Rider" />
-										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="19" number="0" spellcasting="Dragon Rider" />
-										<select type="Spell" name="Spellbook (Wizard)" supports="$(spellcasting:list), $(spellcasting:slots)" level="20" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports=" 1" level="1" number="6" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="2" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="3" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="4" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="5" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="6" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="7" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="8" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="9" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="10" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="11" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="12" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="13" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="14" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="15" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="16" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="17" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="18" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="19" number="0" spellcasting="Dragon Rider" />
+										<select type="Spell" name="Spellbook (Wizard)" supports=" $(spellcasting:slots)" level="20" number="0" spellcasting="Dragon Rider" />
 									</rules>
 								</element>
 			
