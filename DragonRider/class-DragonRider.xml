@@ -4,7 +4,7 @@
 		<name>DragonRider</name>
 		<description>The DragonRider class </description>
 		<author url="https://github.com/dgcid">dgcid</author>
-		<update version="0.5.26">
+		<update version="0.5.27">
 			<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/DragonRider/class-DragonRider.xml" />
 		</update>
 	</info>
@@ -291,7 +291,7 @@
 			<select type="Spell" name="Cantrip (Dragon Rider)" supports=" 0" level="10" number="1" spellcasting="Dragon Rider" />
 
 			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" 1" level="1" number="6" spellcasting="Dragon Rider" />
-			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" $(spellcasting:slots)" level="2" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)"  level="2" number="2" spellcasting="Dragon Rider" />
 			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" $(spellcasting:slots)" level="3" number="2" spellcasting="Dragon Rider" />
 			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" $(spellcasting:slots)" level="4" number="2" spellcasting="Dragon Rider" />
 			<select type="Spell" name="Spellbook (Dragon Rider)" supports=" $(spellcasting:slots)" level="5" number="2" spellcasting="Dragon Rider" />
