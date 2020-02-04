@@ -4,7 +4,7 @@
 		<name>DragonRider</name>
 		<description>The DragonRider class </description>
 		<author url="https://github.com/dgcid">dgcid</author>
-		<update version="0.5.28">
+		<update version="0.5.29">
 			<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/DragonRider/class-DragonRider.xml" />
 		</update>
 	</info>
@@ -237,7 +237,7 @@
 			<select type="Class Feature" name="Improvement Option (Dragon Rider 19)" supports="Improvement Option,Dragon Rider,19" level="19" />
 		</rules>
 	</element>
-	<element name="Spellcasting" type="Class Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_SPELLCASTING_Dragonrider">
+ 	<element name="Spellcasting" type="Class Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_SPELLCASTING_Dragonrider">
 		<description>
 			<p>Once you received the dragon egg you felt a great well of magic awaken in you. Augementing your martial prowess with ability to cast spells. you have a spellbook containing spells that show the first glimmerings of your true power. </p>
 			<h5>CANTRIPS</h5>
@@ -263,7 +263,7 @@
 		<sheet display="false">
 			<description>You can prepare {{Dragon Rider:spellcasting:prepare}} spells from the your spellbook. You use an arcane focus to cast spells.</description>
 		</sheet>
-		<spellcasting name="Dragon Rider" ability="Intelligence" prepare="true">
+<!--		<spellcasting name="Dragon Rider" ability="Intelligence" prepare="true">
 			<list>Wizard</list>
 		</spellcasting>
 		<rules>
@@ -312,7 +312,56 @@
 			<select type="Spell" name="Spellbook (Dragon Rider)"  level="20" number="2" spellcasting="Dragon Rider" />
 		</rules>
 	</element>
+ -->
 
+ <spellcasting name="Dragon Rider" ability="Intelligence" prepare="true">
+			<list known="true">Artificer</list>
+		</spellcasting>
+		<rules>
+			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
+			<!-- <grant type="Grants" id="ID_INTERNAL_GRANTS_RITUAL_CASTER" /> -->
+			<stat name="Dragon Rider:spellcasting:slots:1" value="2" level="1" />
+			<stat name="Dragon Rider:spellcasting:slots:1" value="1" level="3" />
+			<stat name="Dragon Rider:spellcasting:slots:1" value="1" level="5" />
+			<stat name="Dragon Rider:spellcasting:slots:2" value="2" level="5" />
+			<stat name="Dragon Rider:spellcasting:slots:2" value="1" level="7" />
+			<stat name="Dragon Rider:spellcasting:slots:3" value="2" level="9" />
+			<stat name="Dragon Rider:spellcasting:slots:3" value="1" level="11" />
+			<stat name="Dragon Rider:spellcasting:slots:4" value="1" level="13" />
+			<stat name="Dragon Rider:spellcasting:slots:4" value="1" level="15" />
+			<stat name="Dragon Rider:spellcasting:slots:4" value="1" level="17" />
+			<stat name="Dragon Rider:spellcasting:slots:5" value="1" level="17" />
+			<stat name="Dragon Rider:spellcasting:slots:5" value="1" level="19" />
+			<stat name="Dragon Rider:spellcasting:prepare" value="intelligence:modifier" />
+			<stat name="Dragon Rider:spellcasting:prepare" value="level:Dragon Rider" />
+			<select type="Spell" name="Cantrip (Dragon Rider)" supports=" 0" level="1" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Cantrip (Dragon Rider)" supports=" 0" level="4" number="1" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Cantrip (Dragon Rider)" supports=" 0" level="10" number="1" spellcasting="Dragon Rider" />
+
+			<select type="Spell" name="Spellbook (Dragon Rider)"  level="1" number="6" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)"  level="2" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)"  level="3" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)"  level="4" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)"  level="5" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)"  level="6" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)"  level="7" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)"  level="8" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)"  level="9" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)"  level="10" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)"  level="11" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)"  level="12" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)"  level="13" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)"  level="14" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)"  level="15" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)"  level="16" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)"  level="17" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)"  level="18" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)"  level="19" number="2" spellcasting="Dragon Rider" />
+			<select type="Spell" name="Spellbook (Dragon Rider)"  level="20" number="2" spellcasting="Dragon Rider" />
+
+
+		</rules>
+	</element>
 		<element name="Full Casting" type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_FULLCAST_SPELLCASTING">
 		<description>
 			<p>When you reach 3rd level, you augment your Arcane prowess with the ability to cast more powerful spells.</p>
@@ -585,25 +634,26 @@
 		</sheet>
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_FULL" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
-		<stat name="Dragon Rider:spellcasting:slots:1" value="2" level="3" />
-			<stat name="Dragon Rider:spellcasting:slots:1" value="-1" level="4" />
-			<stat name="Dragon Rider:spellcasting:slots:1" value="-1" level="7" />
-			<stat name="Dragon Rider:spellcasting:slots:2" value="2" level="3" />
+			<stat name="Dragon Rider:spellcasting:slots:1" value="1" level="3" />
+			<stat name="Dragon Rider:spellcasting:slots:1" value="-1" level="5" />
 			<stat name="Dragon Rider:spellcasting:slots:2" value="1" level="4" />
-			<stat name="Dragon Rider:spellcasting:slots:2" value="-2" level="7" />
+			<stat name="Dragon Rider:spellcasting:slots:2" value="-2" level="5" />
+			<stat name="Dragon Rider:spellcasting:slots:2" value="-1" level="7" />
 			<stat name="Dragon Rider:spellcasting:slots:2" value="-1" level="10" />
 			<stat name="Dragon Rider:spellcasting:slots:3" value="2" level="5" />
 			<stat name="Dragon Rider:spellcasting:slots:3" value="1" level="6" />
+			<stat name="Dragon Rider:spellcasting:slots:3" value="-2" level="9" />
+			<stat name="Dragon Rider:spellcasting:slots:3" value="-1" level="11" />
 			<stat name="Dragon Rider:spellcasting:slots:3" value="1" level="13" />
-			<stat name="Dragon Rider:spellcasting:slots:3" value="-2" level="16" />
-			<stat name="Dragon Rider:spellcasting:slots:3" value="-1" level="16" />
 			<stat name="Dragon Rider:spellcasting:slots:4" value="1" level="7" />
 			<stat name="Dragon Rider:spellcasting:slots:4" value="1" level="8" />
 			<stat name="Dragon Rider:spellcasting:slots:4" value="1" level="9" />
+			<stat name="Dragon Rider:spellcasting:slots:4" value="-1" level="13" />
+			<stat name="Dragon Rider:spellcasting:slots:4" value="-11" level="15" />
 			<stat name="Dragon Rider:spellcasting:slots:4" value="-1" level="17" />
-			<stat name="Dragon Rider:spellcasting:slots:4" value="-1" level="19" />
 			<stat name="Dragon Rider:spellcasting:slots:5" value="1" level="9" />
 			<stat name="Dragon Rider:spellcasting:slots:5" value="1" level="10" />
+			<stat name="Dragon Rider:spellcasting:slots:5" value="-1" level="17" />
 			<stat name="Dragon Rider:spellcasting:slots:5" value="1" level="18" />
 			<stat name="Dragon Rider:spellcasting:slots:5" value="-1" level="19" />
 			<stat name="Dragon Rider:spellcasting:slots:6" value="1" level="11" />
