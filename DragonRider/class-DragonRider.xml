@@ -4,7 +4,7 @@
 		<name>DragonRider</name>
 		<description>The DragonRider class </description>
 		<author url="https://github.com/dgcid">dgcid</author>
-		<update version="0.5.29">
+		<update version="0.5.30">
 			<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/DragonRider/class-DragonRider.xml" />
 		</update>
 	</info>
@@ -73,58 +73,58 @@
 					<tr><td> 2nd</td><td class="left">Second Wind</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
 				</tr>
 				<tr>
-					<tr><td> 3rd</td><td class="left">Dragon Hatchling, Bond of The Rider,Rider's Archetype Feature</td><td>2</td><td>2</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+					<tr><td> 3rd</td><td class="left">Dragon Hatchling, Bond of The Rider,Rider's Archetype Feature</td><td>2</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
 				</tr>
 				<tr>
 					<tr><td> 4th</td><td class="left">Ability Score Improvement</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>	
 				</tr>
 				<tr>
-					<tr><td> 5th</td><td class="left">Dragon's Blood</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+					<tr><td> 5th</td><td class="left">Dragon's Blood</td><td>3</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
 				</tr>
 				<tr>
-					<tr><td> 6th</td><td class="left">Rider's Archetype Feature</td><td>3</td><td>3</td><td>—</td><td>—</td><td>—</td><td>—</td></tr>
+					<tr><td> 6th</td><td class="left">Rider's Archetype Feature</td><td>3</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
 				</tr>
 				<tr>
-					<tr><td> 7th</td><td class="left">Dragon's Breath Weapon,Dragon Wyrmling</td><td>3</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+					<tr><td> 7th</td><td class="left">Dragon's Breath Weapon,Dragon Wyrmling</td><td>4</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
 				</tr>
 				<tr>
-					<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>3</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+					<tr><td> 8th</td><td class="left">Ability Score Improvement</td><td>3</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
 				</tr>
 				<tr>
-					<tr><td> 9th</td><td class="left">Primal Growth, Rider’s Archetype Feature</td><td>3</td><td>4</td><td>2</td><td>—</td><td>—</td><td>—</td></tr>
+					<tr><td> 9th</td><td class="left">Primal Growth, Rider’s Archetype Feature</td><td>3</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
 				</tr>
 				<tr>
-					<tr><td> 10th</td><td class="left">Ride Dragon</td><td>4</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+					<tr><td> 10th</td><td class="left">Ride Dragon</td><td>4</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
 				</tr>
 				<tr>
-					<tr><td> 11th</td><td class="left">Born to the Saddle,Rider’s Archetype Feature</td><td>4</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+					<tr><td> 11th</td><td class="left">Born to the Saddle,Rider’s Archetype Feature</td><td>4</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
 				</tr>
 				<tr>
-					<tr><td> 12th</td><td class="left">Ability Score Improvement</td><td>4</td><td>4</td><td>3</td><td>—</td><td>—</td><td>—</td></tr>
+					<tr><td> 12th</td><td class="left">Ability Score Improvement</td><td>4</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
 				</tr>
 				<tr>
-					<tr><td> 13th</td><td class="left">Young Dragon</td><td>4</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+					<tr><td> 13th</td><td class="left">Young Dragon</td><td>4</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
 				</tr>
 				<tr>
-					<tr><td> 14th</td><td class="left">Dragon's Longevity</td><td>4</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+					<tr><td> 14th</td><td class="left">Dragon's Longevity</td><td>4</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
 				</tr>
 				<tr>
-					<tr><td> 15th</td><td class="left">Rider’s Archetype feature</td><td>4</td><td>4</td><td>3</td><td>2</td><td>—</td><td>—</td></tr>
+					<tr><td> 15th</td><td class="left">Rider’s Archetype feature</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
 				</tr>
 				<tr>
-					<tr><td> 16th</td><td class="left">Ability Score Improvement</td><td>4</td><td>4</td><td>3</td><td>3</td><td>—</td><td>—</td></tr>
+					<tr><td> 16th</td><td class="left">Ability Score Improvement</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td><td>—</td></tr>
 				</tr>
 				<tr>
-					<tr><td> 17th</td><td class="left">Dragon Heart</td><td>4</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+					<tr><td> 17th</td><td class="left">Dragon Heart</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
 				</tr>
 				<tr>
-					<tr><td> 18th</td><td class="left">Rider’s Archetype feature</td><td>4</td><td>4</td><td>3</td><td>3</td><td>1</td><td>—</td></tr>
+					<tr><td> 18th</td><td class="left">Rider’s Archetype feature</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>1</td></tr>
 				</tr>
 				<tr>
-					<tr><td> 19th</td><td class="left">Ability Score Improvement</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td><td>1</td></tr>
+					<tr><td> 19th</td><td class="left">Ability Score Improvement</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
 				</tr>
 				<tr>
-					<tr><td> 20th</td><td class="left">Adult Dragon</td><td>4</td><td>4</td><td>3</td><td>3</td><td>2</td><td>1</td></tr>
+					<tr><td> 20th</td><td class="left">Adult Dragon</td><td>4</td><td>4</td><td>3</td><td>3</td><td>3</td><td>2</td></tr>
 				</tr>
 			</table>
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_SECONDWIND" />			
@@ -315,7 +315,7 @@
  -->
 
  <spellcasting name="Dragon Rider" ability="Intelligence" prepare="true">
-			<list known="true">Artificer</list>
+			<list>Dragon Rider</list>
 		</spellcasting>
 		<rules>
 			<grant type="Grants" id="ID_INTERNAL_GRANT_MULTICLASS_SPELLCASTING_SLOTS_HALF" requirements="ID_INTERNAL_GRANT_MULTICLASS"/>
@@ -637,6 +637,8 @@
 			<stat name="Dragon Rider:spellcasting:slots:1" value="1" level="3" />
 			<stat name="Dragon Rider:spellcasting:slots:1" value="-1" level="5" />
 			<stat name="Dragon Rider:spellcasting:slots:2" value="1" level="4" />
+			<stat name="Dragon Rider:spellcasting:slots:2" value="2" level="3" />
+			<stat name="Dragon Rider:spellcasting:slots:2" value="1" level="4" />
 			<stat name="Dragon Rider:spellcasting:slots:2" value="-2" level="5" />
 			<stat name="Dragon Rider:spellcasting:slots:2" value="-1" level="7" />
 			<stat name="Dragon Rider:spellcasting:slots:2" value="-1" level="10" />
@@ -649,7 +651,7 @@
 			<stat name="Dragon Rider:spellcasting:slots:4" value="1" level="8" />
 			<stat name="Dragon Rider:spellcasting:slots:4" value="1" level="9" />
 			<stat name="Dragon Rider:spellcasting:slots:4" value="-1" level="13" />
-			<stat name="Dragon Rider:spellcasting:slots:4" value="-11" level="15" />
+			<stat name="Dragon Rider:spellcasting:slots:4" value="-1" level="15" />
 			<stat name="Dragon Rider:spellcasting:slots:4" value="-1" level="17" />
 			<stat name="Dragon Rider:spellcasting:slots:5" value="1" level="9" />
 			<stat name="Dragon Rider:spellcasting:slots:5" value="1" level="10" />
