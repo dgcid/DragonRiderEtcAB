@@ -4,7 +4,7 @@
 		<name>DragonRider</name>
 		<description>The DragonRider class </description>
 		<author url="https://github.com/dgcid">dgcid</author>
-		<update version="0.5.30">
+		<update version="0.5.31">
 			<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/DragonRider/class-DragonRider.xml" />
 		</update>
 	</info>
@@ -646,7 +646,7 @@
 			<stat name="Dragon Rider:spellcasting:slots:3" value="1" level="6" />
 			<stat name="Dragon Rider:spellcasting:slots:3" value="-2" level="9" />
 			<stat name="Dragon Rider:spellcasting:slots:3" value="-1" level="11" />
-			<stat name="Dragon Rider:spellcasting:slots:3" value="1" level="13" />
+			<stat name="Dragon Rider:spellcasting:slots:3" value="-1" level="13" />
 			<stat name="Dragon Rider:spellcasting:slots:4" value="1" level="7" />
 			<stat name="Dragon Rider:spellcasting:slots:4" value="1" level="8" />
 			<stat name="Dragon Rider:spellcasting:slots:4" value="1" level="9" />
@@ -1151,6 +1151,7 @@
 		<description>
 			<p>The archetypal Dragoon focuses on the development of physical abilites based on draconic aspects.Those wo model themselves on this archetpe combine rigorous training with physical excellence to deal devasting blows.</p>
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_EXTRAATTACK" />
+			<div element="ID_WOTC_PHB_CLASS_FEATURE_EXTRAATTACK" />
 			<div element="ID_WOTC_PHB_CLASS_FEATURE_FIGHTINGSTYLE" />
 			<div element="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_SOTD"/>
 			<div element="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_JumpStrike"/>
@@ -1163,7 +1164,7 @@
 			<description>The archetypal Dragoon focuses on the development of physical abilites based on draconic aspects.Those wo model themselves on this archetpe combine rigorous training with physical excellence to deal devasting blows. </description>
 		</sheet>
 		<rules>
-			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" requirements="!ID_MYHB_DR_CLASS_DragonRider"/>
+			<grant type="Proficiency" id="ID_PROFICIENCY_ARMOR_PROFICIENCY_HEAVY_ARMOR" level="3" />
 			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_FEATURE_FIGHTINGSTYLE" level="3"/>
 			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_SOTD" level="3"/>
 			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_JumpStrike" level="3"/>
@@ -1174,6 +1175,7 @@
 			<grant type="Archetype Feature" id="ID_MYHB_DR_ARCHETYPE_DragonRider_DRAGOON_SuperiorDragoon" level="18"/>
 		</rules>
 	</element>
+
 	<element name="Extra Attack" type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_EXTRAATTACK">
 		<description>
 			<p>Beginning at 9th level, you can attack twice, instead of once, whenever you take the Attack action on your turn.</p>
