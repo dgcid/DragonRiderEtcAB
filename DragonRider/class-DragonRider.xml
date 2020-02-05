@@ -4,7 +4,7 @@
 		<name>DragonRider</name>
 		<description>The DragonRider class </description>
 		<author url="https://github.com/dgcid">dgcid</author>
-		<update version="0.6.0">
+		<update version="0.6.1">
 			<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/DragonRider/class-DragonRider.xml" />
 		</update>
 	</info>
@@ -1570,13 +1570,12 @@
 								</element>
 
 						<!-- Magus Archetype -->
-						<element name="Cleric" type="Archetype" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_DragonRider_Magus">
+						<element name="Magus" type="Archetype" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_DragonRider_Magus">
 							<supports>Riders Archetype</supports>
 							<description>
 								<p>The archetypal Magus focuses on the development of Magical abilites based on draconic magic.Those who model themselves on this archetpe combine rigorous Study with Mental excellence to deal devasting spells.  </p>
 								<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_SPELLCASTING_Dragonrider"/>
 								<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_FULLCAST_SPELLCASTING"/>
-								<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_fULLCAST_SPELLCASTING"/>
 								<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_Magus_DLTM"/>
 								<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_Magus_SODM"/>
 								<div element="ID_MYHB_DR_ARCHETYPE_FEATURE_Magus_AncientLanguageCasting"/>
