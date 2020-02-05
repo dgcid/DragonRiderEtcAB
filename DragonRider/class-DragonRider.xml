@@ -4,7 +4,7 @@
 		<name>DragonRider</name>
 		<description>The DragonRider class </description>
 		<author url="https://github.com/dgcid">dgcid</author>
-		<update version="0.5.31">
+		<update version="0.5.32">
 			<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/DragonRider/class-DragonRider.xml" />
 		</update>
 	</info>
@@ -132,14 +132,14 @@
 			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_RiderArchetype" />
 			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_SPELLCASTING_Dragonrider" />
 			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonEgg" />
-			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonHatchling" />
 			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonWyrmling" />
 			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonYoung" />
 			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonAdult" />
+			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonAncient" />
 			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_BondofTheRider" />
 			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DraogonsBlood" />
 			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_BreathWeapon" />
-			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_PrimalGrowth" />
+			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_Frightfulpresence" />
 			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_RideDragon" />
 			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_Borntothesaddle" />
 			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonsLongevity" />
@@ -173,19 +173,19 @@
 			<grant type="Class Feature" id="ID_WOTC_PHB_CLASS_FEATURE_SECONDWIND" level="2"/>
 			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_RiderArchetype" level="3"/>
 			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_BondofTheRider" level="3"/>
-			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonHatchling" level="3"/>
 			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonPartner" level="3"/>
 			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_ABILITYSCOREIMPROVEMENT_Dragonrider" level="4"/>
 			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DraogonsBlood" level="5"/>
 			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_BreathWeapon" level="7"/>
-			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonWyrmling" level="7"/>
-			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_PrimalGrowth" level="9"/>
-			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_RideDragon" level="10"/>
-			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_Borntothesaddle" level="11"/>
-			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonYoung" level="13"/>
+			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonWyrmling" level="3"/>
+			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_Frightfulpresence" level="13"/>
+			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_RideDragon" level="9"/>
+			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_Borntothesaddle" level="10"/>
+			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonYoung" level="7"/>
 			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonsLongevity" level="14"/>
 			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonHeart" level="17"/>
-			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonAdult" level="20"/>
+			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonAdult" level="15"/>
+			<grant type="Class Feature" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonAncient" level="20"/>
 
 
 		</rules>
@@ -1002,30 +1002,17 @@
 			<select type="Class Feature" name="Breath Weapon" supports="Breath Weapon" level="7"/>
 		</rules>
 	</element>
-	
-	<element name="Primal Growth" type="Class Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_PrimalGrowth">
-		<description>
-			<h5 class="caption">Primal Growth</h5>
-			<p>Due to the connection you share with your dragon starting at 9th level, The Dragon Wyrmling is considered large size in the case of Mounting and Mounted Combat.  </p>
-		</description>
-		<sheet display="true">
-			<description>Due to the connection you share with your dragon, The Dragon Wyrmling is considered large size in the case of Mounting and Mounted Combat.</description>
-		</sheet>
-		<rules>
-			<select type="Class Feature" name="Primal Growth" supports="Primal Growth" level="9"/>
-		</rules>
-	</element>
 
 	<element name="Ride Dragon " type="Class Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_RideDragon">
 		<description>
 			<h5 class="caption">Ride Dragon</h5>
-			<p>At 10th level once dragon grows into a wyrmling. The rider may mount the wyrmling like a mount and perform mounted combat with the dragon. .</p>
+			<p>At 9th level You gain the benefit of the Mounted Combatant feat.  </p>
 		</description>
 		<sheet display="true">
-			<description>Once dragon grows into a wyrmling. The rider may mount the wyrmling like a mount and perform mounted combat with the dragon.</description>
+			<description>You gain the benefit of the Mounted Combatant feat. </description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Ride Dragon  " supports="Ride Dragon  " level="10"/>
+			<select type="Class Feature" name="Ride Dragon  " supports="Ride Dragon  " level="9"/>
 		</rules>
 	</element>
 
@@ -1038,7 +1025,20 @@
 			<description>your mastery as a rider becomes apparent. You have advantage on saving throws made to avoid falling off your mount. If you fall off your mount and descend no more than 10 feet, you can land on your feet if you’re not incapacitated. Finally, mounting or dismounting a creature costs you only 5 feet of movement, rather than half your speed.</description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Born to the Saddle" supports="Born to the Saddle" level="11"/>
+			<select type="Class Feature" name="Born to the Saddle" supports="Born to the Saddle" level="10"/>
+		</rules>
+	</element>
+
+	<element name="Frightful Presence" type="Class Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_Frightfulpresence">
+		<description>
+			<h5 class="caption">Born to the Saddle</h5>
+			<p>Starting At 13th level, as an action, choose one creature that is within 30 feet of you and aware of you must succeed on a Wisdom saving throw equal to 8 + your Charisma modifier + your proficiency bonus or become frightened of you for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to your frightful presence for the next 24 hours. You can use your frightful presence once per short rest. </p>
+		</description>
+		<sheet display="true">
+			<description>As an action, choose one creature that is within 30 feet of you and is aware of you, must succeed on a Wisdom saving throw equal to 8 + your Charisma modifier + your proficiency bonus or become frightened of you for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success. If a creature's saving throw is successful or the effect ends for it, the creature is immune to your frightful presence for the next 24 hours. You can use your frightful presence once per short rest. </description>
+		</sheet>
+		<rules>
+			<select type="Class Feature" name="Born to the Saddle" supports="Born to the Saddle" level="10"/>
 		</rules>
 	</element>
 
@@ -1082,22 +1082,6 @@
 			<select type="Class Feature" name="Dragon Partner" supports="Dragon Partner" level="3"/>
 		</rules>
 	</element>
-	
-	<element name="Dragon Hatchling" type="Class Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonHatchling">
-		<supports>Dragon Partner, Dragon Rider</supports>
-		<description>
-			<h5 class="caption">Dragon hatchling</h5>
-			<p>At 3rd level, your dragon egg hatches into a dragon hatchling with the following stat block. Although the it will try to stay by your side, the DM controls the actions of the dragon hatchling; However, you can influence these actions with a successful Handle Animal check. </p>
-			<p class="indent">See Dragon Riders of Abeir for Stat Block. </p>
-		</description>
-		<sheet>
-			<description>your dragon egg hatches into a dragon hatchling. Although the it will try to stay by your side, the DM controls the actions of the dragon hatchling; However, you can influence these actions with a successful Handle Animal check.</description>
-		</sheet>
-			<rules>
-			<!--<select type="Class Feature" name="Dragon Hatchling" supports="Dragon Partner" level="3"/> -->
-		</rules>
-	</element>
-	
 	<element name="Dragon Wyrmling" type="Class Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonWyrmling">
 		<supports>Dragon Partner, Dragon Rider</supports>
 		<description>
@@ -1143,6 +1127,22 @@
 			<!-- <select type="Class Feature" name="Adult Dragon" supports="Dragon Partner" level="20"/> -->
 		</rules>
 	</element>
+	
+	<element name="Ancient Dragon" type="Class Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonAncient">
+		<supports>Dragon Partner, Dragon Rider</supports>
+		<description>
+			<h5 class="caption">Dragon hatchling</h5>
+			<p>At 20th level, the Adult Dragon has matured into a 'Ancient Dragon', as described in the Monster Manual; use these stat blocks to replace the Adult dragon from the Adult dragon class feature. </p>
+			<p class="indent">The type of Adult dragon must remain the same.  The Dragon will act on its own initiative.  </p>
+		</description>
+		<sheet>
+			<description> the Adult Dragon has matured into a 'Ancient Dragon', as described in the Monster Manual; use these stat blocks to replace the Adult dragon from the Adult dragon class feature. The type of Adult dragon must remain the same.  The Dragon will act on its own initiative.  </description>
+		</sheet>
+			<rules>
+			<!--<select type="Class Feature" name="Dragon Hatchling" supports="Dragon Partner" level="3"/> -->
+		</rules>
+	</element>
+	
 
 
 	<!-- Dragoon Archetype -->
