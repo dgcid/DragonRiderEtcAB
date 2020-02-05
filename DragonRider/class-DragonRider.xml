@@ -4,7 +4,7 @@
 		<name>DragonRider</name>
 		<description>The DragonRider class </description>
 		<author url="https://github.com/dgcid">dgcid</author>
-		<update version="0.6.2">
+		<update version="0.6.4">
 			<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/DragonRider/class-DragonRider.xml" />
 		</update>
 	</info>
@@ -164,7 +164,7 @@
 			<grant type="Proficiency" id="ID_PROFICIENCY_SAVINGTHROW_CONSTITUTION" />
 			<grant type="Proficiency" id="ID_PROFICIENCY_SKILL_ANIMALHANDLING" />
 			
-			<select type="Proficiency" name="Tool Proficiency (DragonRider)" supports="ID_WOTC_PHB_ITEM_TOOL_CALLIGRAPHERS_SUPPLIES|ID_WOTC_PHB_ITEM_TOOL_ALCHEMISTS_SUPPLIES" number="1" requirements="!ID_RDDT_AA_MULTICLASS_GUNSLINGER"  />
+			<select type="Proficiency" name="Tool Proficiency (Dragon Rider)" supports="ID_WOTC_PHB_ITEM_TOOL_CALLIGRAPHERS_SUPPLIES|ID_WOTC_PHB_ITEM_TOOL_ALCHEMISTS_SUPPLIES" number="1" requirements="!ID_RDDT_AA_MULTICLASS_GUNSLINGER"  />
 			<select type="Proficiency" name="Skill Proficiency (Dragon Rider)" supports="ID_PROFICIENCY_SKILL_ACROBATICS|ID_PROFICIENCY_SKILL_ATHLETICS|ID_PROFICIENCY_SKILL_HISTORY|ID_PROFICIENCY_SKILL_INSIGHT|ID_PROFICIENCY_SKILL_INTIMIDATION|ID_PROFICIENCY_SKILL_PERCEPTION|ID_PROFICIENCY_SKILL_SURVIVAL" number="1"/>
 
 
@@ -358,9 +358,8 @@
 			<select type="Spell" name="Spellbook (Dragon Rider)"  level="18" number="2" spellcasting="Dragon Rider" />
 			<select type="Spell" name="Spellbook (Dragon Rider)"  level="19" number="2" spellcasting="Dragon Rider" />
 			<select type="Spell" name="Spellbook (Dragon Rider)"  level="20" number="2" spellcasting="Dragon Rider" />
-
-
 		</rules>
+
 	</element>
 		<element name="Full Casting" type="Archetype Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_ARCHETYPE_FEATURE_FULLCAST_SPELLCASTING">
 		<description>
@@ -711,14 +710,14 @@
 			</sheet>
 			<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_PRODUCE_FLAME" />
-			<select type="Companion" name="Red Dragon Egg" supports="Steel Defender" default="ID_MYHB_DR_COMPANION_Dragon_RED_Egg" /> 
+			<select type="Companion" name="Red Dragon Egg" supports="Dragon Egg" default="ID_MYHB_DR_COMPANION_Dragon_EGG" /> 
 			</rules>
 		</element>
 
-	 	<element name="Red Dragon Egg" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_RED_Egg">
-		<supports>Steel Defender</supports>
+	 	<element name="Dragon Egg" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_EGG">
+		<supports>Dragon egg</supports>
 		<description>
-			<p>A dragon egg that imbues the power of Red dragons. Altering your elemental damage to Fire</p>
+			<p>A dragon egg that imbues the power of dragons.</p>
 		</description>
 		<setters>
 			<set name="strength">1</set>
@@ -750,100 +749,6 @@
 		</rules>
 	</element> 
 	
-	 	<!-- 	<element name="Red Dragon Egg" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_RED_Egg">
-		<supports>Steel Defender</supports>
-		<description>
-			<p>A dragon egg that imbues the power of Red dragons. Altering your elemental damage to Fire</p>
-		</description>
-		<setters>
-			<set name="strength">1</set>
-			<set name="dexterity">10</set>
-			<set name="constitution">10</set>
-			<set name="intelligence">2</set>
-			<set name="wisdom">2</set>
-			<set name="charisma">2</set>
-			<set name="ac">20 (natural armor)</set>
-			<set name="hp">10</set>
-			<set name="speed">0 ft.</set>
-			<set name="immunities"></set>
-			<set name="conditionImmunities"></set>			
-		
-			<set name="saves"></set>
-			<set name="skills"></set>
-			<set name="senses"></set>
-			<set name="languages"></set>
-			<set name="type">Dragon</set>
-			<set name="size">Small</set>
-			<set name="alignment">neutral</set>
-			
-			<set name="challenge">1</set>
-			<set name="traits">ID_WOTC_ERLW_COMPANION_TRAIT_STEEL_DEFENDER_SAVING_THROWS,ID_WOTC_ERLW_COMPANION_TRAIT_STEEL_DEFENDER_MIGHT_OF_THE_MASTER,ID_WOTC_ERLW_COMPANION_TRAIT_STEEL_DEFENDER_VIGILANT</set>
-			<set name="actions">ID_WOTC_ERLW_COMPANION_ACTION_STEEL_DEFENDER_FORCE_EMPOWERED_REND,ID_WOTC_ERLW_COMPANION_ACTION_STEEL_DEFENDER_REPAIR</set>
-			<set name="reactions">ID_WOTC_ERLW_COMPANION_REACTION_STEEL_DEFENDER_DEFLECT_ATTACK</set>
-		</setters>
-		<rules>
-			<stat name="companion:ac" value="15" bonus="base" />
-			<stat name="companion:hp:max" value="companion:constitution:modifier" />
-			<stat name="companion:hp:max" value="intelligence:modifier" />
-			<stat name="companion:hp:max" value="level:artificer" />
-			<stat name="companion:hp:max" value="level:artificer" />
-			<stat name="companion:hp:max" value="level:artificer" />
-			<stat name="companion:hp:max" value="level:artificer" />
-			<stat name="companion:hp:max" value="level:artificer" />
-			<stat name="companion:speed" value="40" bonus="base" />			
-			<stat name="companion:athletics:proficiency" value="companion:proficiency" bonus="base" />
-			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
-		</rules>
-	</element>
-	<element name="Saving Throws" type="Companion Trait" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_COMPANION_TRAIT_STEEL_DEFENDER_SAVING_THROWS">
-		<description>
-			<p>The steel defender has proficiency with Dexterity and Constitution saving throws.</p>
-		</description>
-		<sheet>
-			<description>The steel defender has proficiency with Dexterity (+3) and Constitution (+4) saving throws.</description>
-		</sheet>
-	</element>
-	<element name="Might of the Master" type="Companion Trait" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_COMPANION_TRAIT_STEEL_DEFENDER_MIGHT_OF_THE_MASTER">
-		<description>
-			<p>The following numbers increase by 1 when your proficiency bonus increases by 1: the defender’s skill and saving throw bonuses (above), the bonuses to hit and damage of its rend attack, and the number of hit points restored by its Repair action (below).</p>
-		</description>
-		<sheet>
-			<description>The following numbers increase by 1 when your proficiency bonus increases by 1: the defender’s skill and saving throw bonuses (above), the bonuses to hit and damage of its rend attack, and the number of hit points restored by its Repair action.</description>
-		</sheet>
-	</element>
-	<element name="Vigilant" type="Companion Trait" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_COMPANION_TRAIT_STEEL_DEFENDER_VIGILANT">
-		<description>
-			<p>The defender can’t be surprised.</p>
-		</description>
-		<sheet>
-			<description>The defender can’t be surprised.</description>
-		</sheet>
-	</element>
-	<element name="Force-Empowered Rend" type="Companion Action" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_COMPANION_ACTION_STEEL_DEFENDER_FORCE_EMPOWERED_REND">
-		<description>
-			<p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target you can see. Hit: 1d8 + 2 force damage.</p>
-		</description>
-		<sheet>
-			<description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target you can see. Hit: 1d8 + 2 force damage.</description>
-		</sheet>
-	</element>
-	<element name="Repair" type="Companion Action" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_COMPANION_ACTION_STEEL_DEFENDER_REPAIR">
-		<description>
-			<p>The magical mechanisms inside the defender restore 2d8 + 2 hit points to itself or to one construct or object within 5 feet of it.</p>
-		</description>
-		<sheet usage="3/Day">
-			<description>The magical mechanisms inside the defender restore 2d8 + 2 hit points to itself or to one construct or object within 5 feet of it.</description>
-		</sheet>
-	</element>
-	<element name="Deflect Attack" type="Companion Reaction" source="Eberron: Rising from the Last War" id="ID_WOTC_ERLW_COMPANION_REACTION_STEEL_DEFENDER_DEFLECT_ATTACK">
-		<description>
-			<p>The defender imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it, provided the attack roll is against a creature other than the defender.</p>
-		</description>
-		<sheet>
-			<description>The defender imposes disadvantage on the attack roll of one creature it can see that is within 5 feet of it, provided the attack roll is against a creature other than the defender.</description>
-		</sheet>
-	</element>  
-	 -->
 		
 		<element name="Blue Dragon Egg" type="Class Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_CLASS_FEATURE_BLUE_DRAGON_EGG">
 			<supports>Dragon Egg, Dragon Rider</supports>
@@ -855,6 +760,7 @@
 			</sheet>
 			<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_SHOCKING_GRASP" />
+			<select type="Companion" name="Blue Dragon Egg" supports="Dragon Egg" default="ID_MYHB_DR_COMPANION_Dragon_EGG" /> 
 			</rules>
 		</element>
 			
@@ -868,6 +774,7 @@
 			</sheet>
 			<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_RAY_OF_FROST" />
+			<select type="Companion" name="White Dragon Egg" supports="Dragon Egg" default="ID_MYHB_DR_COMPANION_Dragon_EGG" /> 
 			</rules>
 		</element>
 		
@@ -881,6 +788,7 @@
 			</sheet>
 			<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_POISON_SPRAY" />
+			<select type="Companion" name="Green Dragon Egg" supports="Dragon Egg" default="ID_MYHB_DR_COMPANION_Dragon_EGG" /> 
 			</rules>
 		</element>
 	
@@ -894,6 +802,7 @@
 			</sheet>
 			<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_ACID_SPLASH" />
+			<select type="Companion" name="Black Dragon Egg" supports="Dragon Egg" default="ID_MYHB_DR_COMPANION_Dragon_EGG" /> 
 			</rules>
 		</element>
 		
@@ -907,6 +816,7 @@
 			</sheet>
 			<rules>
 			<grant type="Spell" id="ID_XGTE_SPELL_PRIMAL_SAVAGERY" />
+			<select type="Companion" name="Copper Dragon Egg" supports="Dragon Egg" default="ID_MYHB_DR_COMPANION_Dragon_EGG" /> 
 			</rules>
 		</element>
 		
@@ -920,6 +830,7 @@
 			</sheet>
 			<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_FIRE_BOLT" />
+			<select type="Companion" name="Gold Dragon Egg" supports="Dragon Egg" default="ID_MYHB_DR_COMPANION_Dragon_EGG" /> 
 			</rules>
 		</element>
 		
@@ -933,6 +844,7 @@
 			</sheet>
 			<rules>
 			<grant type="Spell" id="ID_SCAG_SPELL_LIGHTNING_LURE" />
+			<select type="Companion" name="Bronze Dragon Egg" supports="Dragon Egg" default="ID_MYHB_DR_COMPANION_Dragon_EGG" /> 
 			</rules>
 		</element>
 		
@@ -946,6 +858,7 @@
 			</sheet>
 			<rules>
 			<grant type="Spell" id="ID_XGTE_SPELL_CREATE_BONFIRE" />
+			<select type="Companion" name="Brass Dragon Egg" supports="Dragon Egg" default="ID_MYHB_DR_COMPANION_Dragon_EGG" /> 
 			</rules>
 		</element>
 		
@@ -959,6 +872,7 @@
 			</sheet>
 			<rules>
 			<grant type="Spell" id="ID_XGTE_SPELL_FROSTBITE" />
+			<select type="Companion" name="Silver Dragon Egg" supports="Dragon Egg" default="ID_MYHB_DR_COMPANION_Dragon_EGG" /> 
 			</rules>
 		</element>
 		
@@ -972,6 +886,7 @@
 			</sheet>
 			<rules>
 			<grant type="Spell" id="ID_SCAG_SPELL_SWORD_BURST" />
+			<select type="Companion" name="Amethyst Dragon Egg" supports="Dragon Egg" default="ID_MYHB_DR_COMPANION_Dragon_EGG" /> 
 			</rules>
 		</element>
 		
@@ -985,6 +900,7 @@
 			</sheet>
 			<rules>
 			<grant type="Spell" id="ID_XGTE_SPELL_GUST" />
+			<select type="Companion" name="Emerald Dragon Egg" supports="Dragon Egg" default="ID_MYHB_DR_COMPANION_Dragon_EGG" /> 
 			</rules>
 		</element>
 		
@@ -998,6 +914,7 @@
 			</sheet>
 			<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_VICIOUS_MOCKERY" />
+			<select type="Companion" name="Sapphire Dragon Egg" supports="Dragon Egg" default="ID_MYHB_DR_COMPANION_Dragon_EGG" /> 
 			</rules>
 		</element>
 		
@@ -1011,6 +928,7 @@
 			</sheet>
 			<rules>
 			<grant type="Spell" id="ID_XGTE_SPELL_SHAPE_WATER" />
+			<select type="Companion" name="Topaz Dragon Egg" supports="Dragon Egg" default="ID_MYHB_DR_COMPANION_Dragon_EGG" /> 
 			</rules>
 		</element>
 		
@@ -1024,6 +942,7 @@
 			</sheet>
 			<rules>
 			<grant type="Spell" id="ID_XGTE_SPELL_SHAPE_WATER" />
+			<select type="Companion" name="Crystal Dragon Egg" supports="Dragon Egg" default="ID_MYHB_DR_COMPANION_Dragon_EGG" /> 
 			</rules>
 		</element>
 		
@@ -1037,6 +956,7 @@
 			</sheet>
 			<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_CHILL_TOUCH" />
+			<select type="Companion" name="Obsidian Dragon Egg" supports="Dragon Egg" default="ID_MYHB_DR_COMPANION_Dragon_EGG" /> 
 			</rules>
 		</element>
 		
@@ -1050,6 +970,7 @@
 			</sheet>
 			<rules>
 			<grant type="Spell" id="ID_XGTE_SPELL_THUNDERCLAP" />
+			<select type="Companion" name="Adamantine Dragon Egg" supports="Dragon Egg" default="ID_MYHB_DR_COMPANION_Dragon_EGG" /> 
 			</rules>
 		</element>
 		
@@ -1063,6 +984,7 @@
 			</sheet>
 			<rules>
 			<grant type="Spell" id="ID_XGTE_SPELL_INFESTATION" />
+			<select type="Companion" name="Fang Dragon Egg" supports="Dragon Egg" default="ID_MYHB_DR_COMPANION_Dragon_EGG" /> 
 			</rules>
 		</element>
 		
@@ -1076,6 +998,7 @@
 			</sheet>
 			<rules>
 			<grant type="Spell" id="ID_XGTE_SPELL_WORD_OF_RADIANCE" />
+			<select type="Companion" name="Radiant Dragon Egg" supports="Dragon Egg" default="ID_MYHB_DR_COMPANION_Dragon_EGG" /> 
 			</rules>
 		</element>
 		
@@ -1089,6 +1012,7 @@
 			</sheet>
 			<rules>
 			<grant type="Spell" id="ID_XGTE_SPELL_WORD_OF_RADIANCE" />
+			<select type="Companion" name="Steel Dragon Egg" supports="Dragon Egg" default="ID_MYHB_DR_COMPANION_Dragon_EGG" /> 
 			</rules>
 		</element>
 
@@ -1216,10 +1140,10 @@
 		<supports>Dragon Partner, Dragon Rider</supports>
 		<description>
 			<h5 class="caption">Dragon Wyrmling</h5>
-			<p>At 7th level, the hatchling has matured into a 'Dragon Wyrmling', as described in the Monster Manual.</p>
+			<p>At 3rd level, Egg has Hatched into a 'Dragon Wyrmling', as described in the Monster Manual.</p>
 			<p class="indent">The dragon wyrmling is now a companion that accompanies you on your adventures and is trained to fight alongside you. The type of wyrming corresponds to the chosen dragon egg. Add your proficiency bonus to the wyrmling’s AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. Its hit point maximum equals the hit point number in its stat block or four times your Dragon Rider Level level, whichever is higher. Like any creature, it can spend Hit Dice during a short rest to regain hit points. </p>
-			<p class="indent">The wyrmling obeys your commands as best as it can On your turn, you can verbally command the wyrmling where to move (no action required by you). You can use your bonus action to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action.</p>
-			<p class="indent">If you are incapacitated or absent, the wyrmling acts on its own, focusing on protecting you and itself. The wyrmling never requires your command to use its reaction, such as when making an opportunity attack. </p>
+			<p class="indent">The wyrmling obeys your commands as best as it can On your turn, you can verbally command the wyrmling where to move (no action required by you). You can use your action to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action.</p>
+			<p class="indent">If you have the extra attack feature you can you your first attack to command the wyrmling.If you are incapacitated or absent, the wyrmling acts on its own, focusing on protecting you and itself. The wyrmling never requires your command to use its reaction, such as when making an opportunity attack. </p>
 		</description>
 		<sheet action="Bonus Action" usage="Unlimited"> 
 			<description>the hatchling has matured into a 'Dragon Wyrmling', as described in the Monster Manual. The wyrmling obeys your commands as best as it can On your turn, you can verbally command the wyrmling where to move (no action required by you). You can use your bonus action to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action.</description>
@@ -1229,6 +1153,743 @@
 		</rules>
 	</element>
 	
+ 	<element name="Red Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_RED">
+		<supports>Dragon Partner</supports>
+		<description>
+			<p>A Red Dragon Wyrmling Companion.</p>
+		</description>
+		<setters>
+			<set name="strength">19</set>
+			<set name="dexterity">10</set>
+			<set name="constitution">17</set>
+			<set name="intelligence">12</set>
+			<set name="wisdom">11</set>
+			<set name="charisma">15</set>
+			<set name="ac">17 (natural armor)</set>
+			<set name="hp">equal the Wyrmling’s Constitution modifier + your Intelligence modifier + five times your level in this class</set>
+			<set name="speed">30 ft., Climb 30ft., Fly 60ft.</set>
+			<set name="immunities">fire</set>
+			<set name="conditionImmunities"></set>			
+		
+			<set name="saves">Dex +2, Con +5, Wis +2, Cha +4</set>
+			<set name="skills">Perception +4, Stealth +2</set>
+			<set name="senses">Blindsight 10ft. darkvision 60ft. Passive Perception 14</set>
+			<set name="languages">Draconic</set>
+			<set name="type">Dragon</set>
+			<set name="size">Medium</set>
+			<set name="alignment">Chaotic Evil</set>
+			<set name="challenge">4</set>
+			<set name="traits">ID_MYHB_DR_COMPANION_TRAIT_DRAGON_WYRMLING_RED_SAVING_THROWS</set>
+			<set name="actions">ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_RED_FORCE_BITE,ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_RED_FIRE_BREATH</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="17" bonus="base" />
+			<stat name="companion:hp:max" value="companion:constitution:modifier" />
+			<stat name="companion:hp:max" value="intelligence:modifier" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:speed" value="30" bonus="base" />			
+			<stat name="companion:Stealth:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Saving Throws" type="Companion Trait" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_TRAIT_DRAGON_WYRMLING_RED_SAVING_THROWS">
+		<description>
+			<p>The Red Dragon Wyrmling has proficiency with Dexterity, Constitution, Wisdom, and Charisma saving throws.</p>
+		</description>
+		<sheet>
+			<description>The Red Dragon Wyrmling has proficiency with Dexterity (+2),Constitution (+5),Wisdom (+2), and Charisma (+4) saving throws.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_RED_FORCE_BITE">
+		<description>
+			<p>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) piercing damage plus 3 (1d6) fire damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) piercing damage plus 3 (1d6) fire damage.</description>
+		</sheet>
+	</element>
+	<element name="Fire Breath (Recharge 5–6)" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_RED_FIRE_BREATH">
+		<description>
+			<p>The dragon exhales fire in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 24 (7d6) fire damage on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<sheet usage="Recharges on a 5 or 6 roll on a d6">
+			<description>The dragon exhales fire in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 24 (7d6) fire damage on a failed save, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+
+	<element name="Blue Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_BLUE">
+		<supports>Dragon Partner</supports>
+		<description>
+			<p>A Blue Dragon Wyrmling Companion.</p>
+		</description>
+		<setters>
+			<set name="strength">17</set>
+			<set name="dexterity">10</set>
+			<set name="constitution">15</set>
+			<set name="intelligence">12</set>
+			<set name="wisdom">11</set>
+			<set name="charisma">15</set>
+			<set name="ac">17 (natural armor)</set>
+			<set name="hp">equal the Wyrmling’s Constitution modifier + your Intelligence modifier + five times your level in this class</set>
+			<set name="speed">30 ft., burrow 15ft., Fly 60ft.</set>
+			<set name="immunities">lightning</set>
+			<set name="conditionImmunities"></set>			
+		
+			<set name="saves">Dex +2, Con +4, Wis +2, Cha +4</set>
+			<set name="skills">Perception +4, Stealth +2</set>
+			<set name="senses">Blindsight 10ft. darkvision 60ft. Passive Perception 14</set>
+			<set name="languages">Draconic</set>
+			<set name="type">Dragon</set>
+			<set name="size">Medium</set>
+			<set name="alignment">Lawful Evil</set>
+			<set name="challenge">3</set>
+			<set name="traits">ID_MYHB_DR_COMPANION_TRAIT_DRAGON_WYRMLING_BLUE_SAVING_THROWS</set>
+			<set name="actions">ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_BLUE_FORCE_BITE,ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_BLUE_LIGHTNING_BREATH</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="17" bonus="base" />
+			<stat name="companion:hp:max" value="companion:constitution:modifier" />
+			<stat name="companion:hp:max" value="intelligence:modifier" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:speed" value="30" bonus="base" />			
+			<stat name="companion:Stealth:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Saving Throws" type="Companion Trait" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_TRAIT_DRAGON_WYRMLING_BLUE_SAVING_THROWS">
+		<description>
+			<p>The Blue Dragon Wyrmling has proficiency with Dexterity, Constitution, Wisdom, and Charisma saving throws.</p>
+		</description>
+		<sheet>
+			<description>The Blue Dragon Wyrmling has proficiency with Dexterity (+2),Constitution (+4),Wisdom (+2), and Charisma (+4) saving throws.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_BLUE_FORCE_BITE">
+		<description>
+			<p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage plus 3 (1d6) lightning damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage plus 3 (1d6) lightning damage.</description>
+		</sheet>
+	</element>
+	<element name="lightning Breath (Recharge 5–6)" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_BLUE_LIGHTNING_BREATH">
+		<description>
+			<p> The dragon exhales lightning in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 12 Dexterity saving throw, taking 22 (4d10) lightning damage on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<sheet usage="Recharges on a 5 or 6 roll on a d6">
+			<description> The dragon exhales lightning in a 30-foot line that is 5 feet wide. Each creature in that line must make a DC 12 Dexterity saving throw, taking 22 (4d10) lightning damage on a failed save, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+
+	
+	<element name="White Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_WHITE">
+		<supports>Dragon Partner</supports>
+		<description>
+			<p>A White Dragon Wyrmling Companion.</p>
+		</description>
+		<setters>
+			<set name="strength">14</set>
+			<set name="dexterity">10</set>
+			<set name="constitution">14</set>
+			<set name="intelligence">5</set>
+			<set name="wisdom">10</set>
+			<set name="charisma">11</set>
+			<set name="ac">16 (natural armor)</set>
+			<set name="hp">equal the Wyrmling’s Constitution modifier + your Intelligence modifier + five times your level in this class</set>
+			<set name="speed">30 ft., burrow 15ft., Fly 60ft., Swim 30ft.</set>
+			<set name="immunities">cold</set>
+			<set name="conditionImmunities"></set>			
+		
+			<set name="saves">Dex +2, Con +4, Wis +2, Cha +2</set>
+			<set name="skills">Perception +4, Stealth +2</set>
+			<set name="senses">Blindsight 10ft. darkvision 60ft. Passive Perception 14</set>
+			<set name="languages">Draconic</set>
+			<set name="type">Dragon</set>
+			<set name="size">Medium</set>
+			<set name="alignment">Chaotic Evil</set>
+			<set name="challenge">2</set>
+			<set name="traits">ID_MYHB_DR_COMPANION_TRAIT_DRAGON_WYRMLING_WHITE_SAVING_THROWS</set>
+			<set name="actions">ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_WHITE_FORCE_BITE,ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_WHITE_COLD_BREATH</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="16" bonus="base" />
+			<stat name="companion:hp:max" value="companion:constitution:modifier" />
+			<stat name="companion:hp:max" value="intelligence:modifier" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:speed" value="30" bonus="base" />			
+			<stat name="companion:Stealth:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Saving Throws" type="Companion Trait" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_TRAIT_DRAGON_WYRMLING_WHITE_SAVING_THROWS">
+		<description>
+			<p>The White Dragon Wyrmling has proficiency with Dexterity, Constitution, Wisdom, and Charisma saving throws.</p>
+		</description>
+		<sheet>
+			<description>The White Dragon Wyrmling has proficiency with Dexterity (+2),Constitution (+4),Wisdom (+2), and Charisma (+2) saving throws.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_WHITE_FORCE_BITE">
+		<description>
+			<p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage plus 2 (1d4) cold damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage plus 2 (1d4) cold damage.</description>
+		</sheet>
+	</element>
+	<element name="Cold Breath (Recharge 5–6)" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_WHITE_COLD_BREATH">
+		<description>
+			<p> The dragon exhales an icy blast of hail in a 15-foot cone. Each creature in that area must make a DC 12 Constitution saving throw, taking 22 (5d8) cold damage on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<sheet usage="Recharges on a 5 or 6 roll on a d6">
+			<description> The dragon exhales an icy blast of hail in a 15-foot cone. Each creature in that area must make a DC 12 Constitution saving throw, taking 22 (5d8) cold damage on a failed save, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+
+	<element name="Green Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_GREEN">
+		<supports>Dragon Partner</supports>
+		<description>
+			<p>A Green Dragon Wyrmling Companion.</p>
+		</description>
+		<setters>
+			<set name="strength">14</set>
+			<set name="dexterity">12</set>
+			<set name="constitution">13</set>
+			<set name="intelligence">14</set>
+			<set name="wisdom">11</set>
+			<set name="charisma">13</set>
+			<set name="ac">17 (natural armor)</set>
+			<set name="hp">equal the Wyrmling’s Constitution modifier + your Intelligence modifier + five times your level in this class</set>
+			<set name="speed">30 ft., Fly 60ft., Swim 30ft.</set>
+			<set name="immunities">poison</set>
+			<set name="conditionImmunities">poisoned</set>			
+		
+			<set name="saves">Dex +3, Con +3, Wis +2, Cha +3</set>
+			<set name="skills">Perception +4, Stealth +3</set>
+			<set name="senses">Blindsight 10ft. darkvision 60ft. Passive Perception 14</set>
+			<set name="languages">Draconic</set>
+			<set name="type">Dragon</set>
+			<set name="size">Medium</set>
+			<set name="alignment">Lawful Evil</set>
+			<set name="challenge">2</set>
+			<set name="traits">ID_MYHB_DR_COMPANION_TRAIT_DRAGON_WYRMLING_GREEN_SAVING_THROWS</set>
+			<set name="actions">ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_GREEN_FORCE_BITE,ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_GREEN_POISON_BREATH</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="17" bonus="base" />
+			<stat name="companion:hp:max" value="companion:constitution:modifier" />
+			<stat name="companion:hp:max" value="intelligence:modifier" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:speed" value="30" bonus="base" />			
+			<stat name="companion:Stealth:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Saving Throws" type="Companion Trait" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_TRAIT_DRAGON_WYRMLING_GREEN_SAVING_THROWS">
+		<description>
+			<p>The Green Dragon Wyrmling has proficiency with Dexterity, Constitution, Wisdom, and Charisma saving throws.</p>
+		</description>
+		<sheet>
+			<description>The Green Dragon Wyrmling has proficiency with Dexterity (+3),Constitution (+3),Wisdom (+2), and Charisma (+3) saving throws.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_GREEN_FORCE_BITE">
+		<description>
+			<p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage plus 3 (1d6) poison damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage plus 2 (1d4) cold damage.</description>
+		</sheet>
+	</element>
+	<element name="Poison Breath (Recharge 5–6)" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_GREEN_POISON_BREATH">
+		<description>
+			<p> The dragon exhales poisonous gas in a 15-foot cone. Each creature in that area must make a DC 11 Constitution saving throw, taking 21 (6d6) poison damage on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<sheet usage="Recharges on a 5 or 6 roll on a d6">
+			<description>The dragon exhales poisonous gas in a 15-foot cone. Each creature in that area must make a DC 11 Constitution saving throw, taking 21 (6d6) poison damage on a failed save, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+
+	<element name="Black Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_Black">
+		<supports>Dragon Partner</supports>
+		<description>
+			<p>A Black Dragon Wyrmling Companion.</p>
+		</description>
+		<setters>
+			<set name="strength">15</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">13</set>
+			<set name="intelligence">10</set>
+			<set name="wisdom">11</set>
+			<set name="charisma">13</set>
+			<set name="ac">17 (natural armor)</set>
+			<set name="hp">equal the Wyrmling’s Constitution modifier + your Intelligence modifier + five times your level in this class</set>
+			<set name="speed">30 ft., Fly 60ft., Swim 30ft.</set>
+			<set name="immunities">acid</set>
+			<set name="conditionImmunities"></set>			
+		
+			<set name="saves">Dex +4, Con +3, Wis +2, Cha +3</set>
+			<set name="skills">Perception +4, Stealth +4</set>
+			<set name="senses">Blindsight 10ft. darkvision 60ft. Passive Perception 14</set>
+			<set name="languages">Draconic</set>
+			<set name="type">Dragon</set>
+			<set name="size">Medium</set>
+			<set name="alignment">Chaotic Evil</set>
+			<set name="challenge">2</set>
+			<set name="traits">ID_MYHB_DR_COMPANION_TRAIT_DRAGON_WYRMLING_Black_SAVING_THROWS,ID_MYHB_DR_COMPANION_TRAIT_DRAGON_WYRMLING_Black_AMPHIBIOUS</set>
+			<set name="actions">ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Black_FORCE_BITE,ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Black_ACID_BREATH</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="17" bonus="base" />
+			<stat name="companion:hp:max" value="companion:constitution:modifier" />
+			<stat name="companion:hp:max" value="intelligence:modifier" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:speed" value="30" bonus="base" />			
+			<stat name="companion:Stealth:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Saving Throws" type="Companion Trait" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_TRAIT_DRAGON_WYRMLING_Black_SAVING_THROWS">
+		<description>
+			<p>The Black Dragon Wyrmling has proficiency with Dexterity, Constitution, Wisdom, and Charisma saving throws.</p>
+		</description>
+		<sheet>
+			<description>The Black Dragon Wyrmling has proficiency with Dexterity (+4),Constitution (+3),Wisdom (+2), and Charisma (+3) saving throws.</description>
+		</sheet>
+	</element>
+	<element name="Amphibious" type="Companion Trait" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_TRAIT_DRAGON_WYRMLING_Black_AMPHIBIOUS">
+		<description>
+			<p>The dragon can breathe air and water.</p>
+		</description>
+		<sheet>
+			<description>The dragon can breathe air and water.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Black_FORCE_BITE">
+		<description>
+			<p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage plus 2 (1d4) acid damage.</p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage plus 2 (1d4) acid damage.</description>
+		</sheet>
+	</element>
+	<element name="Acid Breath (Recharge 5–6)" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Black_ACID_BREATH">
+		<description>
+			<p> The dragon exhales acid in a 15-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 22 (5d8) acid damage on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<sheet usage="Recharges on a 5 or 6 roll on a d6">
+			<description>The dragon exhales acid in a 15-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 22 (5d8) acid damage on a failed save, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+
+	<element name="Copper Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_Copper">
+		<supports>Dragon Partner</supports>
+		<description>
+			<p>A Copper Dragon Wyrmling Companion.</p>
+		</description>
+		<setters>
+			<set name="strength">15</set>
+			<set name="dexterity">12</set>
+			<set name="constitution">13</set>
+			<set name="intelligence">14</set>
+			<set name="wisdom">11</set>
+			<set name="charisma">13</set>
+			<set name="ac">16 (natural armor)</set>
+			<set name="hp">equal the Wyrmling’s Constitution modifier + your Intelligence modifier + five times your level in this class</set>
+			<set name="speed">30 ft., Fly 60ft., Climb 30ft.</set>
+			<set name="immunities">acid</set>
+			<set name="conditionImmunities"></set>			
+		
+			<set name="saves">Dex +3, Con +3, Wis +2, Cha +3</set>
+			<set name="skills">Perception +4, Stealth +3</set>
+			<set name="senses">Blindsight 10ft. darkvision 60ft. Passive Perception 14</set>
+			<set name="languages">Draconic</set>
+			<set name="type">Dragon</set>
+			<set name="size">Medium</set>
+			<set name="alignment">Chaotic Good</set>
+			<set name="challenge">1</set>
+			<set name="traits">ID_MYHB_DR_COMPANION_TRAIT_DRAGON_WYRMLING_Copper_SAVING_THROWS</set>
+			<set name="actions">ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Copper_FORCE_BITE,ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Copper_ACID_BREATH,ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Copper_SLOWING_BREATH</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="16" bonus="base" />
+			<stat name="companion:hp:max" value="companion:constitution:modifier" />
+			<stat name="companion:hp:max" value="intelligence:modifier" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:speed" value="30" bonus="base" />			
+			<stat name="companion:Stealth:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Saving Throws" type="Companion Trait" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_TRAIT_DRAGON_WYRMLING_Copper_SAVING_THROWS">
+		<description>
+			<p>The Copper Dragon Wyrmling has proficiency with Dexterity, Constitution, Wisdom, and Charisma saving throws.</p>
+		</description>
+		<sheet>
+			<description>The Copper Dragon Wyrmling has proficiency with Dexterity (+3),Constitution (+3),Wisdom (+2), and Charisma (+3) saving throws.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Copper_FORCE_BITE">
+		<description>
+			<p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage. </p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage.</description>
+		</sheet>
+	</element>
+	<element name="Acid Breath (Recharge 5–6)" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Copper_ACID_BREATH">
+		<description>
+			<p> The dragon exhales acid in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 18 (4d8) acid damage on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<sheet usage="Recharges on a 5 or 6 roll on a d6">
+			<description>The dragon exhales acid in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 18 (4d8) acid damage on a failed save, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+		<element name="Slowing Breath (Recharge 5–6)" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Copper_SLOWING_BREATH">
+		<description>
+			<p> The dragon exhales gas in a 15-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save.</p>
+		</description>
+		<sheet usage="Recharges on a 5 or 6 roll on a d6">
+			<description> The dragon exhales gas in a 15-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw. On a failed save, the creature can't use reactions, its speed is halved, and it can't make more than one attack on its turn. In addition, the creature can use either an action or a bonus action on its turn, but not both. These effects last for 1 minute. The creature can repeat the saving throw at the end of each of its turns, ending the effect on itself with a successful save.</description>
+		</sheet>
+	</element>
+
+		<element name="Gold Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_Gold">
+		<supports>Dragon Partner</supports>
+		<description>
+			<p>A Gold Dragon Wyrmling Companion.</p>
+		</description>
+		<setters>
+			<set name="strength">19</set>
+			<set name="dexterity">14</set>
+			<set name="constitution">17</set>
+			<set name="intelligence">14</set>
+			<set name="wisdom">11</set>
+			<set name="charisma">16</set>
+			<set name="ac">17 (natural armor)</set>
+			<set name="hp">equal the Wyrmling’s Constitution modifier + your Intelligence modifier + five times your level in this class</set>
+			<set name="speed">30 ft., Fly 60ft., Swim 30ft.</set>
+			<set name="immunities">fire</set>
+			<set name="conditionImmunities"></set>			
+		
+			<set name="saves">Dex +4, Con +5, Wis +2, Cha +5</set>
+			<set name="skills">Perception +4, Stealth +3</set>
+			<set name="senses">Blindsight 10ft. darkvision 60ft. Passive Perception 14</set>
+			<set name="languages">Draconic</set>
+			<set name="type">Dragon</set>
+			<set name="size">Medium</set>
+			<set name="alignment">Lawful Good</set>
+			<set name="challenge">3</set>
+			<set name="traits">ID_MYHB_DR_COMPANION_TRAIT_DRAGON_WYRMLING_Gold_SAVING_THROWS</set>
+			<set name="actions">ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Gold_FORCE_BITE,ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Gold_FIRE_BREATH,ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Gold_WEAKENING_BREATH</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="17" bonus="base" />
+			<stat name="companion:hp:max" value="companion:constitution:modifier" />
+			<stat name="companion:hp:max" value="intelligence:modifier" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:speed" value="30" bonus="base" />			
+			<stat name="companion:Stealth:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Saving Throws" type="Companion Trait" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_TRAIT_DRAGON_WYRMLING_Gold_SAVING_THROWS">
+		<description>
+			<p>The Gold Dragon Wyrmling has proficiency with Dexterity, Constitution, Wisdom, and Charisma saving throws.</p>
+		</description>
+		<sheet>
+			<description>The Gold Dragon Wyrmling has proficiency with Dexterity (+4),Constitution (+5),Wisdom (+2), and Charisma (+5) saving throws.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Gold_FORCE_BITE">
+		<description>
+			<p>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) piercing damage. </p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) piercing damage.</description>
+		</sheet>
+	</element>
+	<element name="Fire Breath (Recharge 5–6)" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Gold_FIRE_BREATH">
+		<description>
+			<p> The dragon exhales fire in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 22 (4d10) fire damage on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<sheet usage="Recharges on a 5 or 6 roll on a d6">
+			<description>The dragon exhales fire in a 15-foot cone. Each creature in that area must make a DC 13 Dexterity saving throw, taking 22 (4d10) fire damage on a failed save, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+		<element name="Weakening Breath (Recharge 5–6)" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Gold_WEAKENING_BREATH">
+		<description>
+			<p> The dragon exhales gas in a 15-foot cone. Each creature in that area must succeed on a DC 13 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+		</description>
+		<sheet usage="Recharges on a 5 or 6 roll on a d6">
+			<description> The dragon exhales gas in a 15-foot cone. Each creature in that area must succeed on a DC 13 Strength saving throw or have disadvantage on Strength-based attack rolls, Strength checks, and Strength saving throws for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+		</sheet>
+	</element>
+
+		<element name="Bronze Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_Bronze">
+		<supports>Dragon Partner</supports>
+		<description>
+			<p>A Bronze Dragon Wyrmling Companion.</p>
+		</description>
+		<setters>
+			<set name="strength">17</set>
+			<set name="dexterity">10</set>
+			<set name="constitution">15</set>
+			<set name="intelligence">12</set>
+			<set name="wisdom">11</set>
+			<set name="charisma">15</set>
+			<set name="ac">17 (natural armor)</set>
+			<set name="hp">equal the Wyrmling’s Constitution modifier + your Intelligence modifier + five times your level in this class</set>
+			<set name="speed">30 ft., Fly 60ft., Swim 30ft.</set>
+			<set name="immunities">lightning</set>
+			<set name="conditionImmunities"></set>			
+		
+			<set name="saves">Dex +4, Con +4, Wis +2, Cha +4</set>
+			<set name="skills">Perception +4, Stealth +2</set>
+			<set name="senses">Blindsight 10ft. darkvision 60ft. Passive Perception 14</set>
+			<set name="languages">Draconic</set>
+			<set name="type">Dragon</set>
+			<set name="size">Medium</set>
+			<set name="alignment">Lawful Good</set>
+			<set name="challenge">2</set>
+			<set name="traits">ID_MYHB_DR_COMPANION_TRAIT_DRAGON_WYRMLING_Bronze_SAVING_THROWS,ID_MYHB_DR_COMPANION_TRAIT_DRAGON_WYRMLING_Bronze_AMPHIBIOUS</set>
+			<set name="actions">ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Bronze_FORCE_BITE,ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Bronze_LIGHTNING_BREATH,ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Bronze_REPULSION_BREATH</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="17" bonus="base" />
+			<stat name="companion:hp:max" value="companion:constitution:modifier" />
+			<stat name="companion:hp:max" value="intelligence:modifier" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:speed" value="30" bonus="base" />			
+			<stat name="companion:Stealth:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Saving Throws" type="Companion Trait" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_TRAIT_DRAGON_WYRMLING_Bronze_SAVING_THROWS">
+		<description>
+			<p>The Bronze Dragon Wyrmling has proficiency with Dexterity, Constitution, Wisdom, and Charisma saving throws.</p>
+		</description>
+		<sheet>
+			<description>The Bronze Dragon Wyrmling has proficiency with Dexterity (+2),Constitution (+4),Wisdom (+2), and Charisma (+4) saving throws.</description>
+		</sheet>
+	</element>
+		<element name="Amphibious" type="Companion Trait" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_TRAIT_DRAGON_WYRMLING_Bronze_AMPHIBIOUS">
+		<description>
+			<p>The dragon can breathe air and water.</p>
+		</description>
+		<sheet>
+			<description>The dragon can breathe air and water.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Bronze_FORCE_BITE">
+		<description>
+			<p>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage. </p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +5 to hit, reach 5 ft., one target. Hit: 8 (1d10 + 3) piercing damage.</description>
+		</sheet>
+	</element>
+	<element name="Lightning Breath (Recharge 5–6)" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Bronze_LIGHTNING_BREATH">
+		<description>
+			<p> The dragon exhales lightning in a 40-foot line that is 5 feet wide. Each creature in that line must make a DC 12 Dexterity saving throw, taking 16 (3d10) lightning damage on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<sheet usage="Recharges on a 5 or 6 roll on a d6">
+			<description>The dragon exhales lightning in a 40-foot line that is 5 feet wide. Each creature in that line must make a DC 12 Dexterity saving throw, taking 16 (3d10) lightning damage on a failed save, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+		<element name="Repulsion Breath (Recharge 5–6)" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Bronze_REPULSION_BREATH">
+		<description>
+			<p> The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 12 Strength saving throw. On a failed save, the creature is pushed 30 feet away from the dragon.</p>
+		</description>
+		<sheet usage="Recharges on a 5 or 6 roll on a d6">
+			<description>The dragon exhales repulsion energy in a 30-foot cone. Each creature in that area must succeed on a DC 12 Strength saving throw. On a failed save, the creature is pushed 30 feet away from the dragon.</description>
+		</sheet>
+	</element>
+
+	<element name="Brass Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_Brass">
+		<supports>Dragon Partner</supports>
+		<description>
+			<p>A Brass Dragon Wyrmling Companion.</p>
+		</description>
+		<setters>
+			<set name="strength">15</set>
+			<set name="dexterity">10</set>
+			<set name="constitution">13</set>
+			<set name="intelligence">10</set>
+			<set name="wisdom">11</set>
+			<set name="charisma">13</set>
+			<set name="ac">16 (natural armor)</set>
+			<set name="hp">equal the Wyrmling’s Constitution modifier + your Intelligence modifier + five times your level in this class</set>
+			<set name="speed">30 ft., Fly 60ft., Burrow 15ft.</set>
+			<set name="immunities">fire</set>
+			<set name="conditionImmunities"></set>			
+		
+			<set name="saves">Dex +2, Con +3, Wis +2, Cha +3</set>
+			<set name="skills">Perception +4, Stealth +2</set>
+			<set name="senses">Blindsight 10ft. darkvision 60ft. Passive Perception 14</set>
+			<set name="languages">Draconic</set>
+			<set name="type">Dragon</set>
+			<set name="size">Medium</set>
+			<set name="alignment">Chaotic Good</set>
+			<set name="challenge">1</set>
+			<set name="traits">ID_MYHB_DR_COMPANION_TRAIT_DRAGON_WYRMLING_Brass_SAVING_THROWS</set>
+			<set name="actions">ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Brass_FORCE_BITE,ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Brass_FIRE_BREATH,ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Brass_SLEEP_BREATH</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="16" bonus="base" />
+			<stat name="companion:hp:max" value="companion:constitution:modifier" />
+			<stat name="companion:hp:max" value="intelligence:modifier" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:speed" value="30" bonus="base" />			
+			<stat name="companion:Stealth:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Saving Throws" type="Companion Trait" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_TRAIT_DRAGON_WYRMLING_Brass_SAVING_THROWS">
+		<description>
+			<p>The Brass Dragon Wyrmling has proficiency with Dexterity, Constitution, Wisdom, and Charisma saving throws.</p>
+		</description>
+		<sheet>
+			<description>The Brass Dragon Wyrmling has proficiency with Dexterity (+2),Constitution (+3),Wisdom (+2), and Charisma (+3) saving throws.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Brass_FORCE_BITE">
+		<description>
+			<p>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage. </p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +4 to hit, reach 5 ft., one target. Hit: 7 (1d10 + 2) piercing damage. </description>
+		</sheet>
+	</element>
+	<element name="Fire Breath (Recharge 5–6)" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Brass_FIRE_BREATH">
+		<description>
+			<p>The dragon exhales fire in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<sheet usage="Recharges on a 5 or 6 roll on a d6">
+			<description>The dragon exhales fire in a 20-foot line that is 5 feet wide. Each creature in that line must make a DC 11 Dexterity saving throw, taking 14 (4d6) fire damage on a failed save, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+		<element name="Sleep Breath (Recharge 5–6)" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Brass_SLEEP_BREATH">
+		<description>
+			<p> The dragon exhales sleep gas in a 15-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw or fall unconscious for 1 minute. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.</p>
+		</description>
+		<sheet usage="Recharges on a 5 or 6 roll on a d6">
+			<description>The dragon exhales sleep gas in a 15-foot cone. Each creature in that area must succeed on a DC 11 Constitution saving throw or fall unconscious for 1 minute. This effect ends for a creature if the creature takes damage or someone uses an action to wake it.</description>
+		</sheet>
+	</element>
+
+	<element name="Silver Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_Silver">
+		<supports>Dragon Partner</supports>
+		<description>
+			<p>A Silver Dragon Wyrmling Companion.</p>
+		</description>
+		<setters>
+			<set name="strength">19</set>
+			<set name="dexterity">10</set>
+			<set name="constitution">17</set>
+			<set name="intelligence">12</set>
+			<set name="wisdom">11</set>
+			<set name="charisma">15</set>
+			<set name="ac">17 (natural armor)</set>
+			<set name="hp">equal the Wyrmling’s Constitution modifier + your Intelligence modifier + five times your level in this class</set>
+			<set name="speed">30 ft., Fly 60ft.</set>
+			<set name="immunities">cold</set>
+			<set name="conditionImmunities"></set>			
+		
+			<set name="saves">Dex +2, Con +5, Wis +2, Cha +4</set>
+			<set name="skills">Perception +4, Stealth +2</set>
+			<set name="senses">Blindsight 10ft. darkvision 60ft. Passive Perception 14</set>
+			<set name="languages">Draconic</set>
+			<set name="type">Dragon</set>
+			<set name="size">Medium</set>
+			<set name="alignment">Chaotic Good</set>
+			<set name="challenge">2</set>
+			<set name="traits">ID_MYHB_DR_COMPANION_TRAIT_DRAGON_WYRMLING_Silver_SAVING_THROWS</set>
+			<set name="actions">ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Silver_FORCE_BITE,ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Silver_COLD_BREATH,ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Silver_PARALYZING_BREATH</set>
+		</setters>
+		<rules>
+			<stat name="companion:ac" value="16" bonus="base" />
+			<stat name="companion:hp:max" value="companion:constitution:modifier" />
+			<stat name="companion:hp:max" value="intelligence:modifier" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:hp:max" value="level:Dragon Rider" />
+			<stat name="companion:speed" value="30" bonus="base" />			
+			<stat name="companion:Stealth:proficiency" value="companion:proficiency" bonus="base" />
+			<stat name="companion:perception:proficiency" value="companion:proficiency" bonus="base" />
+		</rules>
+	</element>
+	<element name="Saving Throws" type="Companion Trait" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_TRAIT_DRAGON_WYRMLING_Silver_SAVING_THROWS">
+		<description>
+			<p>The Silver Dragon Wyrmling has proficiency with Dexterity, Constitution, Wisdom, and Charisma saving throws.</p>
+		</description>
+		<sheet>
+			<description>The Silver Dragon Wyrmling has proficiency with Dexterity (+2),Constitution (53),Wisdom (+2), and Charisma (+4) saving throws.</description>
+		</sheet>
+	</element>
+	<element name="Bite" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Silver_FORCE_BITE">
+		<description>
+			<p>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) piercing damage. </p>
+		</description>
+		<sheet>
+			<description>Melee Weapon Attack: +6 to hit, reach 5 ft., one target. Hit: 9 (1d10 + 4) piercing damage. </description>
+		</sheet>
+	</element>
+	<element name="Cold Breath (Recharge 5–6)" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Silver_COLD_BREATH">
+		<description>
+			<p>The dragon exhales an icy blast in a 15-foot cone. Each creature in that area must make a DC 13 Constitution saving throw, taking 18 (4d8) cold damage on a failed save, or half as much damage on a successful one.</p>
+		</description>
+		<sheet usage="Recharges on a 5 or 6 roll on a d6">
+			<description>The dragon exhales an icy blast in a 15-foot cone. Each creature in that area must make a DC 13 Constitution saving throw, taking 18 (4d8) cold damage on a failed save, or half as much damage on a successful one.</description>
+		</sheet>
+	</element>
+		<element name="Paralyzing Breath (Recharge 5–6)" type="Companion Action" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_ACTION_DRAGON_WYRMLING_Silver_PARALYZING_BREATH">
+		<description>
+			<p> The dragon exhales paralyzing gas in a 15-foot cone. Each creature in that area must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</p>
+		</description>
+		<sheet usage="Recharges on a 5 or 6 roll on a d6">
+			<description>The dragon exhales paralyzing gas in a 15-foot cone. Each creature in that area must succeed on a DC 13 Constitution saving throw or be paralyzed for 1 minute. A creature can repeat the saving throw at the end of each of its turns, ending the effect on itself on a success.</description>
+		</sheet>
+	</element>
+
 	<element name="Young Dragon" type="Class Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonYoung">
 		<supports>Dragon Partner, Dragon Rider</supports>
 		<description>
