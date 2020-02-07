@@ -4,7 +4,7 @@
 		<name>DragonRider</name>
 		<description>The DragonRider class </description>
 		<author url="https://github.com/dgcid">dgcid</author>
-		<update version="0.6.7">
+		<update version="0.6.8">
 			<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/DragonRider/class-DragonRider.xml" />
 		</update>
 	</info>
@@ -1139,20 +1139,17 @@
 			<select type="Class Feature" name="Ancient Dragon" supports="Dragon Partner" level="20"/>
 		</rules>
 	</element>
+
 	<element name="Dragon Wyrmling" type="Class Feature" source="Dragon Riders of Abeir" id="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonWyrmling">
 		<supports>Dragon Partner, Dragon Rider</supports>
 		<description>
 			<h5 class="caption">Dragon Wyrmling</h5>
 			<p>At 3rd level, Egg has Hatched into a 'Dragon Wyrmling', as described in the Monster Manual.</p>
-			<p class="indent">The dragon wyrmling is now a companion that accompanies you on your adventures and is trained to fight alongside you. The type of wyrming corresponds to the chosen dragon egg. Add your proficiency bonus to the wyrmling’s AC, attack rolls, and damage rolls, as well as to any saving throws and skills it is proficient in. Its hit point maximum equals the hit point number in its stat block or four times your Dragon Rider Level level, whichever is higher. Like any creature, it can spend Hit Dice during a short rest to regain hit points. </p>
-			<p class="indent">The wyrmling obeys your commands as best as it can On your turn, you can verbally command the wyrmling where to move (no action required by you). You can use your action to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action.</p>
-			<p class="indent">If you have the extra attack feature you can you your first attack to command the wyrmling.If you are incapacitated or absent, the wyrmling acts on its own, focusing on protecting you and itself. The wyrmling never requires your command to use its reaction, such as when making an opportunity attack. </p>
 		</description>
-		<sheet action="Bonus Action" usage="Unlimited"> 
+		<sheet> 
 			<description>the hatchling has matured into a 'Dragon Wyrmling', as described in the Monster Manual. The wyrmling obeys your commands as best as it can On your turn, you can verbally command the wyrmling where to move (no action required by you). You can use your bonus action to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action.</description>
 		</sheet>
 		<rules>
-			<!--<select type="Class Feature" name="Dragon Wyrmling" supports="Dragon Partner" level="7"/> -->
 		</rules>
 	</element>
 	
