@@ -4,7 +4,7 @@
 		<name>DragonRider</name>
 		<description>The DragonRider class </description>
 		<author url="https://github.com/dgcid">dgcid</author>
-		<update version="0.6.11">
+		<update version="0.6.12">
 			<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/DragonRider/class-DragonRider.xml" />
 		</update>
 	</info>
@@ -931,7 +931,11 @@
 			</sheet>
 			<rules>
 			<grant type="Spell" id="ID_XGTE_SPELL_SHAPE_WATER" />
-			<select type="Companion" name="Topaz Dragon Egg" supports="Dragon Egg" default="ID_MYHB_DR_COMPANION_Dragon_EGG" /> 
+			<	<grant type="Companion" name="Topaz Dragon Egg" supports="Dragon Egg" level="1" default="ID_MYHB_DR_COMPANION_Dragon_EGG" />
+			<grant type="Companion" name="Topaz Dragon Wyrmling" supports="Topaz Dragon Wyrmling" level="3" default="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_Topaz" />  
+			<grant type="Companion" name="Young Topaz Dragon" supports="Young Topaz Dragon" level="7" default="ID_MYHB_DR_COMPANION_Dragon_YOUNG_Topaz" />
+			 <grant type="Companion" name="Adult Topaz Dragon " supports="Adult Topaz Dragon" level="15" default="ID_MYHB_DR_COMPANION_Dragon_ADULT_Topaz" />  
+			<!-- <grant type="Companion" name="Red Dragon Wyrmling" supports="Red Dragon Wyrmling" level="3" default="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_RED" />       -->> 
 			</rules>
 		</element>
 		
