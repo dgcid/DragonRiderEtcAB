@@ -4,7 +4,7 @@
 		<name>DragonRider</name>
 		<description>The DragonRider class </description>
 		<author url="https://github.com/dgcid">dgcid</author>
-		<update version="0.6.10">
+		<update version="0.6.11">
 			<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/DragonRider/class-DragonRider.xml" />
 		</update>
 	</info>
@@ -710,8 +710,8 @@
 			<rules>
 			<grant type="Spell" id="ID_PHB_SPELL_PRODUCE_FLAME" />
 			<grant type="Companion" name="Black Dragon Egg" supports="Dragon Egg" level="1" default="ID_MYHB_DR_COMPANION_Dragon_EGG" />
-			<grant type="Companion" name="Black Dragon Wyrmling" supports="Black Dragon Wyrmling" level="3" default="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_BLACK" />  
-			<grant type="Companion" name="Young Black Dragon" supports="Young Black Dragon" level="3" default="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_BLACK" />
+			<grant type="Companion" name="Black Dragon Wyrmling" supports="Black Dragon Wyrmling" level="3" default="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_Black" />  
+			<grant type="Companion" name="Young Black Dragon" supports="Young Black Dragon" level="7" default="ID_MYHB_DR_COMPANION_Dragon_YOUNG_Black" />
 			<!-- <grant type="Companion" name="Adult Black Dragon " supports="Red Dragon Wyrmling" level="3" default="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_RED" />  
 			<grant type="Companion" name="Red Dragon Wyrmling" supports="Red Dragon Wyrmling" level="3" default="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_RED" />       -->
 			</rules>
