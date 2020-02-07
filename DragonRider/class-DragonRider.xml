@@ -4,7 +4,7 @@
 		<name>DragonRider</name>
 		<description>The DragonRider class </description>
 		<author url="https://github.com/dgcid">dgcid</author>
-		<update version="0.6.8">
+		<update version="0.6.9">
 			<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/DragonRider/class-DragonRider.xml" />
 		</update>
 	</info>
@@ -1132,11 +1132,7 @@
 			<description>This is the Feature that grants you your Dragon</description>
 		</sheet>
 		<rules>
-			<select type="Class Feature" name="Dragon Partner" supports="Dragon Partner" level="3"/>
-			<select type="Class Feature" name="Dragon Wyrmling" supports="Dragon Partner" level="3"/>
-			<select type="Class Feature" name="Young Dragon" supports="Dragon Partner" level="7"/>
-			<select type="Class Feature" name="Adult Dragon" supports="Dragon Partner" level="15"/>
-			<select type="Class Feature" name="Ancient Dragon" supports="Dragon Partner" level="20"/>
+		<select type="Class Feature" name="Dragon Wyrmling" supports="Dragon Partner" level="3" />
 		</rules>
 	</element>
 
@@ -1150,11 +1146,14 @@
 			<description>the hatchling has matured into a 'Dragon Wyrmling', as described in the Monster Manual. The wyrmling obeys your commands as best as it can On your turn, you can verbally command the wyrmling where to move (no action required by you). You can use your bonus action to verbally command it to take the Attack, Dash, Disengage, Dodge, or Help action.</description>
 		</sheet>
 		<rules>
+		<select type="Companion" name="Dragon Wyrmling" supports="Dragon Wyrmling" default="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_RED" />
+		<select type="Companion" name="Dragon Wyrmling" supports="Dragon Wyrmling" default="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_BLUE" />
+		<select type="Companion" name="Dragon Wyrmling" supports="Dragon Wyrmling" default="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_WHITE" />
 		</rules>
 	</element>
 	
  	<element name="Red Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_RED">
-		<supports>Dragon Partner</supports>
+		<supports>Dragon Wyrmling</supports>
 		<description>
 			<p>A Red Dragon Wyrmling Companion.</p>
 		</description>
@@ -1222,7 +1221,7 @@
 	</element>
 
 	<element name="Blue Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_BLUE">
-		<supports>Dragon Partner</supports>
+		<supports>Dragon Wyrmling</supports>
 		<description>
 			<p>A Blue Dragon Wyrmling Companion.</p>
 		</description>
@@ -1291,7 +1290,7 @@
 
 	
 	<element name="White Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_WHITE">
-		<supports>Dragon Partner</supports>
+		<supports>Dragon Wyrmling</supports>
 		<description>
 			<p>A White Dragon Wyrmling Companion.</p>
 		</description>
@@ -1359,7 +1358,7 @@
 	</element>
 
 	<element name="Green Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_GREEN">
-		<supports>Dragon Partner</supports>
+		<supports>Dragon Wyrmling</supports>
 		<description>
 			<p>A Green Dragon Wyrmling Companion.</p>
 		</description>
@@ -1427,7 +1426,7 @@
 	</element>
 
 	<element name="Black Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_Black">
-		<supports>Dragon Partner</supports>
+		<supports>Dragon Wyrmling</supports>
 		<description>
 			<p>A Black Dragon Wyrmling Companion.</p>
 		</description>
@@ -1503,7 +1502,7 @@
 	</element>
 
 	<element name="Copper Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_Copper">
-		<supports>Dragon Partner</supports>
+		<supports>Dragon Wyrmling</supports>
 		<description>
 			<p>A Copper Dragon Wyrmling Companion.</p>
 		</description>
@@ -1579,7 +1578,7 @@
 	</element>
 
 		<element name="Gold Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_Gold">
-		<supports>Dragon Partner</supports>
+		<supports>Dragon Wyrmling</supports>
 		<description>
 			<p>A Gold Dragon Wyrmling Companion.</p>
 		</description>
@@ -1655,7 +1654,7 @@
 	</element>
 
 		<element name="Bronze Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_Bronze">
-		<supports>Dragon Partner</supports>
+		<supports>Dragon Wyrmling</supports>
 		<description>
 			<p>A Bronze Dragon Wyrmling Companion.</p>
 		</description>
@@ -1739,7 +1738,7 @@
 	</element>
 
 	<element name="Brass Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_Brass">
-		<supports>Dragon Partner</supports>
+		<supports>Dragon Wyrmling</supports>
 		<description>
 			<p>A Brass Dragon Wyrmling Companion.</p>
 		</description>
@@ -1815,7 +1814,7 @@
 	</element>
 
 	<element name="Silver Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_Silver">
-		<supports>Dragon Partner</supports>
+		<supports>Dragon Wyrmling</supports>
 		<description>
 			<p>A Silver Dragon Wyrmling Companion.</p>
 		</description>
@@ -1891,7 +1890,7 @@
 	</element>
 
 		<element name="Amethyst Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_Amethyst">
-		<supports>Dragon Partner</supports>
+		<supports>Dragon Wyrmling</supports>
 		<description>
 			<p>A Amethyst Dragon Wyrmling Companion.</p>
 		</description>
@@ -1977,7 +1976,7 @@
 	</element>
 
 		<element name="Emerald Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_Emerald">
-		<supports>Dragon Partner</supports>
+		<supports>Dragon Wyrmling</supports>
 		<description>
 			<p>A Emerald Dragon Wyrmling Companion.</p>
 		</description>
@@ -2064,7 +2063,7 @@
 	</element>
 
 		<element name="Sapphire Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_Sapphire">
-		<supports>Dragon Partner</supports>
+		<supports>Dragon Wyrmling</supports>
 		<description>
 			<p>A Sapphire Dragon Wyrmling Companion.</p>
 		</description>
@@ -2150,7 +2149,7 @@
 	</element>
 
 	<element name="Topaz Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_Topaz">
-		<supports>Dragon Partner</supports>
+		<supports>Dragon Wyrmling</supports>
 		<description>
 			<p>A Topaz Dragon Wyrmling Companion.</p>
 		</description>
@@ -2229,7 +2228,7 @@
 
 
 		<element name="Obsidian Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_Obsidian">
-		<supports>Dragon Partner</supports>
+		<supports>Dragon Wyrmling</supports>
 		<description>
 			<p>A Obsidian Dragon Wyrmling Companion.</p>
 		</description>
@@ -2308,7 +2307,7 @@
 	</element>
 
 	<element name="Radiant Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_Radiant">
-		<supports>Dragon Partner</supports>
+		<supports>Dragon Wyrmling</supports>
 		<description>
 			<p>A Radiant Dragon Wyrmling Companion.</p>
 		</description>
@@ -2396,7 +2395,7 @@
 	</element>
 
 		<element name="Fang Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_Fang">
-		<supports>Dragon Partner</supports>
+		<supports>Dragon Wyrmling</supports>
 		<description>
 			<p>A Fang Dragon Wyrmling Companion.</p>
 		</description>
@@ -2469,7 +2468,7 @@
 
 	
 	<element name="Steel Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_Steel">
-		<supports>Dragon Partner</supports>
+		<supports>Dragon Wyrmling</supports>
 		<description>
 			<p>A Steel Dragon Wyrmling Companion.</p>
 		</description>
@@ -2556,7 +2555,7 @@
 	</element>
 
 		<element name="Adamantine Dragon Wyrmling" type="Companion" source="Dragon Riders of Abeir" id="ID_MYHB_DR_COMPANION_Dragon_WYRMLING_Adamantine">
-		<supports>Dragon Partner</supports>
+		<supports>Dragon Wyrmling</supports>
 		<description>
 			<p>A Adamantine Dragon Wyrmling Companion.</p>
 		</description>
