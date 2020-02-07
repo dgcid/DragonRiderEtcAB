@@ -4,7 +4,7 @@
 		<name>DragonRider</name>
 		<description>The DragonRider class </description>
 		<author url="https://github.com/dgcid">dgcid</author>
-		<update version="0.6.5">
+		<update version="0.6.6">
 			<file name="class-DragonRider.xml" url="https://raw.githubusercontent.com/dgcid/DragonRiderEtcAB/master/DragonRider/class-DragonRider.xml" />
 		</update>
 	</info>
@@ -132,7 +132,6 @@
 			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_RiderArchetype" />
 			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_SPELLCASTING_Dragonrider" />
 			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonEgg" />
-			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_Dragonyoung" />
 			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonYoung" />
 			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonAdult" />
 			<div element="ID_MYHB_DR_CLASS_FEATURE_Dragonrider_DragonAncient" />
